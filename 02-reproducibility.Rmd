@@ -1,2 +1,2 @@
-# Reproducibility
+# Reproducibilidad
 We describe our methods in this chapter.

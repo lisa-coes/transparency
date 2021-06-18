@@ -1,7 +1,7 @@
 intro
-transparency
+transparencia
 por-qué-adoptar-los-principios-de-transparencia
 transparencia-de-qué
 actualmente-se-adoptan-estos-principios-de-transparencia-en-las-ciencias-sociales
-reproducibility
+reproducibilidad
 final-words
