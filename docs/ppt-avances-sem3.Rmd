@@ -1,0 +1,153 @@
+---
+title: "Avances Documento Transparencia"
+subtitle: ""  
+author: "Martín Venegas M"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      ratio: '16:9'
+      countIncrementalSlides: false
+      beforeInit: "https://jciturras.github.io/ayudantia-sol3051/slides/00-intro-r/macros.js"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+    css: ["https://jciturras.github.io/ayudantia-sol3051/slides/00-intro-r/xaringan-coes.css","https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
+    #seal: false # esto omite title slide automática  
+---
+class: center, middle
+
+# _Proyecto Laboratorio Ciencia Social Abierta (LISA)_
+```{r setup, include=FALSE,eval=TRUE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo(primary_color = "#1F4257", secondary_color = "#F97B64")
+
+```
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           hyperlink = FALSE,
+           dashed = FALSE)
+myBib <- ReadBib("../book.bib", check = FALSE)
+```
+---
+class: inverse, center, middle
+
+# Características del documento
+---
+# Formato
+- **Tipo documento:** manual breve - revisión de literatura
+- **Formato de escritura:** tipo manual, escritura formal pero con un tono experiencial y dirigida a un sujeto: "imegienese que ud...."
+- **Audiencia:** académicos de las ciencias sociales que no necesariamente estén familiarizados con la ciencia abierta ni con R.
+--
+
+# Objetivos del documento
+- Convencer al lector para que adopte prácticas transparentes en el quehacer investigativo
+- Instruir al lector para facilitar la adopción de prácticas transparentes en el quehacer investigativo
+
+---
+class: inverse, center, middle
+
+# Estructura y contenidos
+---
+# Introducción
+
+## Objetivos
+
+- Que el lector logre asociar la transparencia y la reproducibilidad como componentes centrales del quehacer científico, específicamente en ciencias sociales.
+- Hacer sentir al lector la necesidad de instruirse en los tópicos relacionados a la ciencia abierta, específicamente en transparencia y reproducibilidad
+- Demarcar cuáles son las contribuciones del documento en relación a la literatura existente.
+---
+# Sección transparencia
+
+## Objetivos
+
+- Entregar una definición precisa de qué se entiende por transparencia.
+- Exponer las razones que llevan a considerar necesaria una promoción de los principios de transparencia
+- Describir las formas en las que se puede promover la transparencia
+- Enfatizar en los beneficios que conlleva adoptar los principios de transparencia
+---
+# Sección transparencia
+### ¿Qué es la transparencia?
+
+- `r Citet(myBib, c("breznau_Does_2021"))`: La transparencia en la ciencia abierta es una forma de que todos los investigadores revelen el proceso, las ideas y materiales en los que se basa un argumento o teoría, y para apoyar una comunidad científica más ética.
+
+- Aczel et al. (2020): Se requiere transparencia para evaluar y reproducir los hallazgos, y también para la síntesis de la investigación y el metanálisis a partir de los datos brutos.
+---
+# Seccion transparencia
+
+### Actualmente ¿se adoptan estos principios de transparencia en las ciencias sociales?
+
+- En general, la literatura dice que no, que existe una **crisis de reproudicibilidad** o de replicación en las ciencias sociales.
+- Existe tanto un *contexto institucional* (sistemas de recompensa para investigadores) como ciertas *prácticas de los investigadores* que promueven esta crisis, y a la larga, afectan la credibilidad de las ciencias sociales.
+
+  * **Contexto institucional:** cultura del pública o perece, revisión de pares basada en resultados y no en rigor, recompensas según indices de públicación, revistas no adoptan principios de transparencia dentro de sus requerimientos de publicación.
+  * **Prácticas cuestionables:** p hacking, HARKing, sesgos de públicación, bajo poder estadístico.
+---
+# Sección transparencia
+### ¿Qué podemos hacer para promover la transparencia?
+
+- Distintas dimensiones en las que la transparencia puede ser promovida. Acá se describen las siguientes: 
+
+  * **Datos abiertos:** Son el punto de partida para el análisis reproducible y el escrutinio científico en general.
+  * **Análisis reproducible:** Fomenta el escrutinio y la detección de errores.
+  * **Pre registros** Preregistrar tanto hipótesis como planes de análisis permite evitar prácticas como p hacking y HARKing.
+  * **Replicación:** Las replicaciones promueven la generalización de los hallagos, y en general, fortalecen la credibilidad.
+  * **Enseñar ciencia abierta:** Enseñar ciencia abierta permite transmitir un sentimiento de suspicacia respecto a la producción científica a los estudiantes.
+---
+# Sección transparencia
+### ¿Qué podemos hacer para promover la transparencia?
+
+- Algunas iniciativas:
+  * Berkeley Initiative for Transparency in the Social Sciences (BITSS)
+  * Framework for Open and Reproducible Research Training (FORRT)
+  * Transparency and Openness Promotion (TOP) Guidelines
+  * Inciativa Latinoamericana por los Datos Abiertos (ILDA)
+  * Center of Open Science (COS)
+  * Open Science Framework (OSF)
+
+---
+# Sección transparencia
+### ¿Por qué adoptar los principios de transparencia?
+
+---
+Especialmente en lo relacionado a reproducibilidad, `r Cite(myBib, c("rodriguez-sanchez_Ciencia_2016"))`:
+- La utilización de código permite la automatización: ejecución de tareas repetitivas sin esfuerzo
+- Muy fácil corregir y regenerar resultados, tablas y figuras
+- Reducción drástica del riesgo de errores
+- Los flujos de trabajo reproducibles facilitan la colaboración
+- Mayor facilidad para escribir artículos al tener registro exhaustivo de todo el proceso de análisis
+- La publicación del código ayuda a detectar errores antes de la publicación definitiva
+- La publicación del código facilita el proceso de revisión
+- La publicación del código facilita la comprensión del artículo y evita malinterpretaciones
+- La reproducibilidad es un sello de calidad y aumenta la probabilidad de aceptación (cuando no es simplemente requerida)
+- La reproducibilidad aumenta el impacto de las publicaciones (citas, reconocimiento, reutilización, coautorías)
+- Ahorro de tiempo y esfuerzo al reutilizar código en otros proyectos
+---
+class: inverse, center, middle
+
+# Objetivos para la semana
+---
+# Para la semana
+
+- Terminar redactar introducción y redactar sección transparencia.
+- Revisión con Julio el viernes.
+---
+class: inverse, center, middle
+
+# Referencias
+```{r, results='asis', echo=FALSE}
+PrintBibliography(myBib)
+```
+---
+class: inverse, middle, center
+
+# ¡Muchas Gracias!

@@ -1,10 +1,7 @@
-fig:nice-fig
-tab:nice-tab
-prerequisites
 intro
-literature
-methods
-applications
-example-one
-example-two
+transparency
+por-qué-adoptar-los-principios-de-transparencia
+transparencia-de-qué
+actualmente-se-adoptan-estos-principios-de-transparencia-en-las-ciencias-sociales
+reproducibility
 final-words
