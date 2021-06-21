@@ -1,7 +1,11 @@
+fig:taxonomy
 intro
 transparencia
-por-qué-adoptar-los-principios-de-transparencia
-transparencia-de-qué
-actualmente-se-adoptan-estos-principios-de-transparencia-en-las-ciencias-sociales
+qué-es-la-transparencia-un-concepto-multidimensional
+cuál-es-el-problema-la-crisis-de-credibilidad-en-las-ciencias-sociales
+fraudes
+prácticas-cuestionables
+sesgo-de-publicación
+qué-podemos-hacer-recomendaciones-prácticas-y-experiencias
 reproducibilidad
-final-words
+palabras-finales

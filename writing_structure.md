@@ -17,7 +17,6 @@ La introducción tiene los siguientes objetivos:
 ## Sections
 
 ### Paragraphs
-
 **[_P1:_ Primer parrafo de enganche]**
 
 **[_P2:_ ¿Qué es la ciencia? -> enfatizar la idea de necesidad de transparencia para un conocimiento cientifico de calidad]**

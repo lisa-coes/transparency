@@ -24,7 +24,7 @@
 <meta name="author" content="Julio Iturra y Martín Venegas" />
 
 
-<meta name="date" content="2021-06-18" />
+<meta name="date" content="2021-06-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -56,6 +56,28 @@
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -76,12 +98,17 @@
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
 <li class="chapter" data-level="2" data-path="transparencia.html"><a href="transparencia.html"><i class="fa fa-check"></i><b>2</b> Transparencia</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="transparencia.html"><a href="transparencia.html#por-qué-adoptar-los-principios-de-transparencia"><i class="fa fa-check"></i><b>2.1</b> ¿Por qué adoptar los principios de transparencia?</a></li>
-<li class="chapter" data-level="2.2" data-path="transparencia.html"><a href="transparencia.html#transparencia-de-qué"><i class="fa fa-check"></i><b>2.2</b> ¿Transparencia de qué?</a></li>
-<li class="chapter" data-level="2.3" data-path="transparencia.html"><a href="transparencia.html#actualmente-se-adoptan-estos-principios-de-transparencia-en-las-ciencias-sociales"><i class="fa fa-check"></i><b>2.3</b> Actualmente ¿se adoptan estos principios de transparencia en las ciencias sociales?</a></li>
+<li class="chapter" data-level="2.1" data-path="transparencia.html"><a href="transparencia.html#qué-es-la-transparencia-un-concepto-multidimensional"><i class="fa fa-check"></i><b>2.1</b> ¿Qué es la transparencia? Un concepto multidimensional</a></li>
+<li class="chapter" data-level="2.2" data-path="transparencia.html"><a href="transparencia.html#cuál-es-el-problema-la-crisis-de-credibilidad-en-las-ciencias-sociales"><i class="fa fa-check"></i><b>2.2</b> ¿Cuál es el problema? La crisis de credibilidad en las ciencias sociales</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="transparencia.html"><a href="transparencia.html#fraudes"><i class="fa fa-check"></i><b>2.2.1</b> Fraudes</a></li>
+<li class="chapter" data-level="2.2.2" data-path="transparencia.html"><a href="transparencia.html#prácticas-cuestionables"><i class="fa fa-check"></i><b>2.2.2</b> Prácticas cuestionables</a></li>
+<li class="chapter" data-level="2.2.3" data-path="transparencia.html"><a href="transparencia.html#sesgo-de-publicación"><i class="fa fa-check"></i><b>2.2.3</b> Sesgo de publicación</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="transparencia.html"><a href="transparencia.html#qué-podemos-hacer-recomendaciones-prácticas-y-experiencias"><i class="fa fa-check"></i><b>2.3</b> ¿Qué podemos hacer? Recomendaciones, prácticas y experiencias</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="reproducibilidad.html"><a href="reproducibilidad.html"><i class="fa fa-check"></i><b>3</b> Reproducibilidad</a></li>
-<li class="chapter" data-level="4" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>4</b> Final Words</a></li>
+<li class="chapter" data-level="4" data-path="palabras-finales.html"><a href="palabras-finales.html"><i class="fa fa-check"></i><b>4</b> Palabras finales</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -106,20 +133,35 @@
 <div id="header">
 <h1 class="title">Transparencia y Reproducibilidad en Investigación Social</h1>
 <p class="author"><em>Julio Iturra y Martín Venegas</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-06-18</em></p>
+<p class="date" style="margin-top: 1.5em;"><em>2021-06-21</em></p>
 </div>
 <div id="intro" class="section level1" number="1">
 <h1><span class="header-section-number">Capítulo 1</span> Introducción</h1>
-<p>Imagine que usted es un chef, y como tal disfruta enormemente del arte de la cocina. Como amante de la cocina, cada vez que alguna celebración especial se avecina, es su tradición el preparar sus mejores recetas para sus seres queridos. Sin embargo, en esta ocación en particular, la celebración se llevará a cabo en un restaurante, donde la preparación de la comida no depende de usted. Dudoso, accede, sin embargo, en su mente ronda la siguiente pregunta ¿cómo puedo tener la certeza de que se seguirán los procedimientos adecuados para que la comida sea de calidad? Pues, estimado lector, es esta misma pregunta la que está a la base de la generación de conocimiento cientifico.</p>
-<p>La ciencia, al igual que la cocina, no se trata solamente de los productos. Un plato de comida no aparece por arte de magia, sino que requiere el seguimiento riguroso de una receta. Usar los ingredientes adecuados, los gramajes adecuados y seguir los tiempos de cocción que dicta la receta no solo contribuyen a preparar un buen plato de comida, sino que hacen posible que ese plato pueda ser reproducido cada vez que sea necesario. Entonces, como buenos chefs que somos, la respuesta a la pregunta no es tan compleja: necesitamos ser capaces de evaluar el proceso de preparación de la comida para asegurarnos de que es el adecuado. Dicho de otro modo, el proceso de preparación debe ser transparente y estar abierto al escrutinio. En el caso de la comida, que el restaurante cuente con una cocina abierta o construida en torno a ventanales bastaría para lograr este objetivo. Sin embargo, cuando vamos al campo de la ciencia ¿cómo logramos que esté abierta al escrutinio público?</p>
-<p>Esta pregunta puede ser algo engañosa ¿acaso la ciencia no está ya abierta al escrutinio público? La narrativa actual pareciese sugerir que no. En el último tiempo ha primado el diagnostico de que la ciencia está viviendo una crisis, donde polemicas situaciones de falseamiento de datos y mala conducta académica han salido a la luz. Uno de los casos más emblematicos es el de Diderik Stapel, un psicologo social considerado durante mucho tiempo un <em>rockstar</em> en su campo: una figura de alto estatus, bastante influyente y con una producción académica impresionante cualitativa y cuantitativamente hablando. No obstante, en su caso, al igual que en muchos otros, se confirmó su autoría en una seríe de prácticas de investigación poco éticas, lo cuál terminó por acabar con su carrera y la retracción de 58 artículos.</p>
-<p>Si bien casos de falseamiento o fabricación intencional de datos existen, no son las situaciones más comunes. Uno de los puntos principales de preocupación dentro de la investigación cientifica son las <em>prácticas cuestionables de investigación</em>, las cuáles tienen por consecuencia la generación de una ciencia irreproducible y sesgada.</p>
-<p>Cualquier lector que se dedique a la inevstigación en ciencia sociales estará de acuerdo que la generación de conocimiento relacionado a lo social es una de nuestras principales contribuciones a la sociedad, si es que no la más grande. Es la tarea de los cientificos sociales el contribuir al bienestar de la sociedad por la vía de las herramientas de investigación. Es por eso que, para el caso especifico de las ciencias sociales, los efectos de una crisis de reproducibilidad son perjudiciales tanto para el desarrollo de la discplina como para la sociedad en su conjunto, ya que implica que la credibilidad de los hallazgos y su uso práctico para orientar la elaboración de políticas públicas empieza a ser puesto en duda. Actualmente, muchos tomadores de decisión no creen que la evidencia planteada por las ciencias sociales sean evidencia confiable. Es necesario tomar cartas en el asunto y volver a darle la credibilidad a las cienicas sociales.</p>
-<p>Estimado investigador o investigadora de las ciencias sociales, este documento va dirijido a usted. Independiente de su discplina, de su trayectoria académica o de su conocimiento previo con respecto a estas temáticas, en este manual tenemos dos simples objetivos. El primero es que usted pueda convencerse de que, efectivamente, es necesario dar un giro en la forma que hacemos ciencia actualmente y que la adopción de prácticas relacionadas a la ciencia abierta son el primer paso en ese giro. El segundo es poder instruirlo en esa adopción de prácticas, particularmente en lo que respecta a dos conceptos centrales de la ciencia abierta: la transparencia y la reproducibilidad.</p>
-<p>Si seguimos la metafora de la cocina que planteamos en un principio, la transparencia y la reproducibilidad son dos conceptos similares, pero no identicos. La transparencia implicaría la posibilidad de evaluar y poner en discusión la receta y la ejecución de la misma. En cambio, la reproducibilidad apuntaría a que la receta sea lo suficientemente clara y precisa para que el mismo plato, con el mismo sabor, pueda ser preparado por cualquier persona que contase con los ingredentes y recursos necesarios. En el campo de las ciencias, esta distinción la hacemos entre: 1) la transparencia en los diseños de investigación y 2) la reproducibilidad de los análisis en los artículos. Este manual estará estructurado en torno a estas dos dimensiones.</p>
-<p>En la primera dimensión, haremos un barrido un tanto más detallado sobre la crisis de la reproducibilidad que aquí hemos mencionado brevemente. Ahondaremos en los factores que contribuyen a su reproducción, a las razones éticas por el cuales es necesario hacer un cambio y en las recomendaciones que se puedens seguir para adoptar ciertos principios de transparencia. En la segunda dimensión, nos centraremos en los análisis reproducibles, teniendo un caracter mucho más práctico. Presentaremos las distintas consideraciones que hay que tener para que un análisis sea fácilmente reproducible, desde tipos de flujos de trabajo hasta herramientas especificas que fomentan la reproducibilidad de los análisis.</p>
-<p>Al final de este manual, ud. será capaz tanto de argumentar por qué la transparencia y la reproducibilidad son un paso importante en el avance de las ciencia sociales, asi como también contará con una serie de herramientas para llevar esto al quehacer académico del día a día.</p>
+<p>Imagine que usted es un chef, y como tal disfruta enormemente del arte de la cocina. Como amante de la cocina, cada vez que alguna celebración especial se avecina, es su tradición el preparar sus mejores recetas para sus seres queridos. Sin embargo, en esta ocación en particular, la celebración se llevará a cabo en un restaurante, lo que implica que la preparación de la comida no depende de usted. Dudoso, accede, sin embargo, en su mente ronda la siguiente pregunta ¿cómo puedo tener la certeza de que se seguirán los procedimientos adecuados para que la comida sea de calidad? Pues, estimado lector, es esta la misma pregunta que está a la base de la generación del conocimiento científico.</p>
+<p>La ciencia, al igual que la cocina, no se trata solamente de los productos. Un plato de comida no aparece por arte de magia, sino que requiere el seguimiento riguroso de una receta. Usar los ingredientes adecuados, los gramajes apropiados y seguir los tiempos de cocción que dicta la receta no solo contribuyen a preparar un buen plato de comida, sino que hacen posible que ese plato pueda ser reproducido cada vez que sea necesario. Entonces, como buen chef, la respuesta a la pregunta no es tan compleja: necesitamos ser capaces de evaluar el proceso de preparación de la comida para asegurarnos de que es el adecuado. Dicho de otro modo, el proceso de preparación debe ser <strong>transparente</strong> y estar abierto al escrutinio. En el caso de la comida, que el restaurante cuente con una cocina abierta o construida en torno a ventanales bastaría para lograr este objetivo. Sin embargo, dentro del campo de la ciencia ¿cómo logramos que el proceso de producción del conocimiento científico esté abierto al escrutinio público?</p>
+<p>Esta pregunta puede ser algo engañosa ¿acaso los procesos de investigación en la ciencia no están ya abiertos al escrutinio público? La narrativa actual pareciese sugerir que no. En el último tiempo ha primado el diagnostico de que la ciencia está viviendo una crisis, donde polémicas situaciones de malas prácticas académicas han salido a la luz. Un ejemplo de estas malas prácticas es el falseamiento de datos. Uno de los casos más emblemáticos es el de Diderik Stapel, una figura académica con alto prestigio en el campo de la psicología social a quién se le acusó y confirmó de falseamiento de datos. Más de 10 años de investigación y 150 artículos -algunos de ellos en las revistas más prestigiosas- fueron puestos en duda a raíz de las malas prácticas de Stapel. Así también el trabajo de muchos colegas y estudiantes fue desacreditado. El caso del ex doctor Stapel acabó en la revocación de su doctorado, la retracción de 58 artículos de investigación y, prácticamente, el fin de su carrera académica.</p>
+<p>Casos como el de Diderik Stapel existen muchos <span class="citation">(ver <a href="#ref-abrilruiz_Manzanas_2019" role="doc-biblioref">Abril Ruiz 2019</a>)</span>, sin embargo, no son las prácticas más recurrentes. Dentro de la investigación científica existen una serie de prácticas que caen en un terreno gris cuando se trata de su evalución ética, estas son las llamadas <em>prácticas cuestionables de investigación</em>. La preocupación dentro de la comunidad cientifica es que la acumulación y la poca fiscalización de estas prácticas lleven a una ciencia poco transparente, con dificultad en torno a la reproducibilidad de los análisis y de sus resultados, y que a la larga se pierda la confianza en el quehacer científico.</p>
+<p>La perdida de la confianza en el quehacer cientifico afecta el objetivo de las ciencias sociales. Generalmente se tiene la concepción de que es parte de las tareas de los cientificos sociales el contribuir al bienestar de la sociedad por la vía de las herramientas de investigación. Esta es la noción de las ciencias sociales como un bien público <span class="citation">(<a href="#ref-thibodeaux_Production_2016" role="doc-biblioref">Thibodeaux 2016</a>)</span>. Bajo esa idea, los efectos de una crisis de credibilidad tienen dos posibles efectos concretos en las ciencias sociales. Primero, la falta de credibilidad podría afectar la confianza en los hallazgos y en las discplinas que componen las ciencias sociales. Ya existe evidencia sobre un incremento de desconfianza hacia los cientificos en países como Estados Unidos <span class="citation">(<a href="#ref-motta_Dynamics_2018" role="doc-biblioref">Motta 2018</a>)</span> y sumarle una crisis de la ciencia a esa situación solo generaría un ambiente mucho más complejo. Segundo, y estrechamente relacionado a lo anterior, una perdida de credibilidad en la ciencia podría impactar en la elaboración de políticas sociales, mal orientando las prioridades y los recursos del país. Si se quieren evitar estas stuaciones, es necesario tomar cartas en el asunto y orientar los esfuerzos a devolverle la credibilidad a las ciencias sociales.</p>
+<p>Este manual busca contribuir a una ciencia social más creíble, basandose en el marco de la ciencia abierta. La ciencia abierta se entiende como:</p>
+<blockquote>
+<p>“…la práctica de la ciencia de manera que otros puedan colaborar y contribuir, donde los datos de la investigación, las notas de laboratorio y otros procesos de investigación estén disponibles libremente, en términos que permitan la reutilización, redistribución y reproducción de la investigación y sus datos y métodos subyacentes.” (FORSTER, Open Science Teaching Resource)</p>
+</blockquote>
+<p>Dentro de la ciencia abierta, nos centraremos en dos conceptos: transparencia y reproducibilidad. Si seguimos la metafora de la cocina que planteamos en un principio, la transparencia y la reproducibilidad son dos conceptos similares, pero no identicos. La transparencia implicaría la posibilidad de evaluar y poner en discusión la receta y la ejecución de la misma. En cambio, la reproducibilidad apuntaría a que la receta sea lo suficientemente clara y precisa para que el mismo plato, con el mismo sabor, pueda ser preparado por cualquier persona que contase con los ingredentes y recursos necesarios. En el campo de las ciencias, esta distinción la hacemos entre: 1) la transparencia de los procesos de producción científica (e.g. transparentar el plan de análisis) y 2) la reproducibilidad de los análisis en los artículos (e.g. código de procesamiento y análisis de datos permite reproducir el artículo). Este manual estará estructurado en torno a estas dos conceptos.</p>
+<p>Relacionado al primer concepto (transparencia), haremos un barrido un tanto más detallado sobre la crisis de la reproducibilidad que aquí hemos mencionado brevemente. Ahondaremos en los factores que contribuyen a su reproducción, a las razones éticas por el cuales es necesario hacer un cambio y en las recomendaciones que se pueden seguir para adoptar ciertos principios de transparencia. En el caso del segundo concepto (reproducibilidad), nos centraremos en los análisis reproducibles, teniendo un carácter mucho más práctico. Presentaremos las distintas consideraciones que hay que tener para que un análisis sea fácilmente reproducible, desde tipos de flujos de trabajo hasta herramientas especificas que faciliten la reproducibilidad de los análisis.</p>
+<p>Estimado investigador o investigadora de las ciencias sociales, este documento va dirijido a usted. Independiente de su disciplina, de su trayectoria académica o de su conocimiento previo con respecto a estas temáticas, en este manual tenemos dos simples objetivos. El primero es que usted pueda convencerse de que, efectivamente, es necesario dar un giro en la forma que hacemos ciencia actualmente y que la adopción de prácticas relacionadas a la ciencia abierta son el primer paso en ese giro. El segundo es poder instruirlo en esa adopción de prácticas, particularmente en lo que respecta a la transparencia y reproducibilidad. Al final de este manual, usted será capaz tanto de argumentar por qué la transparencia y la reproducibilidad son un paso importante en el avance de las ciencia sociales, así como también contará con una serie de herramientas para llevar esto al quehacer académico del día a día.</p>
 
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-abrilruiz_Manzanas_2019" class="csl-entry">
+Abril Ruiz, Angel. 2019. <em><span class="nocase">Manzanas podridas: Malas prácticas de investigación y ciencia descuidada</span></em>.
+</div>
+<div id="ref-motta_Dynamics_2018" class="csl-entry">
+Motta, Matthew. 2018. <span>“The <span>Dynamics</span> and <span>Political Implications</span> of <span>Anti</span>-<span>Intellectualism</span> in the <span>United States</span>.”</span> <em>American Politics Research</em> 46 (3): 465–98. <a href="https://doi.org/10.1177/1532673X17719507">https://doi.org/10.1177/1532673X17719507</a>.
+</div>
+<div id="ref-thibodeaux_Production_2016" class="csl-entry">
+Thibodeaux, Jarrett. 2016. <span>“Production as Social Change: <span>Policy</span> Sociology as a Public Good.”</span> <em>Sociological Spectrum</em> 36 (3): 183–90. <a href="https://doi.org/10.1080/02732173.2015.1102666">https://doi.org/10.1080/02732173.2015.1102666</a>.
+</div>
 </div>
             </section>
 

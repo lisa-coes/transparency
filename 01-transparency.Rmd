@@ -1,20 +1,65 @@
 # Transparencia
 
-La sección de transparencia tiene los siguientes objetivos:
+La presente sección tiene trabaja en torno al concepto de **transparencia**, basandose en los siguientes objetivos:
 
-- Entregar una definición precisa de qué se entiende por transparencia.
-- Exponer las razones que llevan a considerar necesaria una promoción de los principios de transparencia
+- Entregar una definición precisa de qué se entiende por transparencia
+- Exponer las razones que llevan a considerar necesaria una promoción de la transparencia
 - Describir las formas en las que se puede promover la transparencia
-- Enfatizar en los beneficios que conlleva adoptar los principios de transparencia
-## ¿Qué es la transparencia?
 
-- La transparencia, al igual que otros conceptos, esta inserto dentro del marco de la ciencia abierta...
+Al final de esta sección el lector tendrá un manejo del concepto de transparencia y su relevancia para promover una ciencia social abierta.
+
+## ¿Qué es la transparencia? Un concepto multidimensional
+
+En términos generales, la transparencia se puede pensar cómo la cualidad de algo que se puede ver a través de él (RAE). Por ejemplo, el vidrio de una ventana hace posible ver con claridad lo que está del otro lado, sin embargo, si la ventana comienza a perder su transparencia la observación se torna más difícil. Más importante aun, la perdida de claridad causa una ambigüedad en la observación dando la posibilidad de emitir conclusiones erroneas sobre el otro lado de la ventana. Lo que antes era claramente un gato, una ventana poco transparente podría llevar hacer concluir que es un perro o cualquier otro tipo de animal. Este ejemplo entrega un punto de partida para reflexionar la transparencia en las ciencias sociales: a medida que aumentamos la transparencia podemos discernir con mayor claridad si estamos ante hallazgos científicos creíbles.
+
+El concepto de transparencia ha tomado protagonismo en las ciencias sociales. Cada vez son más los autores que abogan por hacer una ciencia social transparente, así como también las iniciativas que buscan promover la adopción de principios transparentes. No obstante, cabe preguntarse ¿qué es exactamente lo que se está promoviendo? o más específicamente ¿cómo se está entendiendo la transparencia en la literatura? Por ejemplo, @breznau_Does_2021  entiende la transparencia como una forma en los investigadores pueden revelar el proceso, ideas y materiales que sustentan un argumento con tal de contribuir a una comunidad científica más ética. También, @aczel_consensusbased_2020 proponen la transparencia como un principio que permite evaluar y reproducir los hallazgos científicos, asi como también sintetizar investigaciones y contribuir a la ejecución de metanálisis. Estas formulaciones ayudan a ir comprendiendo lo que se dice actualmente en la literatura sobre transparencia, pero no son una presentación exhaustiva del concepto. En esta sección presentaremos dos fuentes que ayudan a comprender la complejidad que significa el concepto de transparencia. La primera será la taxonomía propuesta por @elliott_Taxonomy_2020, y la segunda serán las _TOP Guidelines_.
+
+La taxonomía de @elliott_Taxonomy_2020 tiene por objetivo sintetizar la complejidad del concepto de transparencia y las distintas formas que puede tomar La taxonomía se basa en cuatro grandes preguntas: ¿por qué?, ¿quienes? ¿qué? y ¿cómo? Cada una de estas preguntas tiene al menos una dimensión asociada. La primera pregunta se refiere a los propósitos por los cuales adoptar la transparencia; la segunda pregunta apunta a la audiencia que se beneficia de la adopción de transparencia; la tercera pregunta hace alusión al contenido qué es transparentado y la cuarta pregunta hace alusión cuatro distintas dimensiones sobre cómo adoptar la transparencia: actores, mecanismos, tiempo y lugar. También, se añade una dimensión relacionada a los peligros de la transparencia en investigación. Una representación gráfica puede verse en la Figura N° \@ref(fig:taxonomy).
+
+En la Figura N° \@ref(fig:table_tax) se presenta una versión detallada de las dimensiones de la taxonomía en conjunto a una lista no extensiva de variaciones dentro de cada dimensión. Por ejemplo, la dimensión del propósito sintetiza varios de los puntos que ya se han señalado en la literatura sobre ciencia abierta. En general, los propósitos están orientados a mejorar la credibilidad la ciencia, ya sea en si misma (facilitación del reanálisis de resultados o la interacción crítica) o ya sea en su rol instrumental (promover el desarrollo de política pública de calidad). Otra dimensión relevante a destacar es el contenido de lo que se hace transparente, donde según @elliott_Taxonomy_2020 las variaciones van de lo más concreto como los datos, métodos y materiales hasta algo más complejo como los juicios de valor. Más adelante en el documento trataremos especialmente la transparencia de los datos, métodos y materiales.
+
+```{r taxonomy, echo=FALSE, fig.cap="Taxonomía de Transparencia", fig.align = 'center', out.width = '50%'}
+knitr::include_graphics(path = "docs/images/taxonomy.png")
+```
+
+```{r table_tax, echo=FALSE, fig.cap="Variaciones por dimensión de transparencia", fig.align = 'center', out.width = '50%'}
+knitr::include_graphics(path = "docs/images/table_tax.png")
+```
+Otro tratamiento extensivo de la idea de transparencia se da en las TOP Guidelines. Estos son principios que buscan alcanzar un formato de investigación reproducible a tracés del aumento de la transparencia en el proceso y los productos de investigación [@nosek_Transparency_2014]. Estos principios sirven de guía a las revistas académicas para poder adherir progresivamente al ideal de transparencia en la ciencia. Son ocho principios:
+
+1. Citación
+2. Transparencia de datos
+3. Transparencia de métodos análiticos (código)
+4. Transparencia de los materiales
+5. Transparencia del diseño y el análisis
+6. Preregistro de estudios
+7. Pre registro de planes de análisis
+8. Replicación
+
+A grandes rasgos, el principio de citación propone que las normas de citado deben ampliarse también a los datos y códigos, permitiendo reconocer su autoría intelectual [@nosek_Promoting_2015]. Los principios de transparencia de datos, métodos análiticos, materiales y diseño y análisis (2 a 5) refieren a la transparencia en su forma más concreta: la apertura del proceso de investigación para su evaluación. El detalle puesto a los principios responde a la generelabizilidad que se le busca dar a los principios. Por ejemplo, un estudio observacional cuantitativo no tiene material que transparentar, pero si datos y métodos análiticos. Asi también, un estudio cualitativo quizás no tenga código que transparentar, pero si un diseño y una bitacora detalla del proceso de análisis. En el caso de los principios relacionados al pre-registro, @nosek_Promoting_2015 argumenta que registrar los estudios los hace más descubribles, incluso si no son públicados. Asi también, los preregistros del plan de análisis contribuyen a distinguir entre los análisis confirmatorios y explotatorios (ver @nosek_preregistration_2018 para un manejo detalado del tema). Por último, el principios de replicación fomenta las oportunidades para la corrección de artículos y redirecciona la investigación en vías más prometedoras [@nosek_Promoting_2015].
+
+Cada uno de estos principios cuenta con tres niveles, que sirven para medir el grado de inclusión de la transparencia por parte de una revista cientifica. La Figura N° \@ref(fig:table_top) muestra cada nivel en relación el principio correspondiente. Se añade un nivel 0 que no cumple los estandares de transparencia con la finalidad de tener una comparación. Por ejemplo, para los estandares de transparencia del método de análisis (código), el nivel 1 dicta que las revistas deben solicitar la existencia del código de análisis, en cambio, el nivel 3 es más estricto en plantear que el código de análisis debe estar almacenado en un repositorio confiable y que el análisis será reproducido durante el proceso de revisión. El mismo método se puede aplicar para la el preregistro del plan de análisis. En el nivel 1 las revistas promueven el uso de preregistros, en cambio, en el nivel 3 los preregistros son obligatorios y también reconocidos. En suma, las TOP Guideliness son una iniciativa que contribuye a la apertura en la ciencia cambiando los requerimientos de las revistas.
+
+Los dos ejemplos entregados (la taxonomía y las TOP Guideliness) perimiten comprender con un poco más de detalle el concepto de transparencia. Sin embargo, aun queda la interrogante del por qué. ¿Cuál es la problemática que lleva a considerar necesaria la adopción de la transparencia? En breve, la respuesta es la crisis en las ciencias, y especificamente en las ciencia sociales.
+
+```{r table_top, echo=FALSE, fig.cap="Variaciones por dimensión de transparencia", fig.align = 'center', out.width = '50%'}
+knitr::include_graphics(path = "docs/images/table_top.png")
+```
+## ¿Cuál es el problema? La crisis de credibilidad en las ciencias sociales
+
+En los últimos años, ha venido tomando fuerza la idea de que existe una crisis en la ciencia. Se han utilizado distintos nombres para nombrar esta crisis. Algunos han hablado de una crisis de reproducibilidad, siendo el principal problema que el formato actual de publicación cientifica no permite reproducir los hallazgos. Otros usan el término de crisis de "replicabilidad", donde se argumenta que el principal problema es la falta de replicaciones de estudios científicos. También se ha usado el término de crisis de credibilidad, aludiendo a que la evidencia científica ha ido perdiendo su carácter de fiable o veraz, ya sea por prácticas poco éticas, como también por acumulación de errores en los procesos inevstigativos. Sea el concepto que se use, la narrativa instalada es que existe una crisis y que hay que encaminar los esfuerzos en abordarla.
+
+Una de las fuentes más comunes para dar cuenta de la existencia de una crisis de reproducibilidad es una encuesta online realizada por la revista _Nature_. En esta encuesta, @baker_500_2016 logró obtener las opiniones de 1,576 investigadores sobre tópicos relacionados a la reproducibilidad en las ciencias, tales como sus factores y soluciones. El resultado principal muestra que un 52% de los investigadores encuestados creen que hay una crisis significativa, y un 38% creen que hay una ligera crisis. Es decir, un 90% de los encuetados está de acuerdo en la existencia una crisis. Cuándo se les pregunta por los factores que contribuyen a esta crisis, un 60% de los investigadores están de acuerdo en que la cultura del _pública o perece_ y el reporte selectivo de resultados siempre o casi siempre contribuyen la crisis. Si bien la encuesta no es una muestra representativa de toda la comunidad cientifica, presenta una panoramica que lleva a, por lo menos, considerar la crisis de la ciencia como tema a investigar.
+
+Actualmente, existe un cuerpo de literatura que se ha dedicado a debatir e intentar demostrar la existencia de una crisis de credibilidad en las ciencias -y en las ciencias sociales-. Esta literatura se ha centrado en buscar los factores que contribuirían a la crisis, asi como también en desarrollar distintas herramientas, métodos y prácticas para hacerle frente En esta sección señalaremos los factores más importantes, para luego pasar a señalar las recomendaciones y experiencias que se pueden encontrar en la literatura para hacer frente a estos factores. El argumento se ordena en tres grandes factores. El primero consiste en experiencias de fraude o mala conducta académica, tal como la fabricación o manipulación de datos. El segundo se relaciona a los sesgos de publicación, donde son los artículos con resultados significativos son lo que tienen mayores chances de ser publicados. Y el tercero está relacionado a lo que @christensen_Transparent_2019 llaman búsqueda especificada, incluyendo diversas prácticas que tienen por objetivo hacer los resultados de una investigación más llamativos y publicables.
 
 
-## ¿Por qué adoptar los principios de transparencia?
+### Fraudes
 
+Los fraudes académicos refieren a situaciones en las que investigadores han sido descubiertos fabricando o manipulando datos para generar artículos llamativos para la publicación. Generalamente, estas situaciones han estado motivadas por razones de ascenso de estatus y prestigio en la carrera académica. El libro de @abrilruiz_Manzanas_2019 hace una...
 
+### Prácticas cuestionables
 
-## ¿Transparencia de qué?
+### Sesgo de publicación
 
-## Actualmente ¿se adoptan estos principios de transparencia en las ciencias sociales?
+## ¿Qué podemos hacer? Recomendaciones, prácticas y experiencias

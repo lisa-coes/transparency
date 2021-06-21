@@ -24,7 +24,7 @@
 <meta name="author" content="Julio Iturra y Martín Venegas" />
 
 
-<meta name="date" content="2021-06-18" />
+<meta name="date" content="2021-06-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -56,6 +56,28 @@
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -76,12 +98,17 @@
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
 <li class="chapter" data-level="2" data-path="transparencia.html"><a href="transparencia.html"><i class="fa fa-check"></i><b>2</b> Transparencia</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="transparencia.html"><a href="transparencia.html#por-qué-adoptar-los-principios-de-transparencia"><i class="fa fa-check"></i><b>2.1</b> ¿Por qué adoptar los principios de transparencia?</a></li>
-<li class="chapter" data-level="2.2" data-path="transparencia.html"><a href="transparencia.html#transparencia-de-qué"><i class="fa fa-check"></i><b>2.2</b> ¿Transparencia de qué?</a></li>
-<li class="chapter" data-level="2.3" data-path="transparencia.html"><a href="transparencia.html#actualmente-se-adoptan-estos-principios-de-transparencia-en-las-ciencias-sociales"><i class="fa fa-check"></i><b>2.3</b> Actualmente ¿se adoptan estos principios de transparencia en las ciencias sociales?</a></li>
+<li class="chapter" data-level="2.1" data-path="transparencia.html"><a href="transparencia.html#qué-es-la-transparencia-un-concepto-multidimensional"><i class="fa fa-check"></i><b>2.1</b> ¿Qué es la transparencia? Un concepto multidimensional</a></li>
+<li class="chapter" data-level="2.2" data-path="transparencia.html"><a href="transparencia.html#cuál-es-el-problema-la-crisis-de-credibilidad-en-las-ciencias-sociales"><i class="fa fa-check"></i><b>2.2</b> ¿Cuál es el problema? La crisis de credibilidad en las ciencias sociales</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="transparencia.html"><a href="transparencia.html#fraudes"><i class="fa fa-check"></i><b>2.2.1</b> Fraudes</a></li>
+<li class="chapter" data-level="2.2.2" data-path="transparencia.html"><a href="transparencia.html#prácticas-cuestionables"><i class="fa fa-check"></i><b>2.2.2</b> Prácticas cuestionables</a></li>
+<li class="chapter" data-level="2.2.3" data-path="transparencia.html"><a href="transparencia.html#sesgo-de-publicación"><i class="fa fa-check"></i><b>2.2.3</b> Sesgo de publicación</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="transparencia.html"><a href="transparencia.html#qué-podemos-hacer-recomendaciones-prácticas-y-experiencias"><i class="fa fa-check"></i><b>2.3</b> ¿Qué podemos hacer? Recomendaciones, prácticas y experiencias</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="reproducibilidad.html"><a href="reproducibilidad.html"><i class="fa fa-check"></i><b>3</b> Reproducibilidad</a></li>
-<li class="chapter" data-level="4" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>4</b> Final Words</a></li>
+<li class="chapter" data-level="4" data-path="palabras-finales.html"><a href="palabras-finales.html"><i class="fa fa-check"></i><b>4</b> Palabras finales</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -105,24 +132,101 @@
             <section class="normal" id="section-">
 <div id="transparencia" class="section level1" number="2">
 <h1><span class="header-section-number">Capítulo 2</span> Transparencia</h1>
-<p>La sección de transparencia tiene los siguientes objetivos:</p>
+<p>La presente sección tiene trabaja en torno al concepto de <strong>transparencia</strong>, basandose en los siguientes objetivos:</p>
 <ul>
-<li><p>Entregar una definición precisa de qué se entiende por transparencia.</p></li>
-<li><p>Exponer las razones que llevan a considerar necesaria una promoción de los principios de transparencia</p></li>
-<li><p>Describir las formas en las que se puede promover la transparencia</p></li>
-<li><p>Enfatizar en los beneficios que conlleva adoptar los principios de transparencia
-## ¿Qué es la transparencia?</p></li>
-<li><p>La transparencia, al igual que otros conceptos, esta inserto dentro del marco de la ciencia abierta…</p></li>
+<li>Entregar una definición precisa de qué se entiende por transparencia</li>
+<li>Exponer las razones que llevan a considerar necesaria una promoción de la transparencia</li>
+<li>Describir las formas en las que se puede promover la transparencia</li>
 </ul>
-<div id="por-qué-adoptar-los-principios-de-transparencia" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> ¿Por qué adoptar los principios de transparencia?</h2>
+<p>Al final de esta sección el lector tendrá un manejo del concepto de transparencia y su relevancia para promover una ciencia social abierta.</p>
+<div id="qué-es-la-transparencia-un-concepto-multidimensional" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> ¿Qué es la transparencia? Un concepto multidimensional</h2>
+<p>En términos generales, la transparencia se puede pensar cómo la cualidad de algo que se puede ver a través de él (RAE). Por ejemplo, el vidrio de una ventana hace posible ver con claridad lo que está del otro lado, sin embargo, si la ventana comienza a perder su transparencia la observación se torna más difícil. Más importante aun, la perdida de claridad causa una ambigüedad en la observación dando la posibilidad de emitir conclusiones erroneas sobre el otro lado de la ventana. Lo que antes era claramente un gato, una ventana poco transparente podría llevar hacer concluir que es un perro o cualquier otro tipo de animal. Este ejemplo entrega un punto de partida para reflexionar la transparencia en las ciencias sociales: a medida que aumentamos la transparencia podemos discernir con mayor claridad si estamos ante hallazgos científicos creíbles.</p>
+<p>El concepto de transparencia ha tomado protagonismo en las ciencias sociales. Cada vez son más los autores que abogan por hacer una ciencia social transparente, así como también las iniciativas que buscan promover la adopción de principios transparentes. No obstante, cabe preguntarse ¿qué es exactamente lo que se está promoviendo? o más específicamente ¿cómo se está entendiendo la transparencia en la literatura? Por ejemplo, <span class="citation"><a href="#ref-breznau_Does_2021" role="doc-biblioref">Breznau</a> (<a href="#ref-breznau_Does_2021" role="doc-biblioref">2021</a>)</span> entiende la transparencia como una forma en los investigadores pueden revelar el proceso, ideas y materiales que sustentan un argumento con tal de contribuir a una comunidad científica más ética. También, <span class="citation"><a href="#ref-aczel_consensusbased_2020" role="doc-biblioref">Aczel et al.</a> (<a href="#ref-aczel_consensusbased_2020" role="doc-biblioref">2020</a>)</span> proponen la transparencia como un principio que permite evaluar y reproducir los hallazgos científicos, asi como también sintetizar investigaciones y contribuir a la ejecución de metanálisis. Estas formulaciones ayudan a ir comprendiendo lo que se dice actualmente en la literatura sobre transparencia, pero no son una presentación exhaustiva del concepto. En esta sección presentaremos dos fuentes que ayudan a comprender la complejidad que significa el concepto de transparencia. La primera será la taxonomía propuesta por <span class="citation"><a href="#ref-elliott_Taxonomy_2020" role="doc-biblioref">Elliott</a> (<a href="#ref-elliott_Taxonomy_2020" role="doc-biblioref">2020</a>)</span>, y la segunda serán las <em>TOP Guidelines</em>.</p>
+<p>La taxonomía de <span class="citation"><a href="#ref-elliott_Taxonomy_2020" role="doc-biblioref">Elliott</a> (<a href="#ref-elliott_Taxonomy_2020" role="doc-biblioref">2020</a>)</span> tiene por objetivo sintetizar la complejidad del concepto de transparencia y las distintas formas que puede tomar La taxonomía se basa en cuatro grandes preguntas: ¿por qué?, ¿quienes? ¿qué? y ¿cómo? Cada una de estas preguntas tiene al menos una dimensión asociada. La primera pregunta se refiere a los propósitos por los cuales adoptar la transparencia; la segunda pregunta apunta a la audiencia que se beneficia de la adopción de transparencia; la tercera pregunta hace alusión al contenido qué es transparentado y la cuarta pregunta hace alusión cuatro distintas dimensiones sobre cómo adoptar la transparencia: actores, mecanismos, tiempo y lugar. También, se añade una dimensión relacionada a los peligros de la transparencia en investigación. Una representación gráfica puede verse en la Figura N° <a href="transparencia.html#fig:taxonomy">2.1</a>.</p>
+<p>En la Figura N° @ref(fig:table_tax) se presenta una versión detallada de las dimensiones de la taxonomía en conjunto a una lista no extensiva de variaciones dentro de cada dimensión. Por ejemplo, la dimensión del propósito sintetiza varios de los puntos que ya se han señalado en la literatura sobre ciencia abierta. En general, los propósitos están orientados a mejorar la credibilidad la ciencia, ya sea en si misma (facilitación del reanálisis de resultados o la interacción crítica) o ya sea en su rol instrumental (promover el desarrollo de política pública de calidad). Otra dimensión relevante a destacar es el contenido de lo que se hace transparente, donde según <span class="citation"><a href="#ref-elliott_Taxonomy_2020" role="doc-biblioref">Elliott</a> (<a href="#ref-elliott_Taxonomy_2020" role="doc-biblioref">2020</a>)</span> las variaciones van de lo más concreto como los datos, métodos y materiales hasta algo más complejo como los juicios de valor. Más adelante en el documento trataremos especialmente la transparencia de los datos, métodos y materiales.</p>
+<div class="figure" style="text-align: center"><span id="fig:taxonomy"></span>
+<img src="docs/images/taxonomy.png" alt="Taxonomía de Transparencia" width="50%" />
+<p class="caption">
+Figura 2.1: Taxonomía de Transparencia
+</p>
 </div>
-<div id="transparencia-de-qué" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> ¿Transparencia de qué?</h2>
+<div class="figure" style="text-align: center">
+<img src="docs/images/table_tax.png" alt="Variaciones por dimensión de transparencia" width="50%" />
+<p class="caption">
+(#fig:table_tax)Variaciones por dimensión de transparencia
+</p>
 </div>
-<div id="actualmente-se-adoptan-estos-principios-de-transparencia-en-las-ciencias-sociales" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Actualmente ¿se adoptan estos principios de transparencia en las ciencias sociales?</h2>
+<p>Otro tratamiento extensivo de la idea de transparencia se da en las TOP Guidelines. Estos son principios que buscan alcanzar un formato de investigación reproducible a tracés del aumento de la transparencia en el proceso y los productos de investigación <span class="citation">(<a href="#ref-nosek_Transparency_2014" role="doc-biblioref">Brian A. Nosek et al. 2014</a>)</span>. Estos principios sirven de guía a las revistas académicas para poder adherir progresivamente al ideal de transparencia en la ciencia. Son ocho principios:</p>
+<ol style="list-style-type: decimal">
+<li>Citación</li>
+<li>Transparencia de datos</li>
+<li>Transparencia de métodos análiticos (código)</li>
+<li>Transparencia de los materiales</li>
+<li>Transparencia del diseño y el análisis</li>
+<li>Preregistro de estudios</li>
+<li>Pre registro de planes de análisis</li>
+<li>Replicación</li>
+</ol>
+<p>A grandes rasgos, el principio de citación propone que las normas de citado deben ampliarse también a los datos y códigos, permitiendo reconocer su autoría intelectual <span class="citation">(<a href="#ref-nosek_Promoting_2015" role="doc-biblioref">B. A. Nosek et al. 2015</a>)</span>. Los principios de transparencia de datos, métodos análiticos, materiales y diseño y análisis (2 a 5) refieren a la transparencia en su forma más concreta: la apertura del proceso de investigación para su evaluación. El detalle puesto a los principios responde a la generelabizilidad que se le busca dar a los principios. Por ejemplo, un estudio observacional cuantitativo no tiene material que transparentar, pero si datos y métodos análiticos. Asi también, un estudio cualitativo quizás no tenga código que transparentar, pero si un diseño y una bitacora detalla del proceso de análisis. En el caso de los principios relacionados al pre-registro, <span class="citation"><a href="#ref-nosek_Promoting_2015" role="doc-biblioref">B. A. Nosek et al.</a> (<a href="#ref-nosek_Promoting_2015" role="doc-biblioref">2015</a>)</span> argumenta que registrar los estudios los hace más descubribles, incluso si no son públicados. Asi también, los preregistros del plan de análisis contribuyen a distinguir entre los análisis confirmatorios y explotatorios (ver <span class="citation"><a href="#ref-nosek_preregistration_2018" role="doc-biblioref">Brian A. Nosek et al.</a> (<a href="#ref-nosek_preregistration_2018" role="doc-biblioref">2018</a>)</span> para un manejo detalado del tema). Por último, el principios de replicación fomenta las oportunidades para la corrección de artículos y redirecciona la investigación en vías más prometedoras <span class="citation">(<a href="#ref-nosek_Promoting_2015" role="doc-biblioref">B. A. Nosek et al. 2015</a>)</span>.</p>
+<p>Cada uno de estos principios cuenta con tres niveles, que sirven para medir el grado de inclusión de la transparencia por parte de una revista cientifica. La Figura N° @ref(fig:table_top) muestra cada nivel en relación el principio correspondiente. Se añade un nivel 0 que no cumple los estandares de transparencia con la finalidad de tener una comparación. Por ejemplo, para los estandares de transparencia del método de análisis (código), el nivel 1 dicta que las revistas deben solicitar la existencia del código de análisis, en cambio, el nivel 3 es más estricto en plantear que el código de análisis debe estar almacenado en un repositorio confiable y que el análisis será reproducido durante el proceso de revisión. El mismo método se puede aplicar para la el preregistro del plan de análisis. En el nivel 1 las revistas promueven el uso de preregistros, en cambio, en el nivel 3 los preregistros son obligatorios y también reconocidos. En suma, las TOP Guideliness son una iniciativa que contribuye a la apertura en la ciencia cambiando los requerimientos de las revistas.</p>
+<p>Los dos ejemplos entregados (la taxonomía y las TOP Guideliness) perimiten comprender con un poco más de detalle el concepto de transparencia. Sin embargo, aun queda la interrogante del por qué. ¿Cuál es la problemática que lleva a considerar necesaria la adopción de la transparencia? En breve, la respuesta es la crisis en las ciencias, y especificamente en las ciencia sociales.</p>
+<div class="figure" style="text-align: center">
+<img src="docs/images/table_top.png" alt="Variaciones por dimensión de transparencia" width="50%" />
+<p class="caption">
+(#fig:table_top)Variaciones por dimensión de transparencia
+</p>
+</div>
+</div>
+<div id="cuál-es-el-problema-la-crisis-de-credibilidad-en-las-ciencias-sociales" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> ¿Cuál es el problema? La crisis de credibilidad en las ciencias sociales</h2>
+<p>En los últimos años, ha venido tomando fuerza la idea de que existe una crisis en la ciencia. Se han utilizado distintos nombres para nombrar esta crisis. Algunos han hablado de una crisis de reproducibilidad, siendo el principal problema que el formato actual de publicación cientifica no permite reproducir los hallazgos. Otros usan el término de crisis de “replicabilidad,” donde se argumenta que el principal problema es la falta de replicaciones de estudios científicos. También se ha usado el término de crisis de credibilidad, aludiendo a que la evidencia científica ha ido perdiendo su carácter de fiable o veraz, ya sea por prácticas poco éticas, como también por acumulación de errores en los procesos inevstigativos. Sea el concepto que se use, la narrativa instalada es que existe una crisis y que hay que encaminar los esfuerzos en abordarla.</p>
+<p>Una de las fuentes más comunes para dar cuenta de la existencia de una crisis de reproducibilidad es una encuesta online realizada por la revista <em>Nature</em>. En esta encuesta, <span class="citation"><a href="#ref-baker_500_2016" role="doc-biblioref">Baker</a> (<a href="#ref-baker_500_2016" role="doc-biblioref">2016</a>)</span> logró obtener las opiniones de 1,576 investigadores sobre tópicos relacionados a la reproducibilidad en las ciencias, tales como sus factores y soluciones. El resultado principal muestra que un 52% de los investigadores encuestados creen que hay una crisis significativa, y un 38% creen que hay una ligera crisis. Es decir, un 90% de los encuetados está de acuerdo en la existencia una crisis. Cuándo se les pregunta por los factores que contribuyen a esta crisis, un 60% de los investigadores están de acuerdo en que la cultura del <em>pública o perece</em> y el reporte selectivo de resultados siempre o casi siempre contribuyen la crisis. Si bien la encuesta no es una muestra representativa de toda la comunidad cientifica, presenta una panoramica que lleva a, por lo menos, considerar la crisis de la ciencia como tema a investigar.</p>
+<p>Actualmente, existe un cuerpo de literatura que se ha dedicado a debatir e intentar demostrar la existencia de una crisis de credibilidad en las ciencias -y en las ciencias sociales-. Esta literatura se ha centrado en buscar los factores que contribuirían a la crisis, asi como también en desarrollar distintas herramientas, métodos y prácticas para hacerle frente En esta sección señalaremos los factores más importantes, para luego pasar a señalar las recomendaciones y experiencias que se pueden encontrar en la literatura para hacer frente a estos factores. El argumento se ordena en tres grandes factores. El primero consiste en experiencias de fraude o mala conducta académica, tal como la fabricación o manipulación de datos. El segundo se relaciona a los sesgos de publicación, donde son los artículos con resultados significativos son lo que tienen mayores chances de ser publicados. Y el tercero está relacionado a lo que <span class="citation"><a href="#ref-christensen_Transparent_2019" role="doc-biblioref">Christensen, Freese, and Miguel</a> (<a href="#ref-christensen_Transparent_2019" role="doc-biblioref">2019</a>)</span> llaman búsqueda especificada, incluyendo diversas prácticas que tienen por objetivo hacer los resultados de una investigación más llamativos y publicables.</p>
+<div id="fraudes" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Fraudes</h3>
+<p>Los fraudes académicos refieren a situaciones en las que investigadores han sido descubiertos fabricando o manipulando datos para generar artículos llamativos para la publicación. Generalamente, estas situaciones han estado motivadas por razones de ascenso de estatus y prestigio en la carrera académica. El libro de <span class="citation"><a href="#ref-abrilruiz_Manzanas_2019" role="doc-biblioref">Abril Ruiz</a> (<a href="#ref-abrilruiz_Manzanas_2019" role="doc-biblioref">2019</a>)</span> hace una…</p>
+</div>
+<div id="prácticas-cuestionables" class="section level3" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Prácticas cuestionables</h3>
+</div>
+<div id="sesgo-de-publicación" class="section level3" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Sesgo de publicación</h3>
+</div>
+</div>
+<div id="qué-podemos-hacer-recomendaciones-prácticas-y-experiencias" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> ¿Qué podemos hacer? Recomendaciones, prácticas y experiencias</h2>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-abrilruiz_Manzanas_2019" class="csl-entry">
+Abril Ruiz, Angel. 2019. <em><span class="nocase">Manzanas podridas: Malas prácticas de investigación y ciencia descuidada</span></em>.
+</div>
+<div id="ref-aczel_consensusbased_2020" class="csl-entry">
+Aczel, Balazs, Barnabas Szaszi, Alexandra Sarafoglou, Zoltan Kekecs, Šimon Kucharský, Daniel Benjamin, Christopher D. Chambers, et al. 2020. <span>“A Consensus-Based Transparency Checklist.”</span> <em>Nature Human Behaviour</em> 4 (1): 4–6. <a href="https://doi.org/10.1038/s41562-019-0772-6">https://doi.org/10.1038/s41562-019-0772-6</a>.
+</div>
+<div id="ref-baker_500_2016" class="csl-entry">
+Baker, Monya. 2016. <span>“1,500 Scientists Lift the Lid on Reproducibility.”</span> <em>Nature</em> 533 (7604): 452–54. <a href="https://doi.org/10.1038/533452a">https://doi.org/10.1038/533452a</a>.
+</div>
+<div id="ref-breznau_Does_2021" class="csl-entry">
+Breznau, Nate. 2021. <span>“Does <span>Sociology Need Open Science</span>?”</span> <em>Societies</em> 11 (1): 9. <a href="https://doi.org/10.3390/soc11010009">https://doi.org/10.3390/soc11010009</a>.
+</div>
+<div id="ref-christensen_Transparent_2019" class="csl-entry">
+Christensen, Garret S., Jeremy Freese, and Edward Miguel. 2019. <em>Transparent and Reproducible Social Science Research: How to Do Open Science</em>. <span>Oakland, California</span>: <span>University of California Press</span>.
+</div>
+<div id="ref-elliott_Taxonomy_2020" class="csl-entry">
+Elliott, Kevin C. 2020. <span>“A <span>Taxonomy</span> of <span>Transparency</span> in <span>Science</span>.”</span> <em>Canadian Journal of Philosophy</em>, 1–14. <a href="https://doi.org/10.1017/can.2020.21">https://doi.org/10.1017/can.2020.21</a>.
+</div>
+<div id="ref-nosek_Promoting_2015" class="csl-entry">
+Nosek, B. A., G. Alter, G. C. Banks, D. Borsboom, S. D. Bowman, S. J. Breckler, S. Buck, et al. 2015. <span>“Promoting an Open Research Culture.”</span> <em>Science</em> 348 (6242): 1422–25. <a href="https://doi.org/10.1126/science.aab2374">https://doi.org/10.1126/science.aab2374</a>.
+</div>
+<div id="ref-nosek_Transparency_2014" class="csl-entry">
+Nosek, Brian A., George Alter, George Christopher Banks, Denny Borsboom, Sara Bowman, Steven Breckler, Stuart Buck, Chris Chambers, Gilbert Chin, and Garret Christensen. 2014. <span>“Transparency and <span>Openness Promotion</span> (<span>TOP</span>) <span>Guidelines</span>,”</span> August.
+</div>
+<div id="ref-nosek_preregistration_2018" class="csl-entry">
+Nosek, Brian A., Charles R. Ebersole, Alexander C. DeHaven, and David T. Mellor. 2018. <span>“The Preregistration Revolution.”</span> <em>Proceedings of the National Academy of Sciences</em> 115 (11): 2600–2606. <a href="https://doi.org/10.1073/pnas.1708274114">https://doi.org/10.1073/pnas.1708274114</a>.
 </div>
 </div>
             </section>
