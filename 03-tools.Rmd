@@ -4,9 +4,6 @@
 
 ## Flujos de trabajos reproducibles.
 
-
-
-
 Otro tratamiento extensivo de la idea de transparencia se da en las TOP Guidelines. Estos son principios que buscan alcanzar un formato de investigación reproducible a tracés del aumento de la transparencia en el proceso y los productos de investigación [@nosek_Transparency_2014]. Estos principios sirven de guía a las revistas académicas para poder adherir progresivamente al ideal de transparencia en la ciencia. Son ocho principios:
 
 1. Citación

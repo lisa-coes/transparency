@@ -1,2 +1,3 @@
 # Reproducibilidad
-We describe our methods in this chapter.
+
+En el marco de la denominada "crisis de la ciencia", existe una serie de iniciativas que han buscado hacerse cargo de un problema frecuente en las investigaciones, principalmente de caracter cuantitativo. En este sentido, ¿Cuántas veces nos hemos enfrentado a un trabajo publicaco que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces de sus resultados? 
