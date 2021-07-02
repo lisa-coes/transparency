@@ -1,80 +1,56 @@
 # Transparencia
 
-La presente sección tiene trabaja en torno al concepto de **transparencia**, basandose en los siguientes objetivos:
-
-- Entregar una definición precisa de qué se entiende por transparencia
-- Exponer las razones que llevan a considerar necesaria una promoción de la transparencia
-- Describir las formas en las que se puede promover la transparencia
-
-Al final de esta sección el lector tendrá un manejo del concepto de transparencia y su relevancia para promover una ciencia social abierta.
+Esta sección tratará sobre la transaprencia en la investigación cientifica, haciendo enfásis en las ciencias sociales. Nuestro objetivo es poder comunicar de forma clara y concisa tres puntos: a) qué es la transparencia, b) por qué la necesitamos y c) cómo podemos adoptarla. En esta sección verenmos los dos primeros puntos, luego, en la sección de herramientas presentaremos algunas formas de adoptar la transparencia. La tónica de este escrito es la práctica, es decir; todo lo que presentemos acá tiene la finalidad de servir de camino para poder aprender y aprehender herramientas que promueven la transparencia. Dicho esto, comenzemos con los dos primeros puntos.
 
 ## ¿Qué es la transparencia? Un concepto multidimensional
 
-En términos generales, la transparencia se puede pensar cómo la cualidad de algo que se puede ver a través de él (RAE). Por ejemplo, el vidrio de una ventana hace posible ver con claridad lo que está del otro lado, sin embargo, si la ventana comienza a perder su transparencia la observación se torna más difícil. Más importante aun, la perdida de claridad causa una ambigüedad en la observación dando la posibilidad de emitir conclusiones erroneas sobre el otro lado de la ventana. Lo que antes era claramente un gato, una ventana poco transparente podría llevar hacer concluir que es un perro o cualquier otro tipo de animal. Este ejemplo entrega un punto de partida para reflexionar la transparencia en las ciencias sociales: a medida que aumentamos la transparencia podemos discernir con mayor claridad si estamos ante hallazgos científicos creíbles.
+Nuestro punto de partida es que la transparencia es un concepto amplio y multidimensional. Por eso, antes de adentrarnos en su complejidad, comenzemos con una definición de diccionario para comprender lo más básico en la idea de transparencia. Según la Real Academia Española la transparencia es la cualidad de un cuerpo que permite ver a travez de él. Un gran ejemplo para llevar esta definición a la práctica es el vidrio de una ventana. La transparencia del vidrio nos permite ver con claridad lo que está el otro lado, como por ejemplo un paisaje. Sin embargo, ¿qué ocurre cuándo la transparencia del vidrio se va perdiendo? La respuesta es simple, pero potente: la claridad con la que veíamos el paisaje se va difuminando. Esta perdida de claridad puede dar como resultado que nuestra observación del paisaje se torne ambigua y erronea, o dicho de otro modo, cada vez será más dificil analizar el paisaje. En esta metafora, el paisaje sería equivalen al proceso de producción cientifica, y el vidrio representa la claridad con la que podemos analizar estos procesos. De esta manera, la base de la idea de transparencia es que permite analizar con claridad un fenomeno, una situación, o en este caso, un proceso.
 
-El concepto de transparencia ha tomado protagonismo en las ciencias sociales. Cada vez son más los autores que abogan por hacer una ciencia social transparente, así como también las iniciativas que buscan promover la adopción de principios transparentes. No obstante, cabe preguntarse ¿qué es exactamente lo que se está promoviendo? o más específicamente ¿cómo se está entendiendo la transparencia en la literatura? Por ejemplo, @breznau_Does_2021  entiende la transparencia como una forma en los investigadores pueden revelar el proceso, ideas y materiales que sustentan un argumento con tal de contribuir a una comunidad científica más ética. También, @aczel_consensusbased_2020 proponen la transparencia como un principio que permite evaluar y reproducir los hallazgos científicos, asi como también sintetizar investigaciones y contribuir a la ejecución de metanálisis. Estas formulaciones ayudan a ir comprendiendo lo que se dice actualmente en la literatura sobre transparencia, pero no son una presentación exhaustiva del concepto. En esta sección presentaremos dos fuentes que ayudan a comprender la complejidad que significa el concepto de transparencia. La primera será la taxonomía propuesta por @elliott_Taxonomy_2020, y la segunda serán las _TOP Guidelines_ (Guías para la promoción de la apertura y la transparencia) [@nosek_Transparency_2014].
+¿Qué implica un proceso cientifico transparente? Ya existen algunas respuestas a esta pregunta. Por ejemplo, @breznau_Does_2021 entiende la transparencia como una forma en que los investigadores pueden revelar el proceso, ideas y materiales que sustentan un argumento o una teoría, con tal de contribuir a una comunidad científica más ética. Otra perspectiva es la de @aczel_consensusbased_2020, quienes proponen a la transparencia como un principio que permite evaluar y reproducir los hallazgos científicos, así como también a sintetizar investigaciones y contribuir a la ejecución de metanálisis. Estas perspectivas son una primera aproximación a las implicancias de un proceso cientifico transparente, no obstante, no son una presentación exhaustiva del concepto.
+
+Para abarcar la complejidad del concepto de transparencia, y las múltuiples formas que puede adoptar, nos basamos en la taxonomía de @elliott_Taxonomy_2020. La taxonomía se basa en cuatro grandes preguntas: ¿por qué?, ¿quienes? ¿qué? y ¿cómo? Cada una de estas preguntas tiene al menos una dimensión asociada. La primera pregunta se refiere a los propósitos por los cuales adoptar la transparencia; la segunda pregunta apunta a la audiencia que está recibiendo la información; la tercera pregunta hace alusión al contenido qué es transparentado y la cuarta pregunta consiste en cuatro dimensiones distintas sobre cómo adoptar la transparencia: actores, mecanismos, tiempo y lugar. También, la taxonmía propone una dimensión sobre los peligros que podrían afectar a las iniciativas que busquen promover la transparencia. Aunque esta última dimensión no es una forma de transparencia -en el mismo sentido que las otras dimensiones-, si tiene relevancia en tanto permite mejorar las iniciativas de transparencia. Una representación gráfica puede verse en la Figura N° \@ref(fig:taxonomy).
+
 
 ```{r taxonomy, echo=FALSE, fig.cap="Taxonomía de Transparencia", fig.align = 'center', out.width = '100%'}
 knitr::include_graphics(path = "docs/images/taxonomy.png")
 ```
+Para comprender mejor la taxonomía la Figura N° \@ref(fig:tabtax) presenta una versión detallada de cada dimensión en conjunto a una lista no exhaustiva de variaciones. Por ejemplo, la dimensión del propósito sintetiza varios de los puntos que ya se han señalado en la literatura sobre ciencia abierta: hacer la ciencia más replicable, facilitar la interacción crítica, facilitar el reanalisis de resultados, entre otros. La mayoría de estos propositos están estrechamente relacionados con el horizonte de una ciencia con mayor credibilidad. Dentro de las dimensiones restantes, existe una en particular que queremos recalcar: los contenidos. Aquí, los distintos contenidos que pueden ser transparentados van desde cosas complejas como los juicios de valor, hasta lo más concreto como datos, métodos y materiales, o dicho de otra forma, el diseño de investigación. El diseño de investigación es uno de los que más se ha promovido la transparencia últimamente, especialmente a raíz de los pre-registros. Profundizaremos en esto más adelante en el escrito.
 
-La taxonomía de @elliott_Taxonomy_2020 tiene por objetivo sintetizar la complejidad del concepto de transparencia y las distintas formas que puede tomar. La taxonomía se basa en cuatro grandes preguntas: ¿por qué?, ¿quienes? ¿qué? y ¿cómo? Cada una de estas preguntas tiene al menos una dimensión asociada. La primera pregunta se refiere a los propósitos por los cuales adoptar la transparencia; la segunda pregunta apunta a la audiencia que se beneficia de la adopción de transparencia; la tercera pregunta hace alusión al contenido qué es transparentado y la cuarta pregunta hace alusión cuatro distintas dimensiones sobre cómo adoptar la transparencia: actores, mecanismos, tiempo y lugar. También, se añade una dimensión relacionada a los peligros de la transparencia en investigación. Una representación gráfica puede verse en la Figura N° \@ref(fig:taxonomy).
-
-En la Figura N° \@ref(fig:tabtax) se presenta una versión detallada de las dimensiones de la taxonomía en conjunto a una lista no exhaustiva de variaciones dentro de cada dimensión. Por ejemplo, la dimensión del propósito sintetiza varios de los puntos que ya se han señalado en la literatura sobre ciencia abierta. En general, los propósitos están orientados a mejorar la credibilidad de la ciencia, ya sea en si misma (e.g. facilitación del reanálisis de resultados) o ya sea en su rol instrumental (e.g. promover el desarrollo de política pública de calidad). Otra dimensión relevante a destacar es el contenido de lo que se hace transparente, donde según @elliott_Taxonomy_2020 las variaciones van de lo más concreto como los datos, métodos y materiales hasta algo más complejo como los juicios de valor. Más adelante en el documento trataremos especialmente la transparencia de los datos, métodos y materiales.
+En síntesis, un proceso de investigación transparente es uno que se puede evaluar con claridad y facilidad. La taxonomía de @elliott_Taxonomy_2020 nos ayuda a comprender las diversidad dimensiones en las que se puede pensar la idea de transparencia. Sin embargo, aun existe la pregunta del _por qué_. ¿Por qué es relevante la idea de transparencia? La dimensión de propositos de la taxonomía ya nos ha dado algunas pistas: la ciencia puede ser mejor. Y no solo eso, sino que inclusive podria estar en crisis.
 
 ```{r tabtax, echo=FALSE, fig.cap="Variaciones por dimensión de transparencia", fig.align = 'center', out.width = '100%'}
 knitr::include_graphics(path = "docs/images/table_tax.png")
 ```
 
+## ¿Crisis en las ciencias?
 
-Otro tratamiento extensivo de la idea de transparencia se da en las TOP Guidelines. Estos son principios que buscan alcanzar un formato de investigación reproducible a tracés del aumento de la transparencia en el proceso y los productos de investigación [@nosek_Transparency_2014]. Estos principios sirven de guía a las revistas académicas para poder adherir progresivamente al ideal de transparencia en la ciencia. Son ocho principios:
+En los últimos años, ha venido tomando fuerza la idea de que existe una crisis en la ciencia. Esta idea se basa en el diagnóstico de que gran parte de los artículos cientificos en distintas discplinas no son posibles de reproducir ni replicar. Tanto la reproducibilidad (emplear el mismo diseño y datos para reproducir los hallazgos de un artículo) o la replicabilidad (emplear el mismo diseño y distintos datos para obtener los mismos resultados) son componentes centrales de la ciencia. Es más, algunos de los mecanismos que permiten el avance del conocimiento cientifico son el escrutinio y la verificabilidad de sus hallazgos, por lo que un fallo en el cumplimiento de estos es un golpe directo a la credibilidad de la ciencia. La pregunta es ¿existe realmente una crisis en las ciencias?
 
-1. Citación
-2. Transparencia de datos
-3. Transparencia de métodos análiticos (código)
-4. Transparencia de los materiales
-5. Transparencia del diseño y el análisis
-6. Preregistro de estudios
-7. Pre registro de planes de análisis
-8. Replicación
+Unas de las fuentes más comunmente citadas para introducir la idea de crisis es una encuesta realizada en la revista _Nature_. En esta encuesta, @baker_500_2016 logró obtener las opiniones de poco más de 1,500 investigadores de discplinas como la quimica, ingenerías y la medicina, sobre tópicos relacionados a la reproducibilidad en las ciencias. El resultado principal muestra que un **90% de los encuestados está de acuerdo en la existencia una crisis**, donde un 52% piensa que es una gran crisis y un 38% la percibe como una ligera crisis. En este mismo estudio, se les pregunta por los factores que contribuyen a esta crisis, donde la cultura del _pública o perece_ y el _reporte selectivo de resultados_ aparecen como los protagonistas. Si bien la encuesta no es una muestra representativa de toda la comunidad cientifica, presenta una panoramica que lleva a, por lo menos, considerar la crisis de la ciencia como tema que merece atención.
 
-A grandes rasgos, el principio de citación propone que las normas de citado deben ampliarse también a los datos y códigos, permitiendo reconocer su autoría intelectual [@nosek_Promoting_2015]. Los principios de transparencia de datos, métodos análiticos, materiales y diseño y análisis (2 a 5) refieren a la transparencia en su forma más concreta: la apertura del proceso de investigación para su evaluación. El detalle puesto a los principios responde a la generelabizilidad que se le busca dar a los principios. Por ejemplo, un estudio observacional cuantitativo no tiene material que transparentar, pero si datos y métodos análiticos. Asi también, un estudio cualitativo quizás no tenga código que transparentar, pero si un diseño y una bitacora detalla del proceso de análisis. En el caso de los principios relacionados al pre-registro, @nosek_Promoting_2015 argumenta que registrar los estudios los hace más descubribles, incluso si no son públicados. Asi también, los preregistros del plan de análisis contribuyen a distinguir entre los análisis confirmatorios y explotatorios (ver @nosek_preregistration_2018 para un manejo detalado del tema). Por último, el principios de replicación fomenta las oportunidades para la corrección de artículos y redirecciona la investigación en vías más prometedoras [@nosek_Promoting_2015].
+Actualmente, existe un cuerpo de literatura que se ha dedicado diagnosticar y proponer alternativas de solución ante la idea de una ciencia en crisis. Dentro del diagnóstico, variados estudios han orientado sus esfuerzos a esclarecer cuáles son los factores que podrían estar influenciando esta crisis. En esta sección, presentaremos estos factores en dos grandes dimensiones. La primera dimensión se relaciona a las prácticas de investigación, especificamente aquellas prácticas que ya sea en menor o mayor grado afectan la credibilidad de los hallazgos cientificos en su conjunto. La segunda dimensión se centrará más en factores institucionales y que no dependen estrictamente de los investigadores. Una vez explicados estos factores, analizeremos como ciertas herramientas que promueven la transparencia en la investigación podrían c
 
-Cada uno de estos principios cuenta con tres niveles, que sirven para medir el grado de inclusión de la transparencia por parte de una revista cientifica. La Figura N° \@ref(fig:tabtop) muestra cada nivel en relación el principio correspondiente. Se añade un nivel 0 que no cumple los estandares de transparencia con la finalidad de tener una comparación. Por ejemplo, para los estandares de transparencia del método de análisis (código), el nivel 1 dicta que las revistas deben solicitar la existencia del código de análisis, en cambio, el nivel 3 es más estricto en plantear que el código de análisis debe estar almacenado en un repositorio confiable y que el análisis será reproducido durante el proceso de revisión. El mismo método se puede aplicar para la el preregistro del plan de análisis. En el nivel 1 las revistas promueven el uso de preregistros, en cambio, en el nivel 3 los preregistros son obligatorios y también reconocidos. En suma, las TOP Guideliness son una iniciativa que contribuye a la apertura en la ciencia cambiando los requerimientos de las revistas.
+Comenzemos con las prácticas de investigación. Para esquematizar de mejor manera qué es lo problemático de ciertas prácticas, es que utilizaremos el esquema conceptual de @steneck_Fostering_2006. El esquema parte de una distinción básica entre la _ética en investigación_ y la _integridad en investigación_, englobando ambas bajo el gran concepto de _Conducta Responsable de Investigación (RCR)_ (ver Figura N° \@ref(fig:rcr). A grandes rasgos, la RCR se puede entender como el "llevar a cabo la investigación de forma que se cumplan las responsabilidades profesionales de los investigadores, tal y como las definen sus organizaciones profesionales, las instituciones para las que trabajan y, en su caso, el gobierno y el público" [@steneck_Fostering_2006][^1].
 
-Los dos ejemplos entregados (la taxonomía y las TOP Guideliness) perimiten comprender con un poco más de detalle el concepto de transparencia. Sin embargo, aun queda la interrogante del por qué. ¿Cuál es la problemática que lleva a considerar necesaria la adopción de la transparencia? En breve, la respuesta es la crisis en las ciencias, y especificamente en las ciencia sociales.
-
-```{r tabtop, echo=FALSE, fig.cap="Variaciones por dimensión de transparencia", fig.align = 'center', out.width = '100%'}
-knitr::include_graphics(path = "docs/images/table_top.png")
-```
-## ¿Cuál es el problema? La crisis de credibilidad en las ciencias sociales
-
-En los últimos años, ha venido tomando fuerza la idea de que existe una crisis en la ciencia. Se han utilizado distintos nombres para aludir a esta idea. Algunos han hablado de una crisis de reproducibilidad [e.g. @baker_500_2016], siendo el principal problema que el formato actual de publicación cientifica no permite reproducir los hallazgos. Otros usan el término de crisis de "replicabilidad" [e.g. @swiatkowski_Replicability_2017], donde se argumenta que el principal problema es la falta de replicaciones de estudios científicos. También se ha usado el término de crisis de credibilidad [e.g. @bergh_there_2017; @carrier_Facing_2017], aludiendo a que la evidencia científica ha ido perdiendo su carácter de fiable o veraz, ya sea por prácticas poco éticas, como también por acumulación de errores en los procesos inevstigativos. Sea el concepto que se use, la narrativa instalada es que existe una crisis y que hay que encaminar los esfuerzos en abordarla.
-
-Una de las fuentes más comunes para dar cuenta de la existencia de una crisis de reproducibilidad es una encuesta online realizada por la revista _Nature_. En esta encuesta, @baker_500_2016 logró obtener las opiniones de 1,576 investigadores de discplinas de las ciencias naturales sobre tópicos relacionados a la reproducibilidad en las ciencias, tales como sus factores y soluciones. El resultado principal muestra que un 52% de los investigadores encuestados creen que hay una crisis significativa, y un 38% creen que hay una ligera crisis. Es decir, un **90% de los encuestados está de acuerdo en la existencia una crisis**. Cuándo se les pregunta por los factores que contribuyen a esta crisis, un 60% de los investigadores están de acuerdo en que la cultura del _pública o perece_ y el reporte selectivo de resultados siempre o casi siempre contribuyen la crisis. Si bien la encuesta no es una muestra representativa de toda la comunidad cientifica, presenta una panoramica que lleva a, por lo menos, considerar la crisis de la ciencia como tema a investigar.
-
-Actualmente, existe un cuerpo de literatura que se ha dedicado a debatir e intentar demostrar la existencia de una crisis de credibilidad en las ciencias -y en las ciencias sociales-. Esta literatura se ha centrado en buscar los factores que contribuirían a la crisis, así como también en desarrollar distintas herramientas, métodos y prácticas para revertirla. En esta sección señalaremos los factores que con mayor frecuencia se señalan en la literatura. Para esquematizar de mejor manera la presentación de estos factores y la evidencia existente, es que utilizaremos el esquema conceptual de @steneck_Fostering_2006. El esquema parte de una distinción básica entre la _ética en investigación_ y la _integridad en investigación_, englobando ambas bajo el gran concepto de _Conducta Responsable de Investigación (RCR)_ (ver Figura N° \@ref(fig:rcr). A grandes rasgos, la RCR se puede entender como el "llevar a cabo la investigación de forma que se cumplan las responsabilidades profesionales de los investigadores, tal y como las definen sus organizaciones profesionales, las instituciones para las que trabajan y, en su caso, el gobierno y el público" [@steneck_Fostering_2006][^1].
 
 ```{r rcr, echo=FALSE, fig.cap="Conducta Responsable de Investigación. Imagen de @abrilruiz_Manzanas_2019 basada en @steneck_Fostering_2006", fig.align = 'center', out.width = '100%'}
 knitr::include_graphics(path = "docs/images/rcr.png")
 ```
 
-[^1]: A raíz de esta definición, y también en base al código de conducta detallado por XX es que @abrilruiz_Manzanas_2019 proponen a la siguiente definición: "la RCR es el conjunto de normas, habitualmente plasmadas en códi- gos de conducta, que pretenden ser una guía para que nuestras acciones se mantengan dentro de la integridad investigadora" (p.144).
+[^1]: A raíz de esta definición, y también en base al código de conducta detallado por XX es que @abrilruiz_Manzanas_2019 proponen a la siguiente definición: "la RCR es el conjunto de normas, habitualmente plasmadas en códigos de conducta, que pretenden ser una guía para que nuestras acciones se mantengan dentro de la integridad investigadora" (p.144).
 
-Dentro de este concepto, la ética de investigación está relacionada al comportamiento académico visto desde la óptica de los principios morales [@steneck_Fostering_2006], lo que se expresa en tópicos sobre el uso de datos, los consentimientos informados, el trato con pacientes en el caso de las ciencias biomedicas, por dar algunos ejemplos. La definición que ofrece @steneck_Fostering_2006 señala que la ética de investigación se define como "el estudio crítico de los problemas morales asociados o que surgen en el curso de la investigación" (p.56) En cámbio, la integridad en investiación se entiende como "poseer y adherirse firmemente a las normas profesionales, tal y como las señalan las organizaciones profesionales, las instituciones de investigación y, en su caso, el gobierno y el público" [@steneck_Fostering_2006, p.56]. A diferencia de la ética de investigación, el concepto de identidad está regido por los estándares profesionales más que por los principios morales, su función espantear una guía clara para la conducta inevestigativa, de ahí que sea el concepto utilizado por distintos códigos de conducta.
+Dentro de este concepto, la ética de investigación está relacionada al comportamiento académico visto desde la óptica de los principios morales [@steneck_Fostering_2006], lo que se expresa en tópicos como el uso de datos, los consentimientos informados, el trato con pacientes -en el caso de las ciencias biomedicas-, por dar algunos ejemplos. La definición que ofrece @steneck_Fostering_2006 señala que la ética de investigación se define como "el estudio crítico de los problemas morales asociados o que surgen en el curso de la investigación" (p.56) En cámbio, la integridad en investiación se entiende como "poseer y adherirse firmemente a las normas profesionales, tal y como las señalan las organizaciones profesionales, las instituciones de investigación y, en su caso, el gobierno y el público" [@steneck_Fostering_2006, p.56]. A diferencia de la ética de investigación, el concepto de identidad está regido por los estándares profesionales más que por los principios morales, su función es plantear una guía clara para la conducta inevestigativa, de ahí que sea el concepto utilizado por distintos códigos de conducta[].
 
 ```{r grad, echo=FALSE, fig.cap="Gradación del comportamiento integro en investigación. Imagen de @abrilruiz_Manzanas_2019 basada en @steneck_Fostering_2006", fig.align = 'center', out.width = '100%'}
 knitr::include_graphics(path = "docs/images/grad.png")
 ```
+Habiendonos situando dentro del concepto de integridad en la investigación, podemos pasar a delinear las principales prácticas que atentan contra él y que se han propuesto como factores que contribuyen a la crisis en la ciencia. Tanto @steneck_Fostering_2006 como distintos códigos de conducta de universidades e instituciones de financiamiento [] evalúan las prácticas de investigación en un continuo, que representa cuánto adhieren los investigadores a los principios de integridad cientifica. La Figura N° \@ref(fig:grad) esquematiza esta idea mostrando dos extremos, donde a la izquierda está el mejor comportamiento (RCR), y a la derechaa el peor comportamiento (FFP). Las FPP son un abreviación en lengua inglésa para referirse a _Fabrication, Falsification, Plagiarism_ (Invención, Falsificación y Plagio), también conocidas como _mala conducta académica_-. En el medio del continuo están las _prácticas cuestionables de investigación_ (QRP, por sus siglas en inglés) las cuáles refieren a "acciones que violan los valores tradicionales de la empresa de investigación y que pueden ser perjudiciales para el proceso de investigación" [_National Academies of Science_ 1992 en @steneck_Fostering_2006, p.58]. A diferencia de las FFP, las QRP son prácticas que tienen  el potencial de dañar la ciencia y no que la dañan directamente (como las FFP).
 
-Habiendonos situando dentro del concepto de integridad en la investigación, podemos pasar a delinear las principales prácticas que atentan contra él y que se han propuesto como factores que contribuyen a la crisis en la ciencia. Tanto @steneck_Fostering_2006 como distintos códigos de conducta de universidades e instituciones de financiamiento [] plantean una gradación de prácticas de acuerdo en qué tanto atentan contra la integridad en investigación. La Figura N° \@ref(fig:grad) esquematiza esta idea mostrando dos extremos, donde a la izquierda está el mejor comportamiento (RCR), y a la derechaa el peor comportamiento (FFP). Las FPP son un abreviación en lengua inglésa para referirse a _Fabrication, Falsification, Plagiarism_ (Invención, Falsificación y Plagio). Las tres prácticas que componen la abreviación también se conocen como _mala conducta académica_-. En el medio de la gradación están las _prácticas cuestionables de investigación_ (QRP, por sus siglas en inglés) las cuáles refieren a "acciones que violan los valores tradicionales de la empresa de investigación y que pueden ser perjudiciales para el proceso de investigación" [_National Academies of Science_ 1992 en @steneck_Fostering_2006, p.58]. A diferencia de las FFP, las QRP son prácticas que tienen el potencial de dañar la ciencia y no que la dañan directamente (como las FFP).
-
-En base a estas distinciones, presentaremos algunas situaciones y evidencia que dan cuenta de la FFP y las QRP.
-
+Comprendidos ambos conceptos, veamos las situaciones que podrían categorizarse como FFP y las que podrían concebirse como QRP.
 
 ### Mala conducta académica (FFP)
 
-La mala conducta académica suelen ser situaciones que alcanzan gran conbertura mediatica y que no están exentas de polémicas. El libro de @abrilruiz_Manzanas_2019 presenta una serie de situaciones, en distintas discplinas y años, en las que investigadores han sido descubiertos cometiendo mala conducta. Las situaciones son variadas, existen casos de manipulación de imagenes [], exageración de lo registros de laboratorio, o de plano la invención de conjuntos de datos enteros. En esta sección veremos el caso de Diderik Stapel como ejemplo de malas prácticas de investigación y su relación con la transparencia en la investigación.
+La mala conducta académica suelen ser situaciones polémicas y que muchas veces alcanzan gran conbertura mediatica. El libro de @abrilruiz_Manzanas_2019 presenta una serie de situaciones, en distintas discplinas y años, en las que investigadores han sido descubiertos cometiendo prácticas que atentan directamente a la ciencia. Las situaciones son variadas, existen casos de manipulación de imagenes [], exageración de lo registros de laboratorio, o de plano la invención de conjuntos de datos enteros. En esta sección veremos el caso de Diderik Stapel como ejemplo de malas prácticas de investigación y plantearemos  la relación que tiene con la transparencia en la investigación.
 
 #### Diderik Stapel
 
@@ -88,147 +64,31 @@ El caso de Stapel deja un punto base sobre la mesa: la falta de transparencia en
 
 ### Prácticas cuestionables de investigación (QRP)
 
-Últimamente, el concepto de QRP ha sido bastante abordado en la literatura. Distintos autores han argumentado cómo y por qué las QRP pueden afectar a la credibilidad de la ciencia en su conjunto, y cómo la transparencia puede ser un principio que mitigue esta relación. Los aportes han ido desde opiniones, reflexiones o revisiones de literatura, hasta estudios empíricos que han buscado estimar la prevalencia de estas prácticas y su impacto. En esta sección haremos dos cosas. Primero, veremos algunas de las prácticas especificas que han sido categorizadas como QRP [^2] y segundo, presentaremos la evidencia que ha buscado cuantificar o estimar estas prácticas y ver su impacto en la ciencia.
+Recordemos, las QRP son prácticas que en si mismas no dañan directamente la empresa cientifica, pero si tienen el potencial de hacerlo. En la literatura sobre el tema, existen una multiplicidad de términos y listas de prácticas especificas que pueden categorizarse como cuestionables. @abrilruiz_Manzanas_2019 hace una recopilación y traducción de distintos códigos de conducta de distintas universidades y organismos, el cuál nosotros sistematizamos en la Figura N° X. La figura muestra un conjunto de prácticas divididos en cuatro categorías, de acuerdo a si las prácticas tienen que ver con: la redacción y el reporte de los resultados, el procesamiento de los datos, temas de citación y uso de ideas ajenas y, por último, sobre relaciones con otros actores en el campo de la ciencia. El objetivo de esta recopilación es meramente esquemático, en el sentido de poder gatillar la reflexión respecto a la experiencia del lector a partir de algunas situaciones concretas que podráin afectar las investigaciones.
 
-La primera lista de prácticas que presentamos proviene del _Código Europeo de Conducta para la Integridad en la Investigación_ de la ALLEA. La lista, traducida y textual de @abrilruiz_Manzanas_2019, es la siguiente:
+Han habido algunos estudios que han intentado medir directamente la existencia de estas prácticas a través de encuestas cuantitativas. @fanelli_How_2009 hizo un metanálisis que tenía por objetivo sistematizar los resultados de estudios que hasta esa fecha habían abordado las prácticas de investigación desde encuestas cuantitativas. Los resultados mostraron que un 1.97% de investigadores había inventado datos al menos una vez y que un 33.7% había realizado alguna vez una QRP como "borrar puntos de los datos basados en un sentimiento visceral". Un estudio más reciente, también basado en encuestas cuantitativas sobre prácticas, es el de @john_Measuring_2012. En este estudio, los resultados mostraron que un 36.6% de quienes participaron alguna vez habían práctiado alguna QRP. En detalle, analizando los porcentajes práctica a práctica se halló que el 50% de los psicologos encuestados alguna vez reportaron selectivamente estudios que apoyaran su hipotesis; un 35% alguna vez reportaron resultados inesperados como esperados; y un 2% alguna vez reportó datos falsos. Estos estudios son una primera aproximación a la existencia de las QRP en la ciencia.
 
- [^2]: Muchas de las fuentes que se presentan acá son parte de la revisión que hace @abrilruiz_Manzanas_2019 sobre el concepto de QRP.
+Existen ciertas prácticas que han sido tratadas con más enfásis en la literatura, y que son las que queremos destacar acá. Por un lado, está el _sesgo de publicación_. A grandes rasgos, los sesgos de publicación se refieren a la publicación exclusiva de resultados significativos, en desmedro de los no significativos. Dicho de otra forma, cuándo el criterio de selección para la publicación de resultados es la significancia, el cuerpo de literatura de esa temática particular comienza a sesgarse. El estudio de @franco_Publication_2014 tiene por objetivo cuantificar esta situación, especificamente en ciencias sociales. En su estudio encontraron un patrón interesante: "estudios donde la hipotesis principales arrojan resultados nulos son 40% menos probables de ser publicados en una revista cientifica, en contraste a estudios que arrojen resultados significativos" [@christensen_Transparent_2019, p.41]. Los descriptivos se pueden ver en la Figura N° \@ref(fig:written).
 
- 1. Manipular la autoría o denigrar el papel de otros investigadores en las publicaciones.
+Otra práctica es la del _p-hacking_...
 
-2. Volver a publicar partes sustanciales de publicaciones propias anteriores, incluidas las traducciones, sin reconocer o citar debidamente el original ("autoplagio").
+Por último, está el _HARKing_, el cual...
 
-3. Citar de forma selectiva para mejorar los propios resultados o para complacer a los editores, los revisores o los colegas.
 
-4. Retener resultados de la investigación.
 
-5. Permitir que los patrocinadores pongan en peligro la independencia en el proceso de investigación o en la presentación de resultados con el fin de introducir sesgos.
 
-6. Ampliar de manera innecesaria la bibliografía de un estudio.
 
-7. Acusar a un investigador de conducta indebida u otras infracciones de forma maliciosa.
 
-8. Tergiversar los logros de la investigación.
 
-9. Exagerar la importancia y la relevancia práctica de los resultados.
-
-10. Retrasar u obstaculizar inadecuadamente el trabajo de otros investigadores.
-
-11. Emplear la experiencia profesional propia para alentar a que se incumpla la integridad de la investigación.
-
-12. Ignorar supuestos incumplimientos de la integridad de la investigación cometidos por terceros o encubrir reacciones inadecuadas a conductas indebidas u otro tipo de incumplimientos por parte de las instituciones
-
-13. Establecer publicaciones o brindar apoyo a publicaciones que no cumplen el proceso de control de calidad de la investigación (“publicaciones abusivas“)
-
-Otro trabajo que presenta una lista sistematizada de QRP es el de @martinson_Scientists_2005. La lista, textual y traducida de @abrilruiz_Manzanas_2019 es la siguiente (incluye algunas FFP):
-
-1. Falsificar o ("cocinar") datos de investigación.
-
-2. Ignorar los aspectos importantes de los requerimientos de las personas participantes.
-
-3. No divulgar adecuadamente la participación en empresas cuyos productos se basan en la investigación de uno.
-
-4. Relaciones con estudiantes, sujetos de investigación o clientes que pueden ser interpretadas como cuestionables.
-
-5. Usar ideas de otros sin obtener permiso o dar crédito
-
-6. Uso no autorizado de información confidencial en relación con la propia investigación.
-
-7. No presentar datos que contradicen una propia investigación previa.
-
-8. Eludir ciertos aspectos menores de los requerimientos de las personas participantes.
-
-9. Pasar por alto el uso de datos cuestionables o de interpretaciones cuestionables que otros hacen.
-
-10. Cambiar el diseño, la metodología o los resultados de un estudio como respuesta a la presión de una fuente de financiación.
-
-11. Publicar los mismos datos o resultados en dos o más publicaciones.
-
-12. Asignar inapropiadamente los crédios de autoría.
-
-13. Retener detalles de la metodología o los resultados en artículos o propuestas
-
-14. Usar diseños de investigación inadecuados o inapropiados.
-
-15. Eliminar observaciones o puntos de datos de los análisis basados en la intuición de que eran inexactos.
-
-16. Mantener registros inadecuados relacionados con los proyectos de investigación.
-
-Otro ejemplo es el de @john_Measuring_2012, quienes en su estudio sistematizan las prácticas en la siguiente lista -textual y traducida por @abrilruiz_Manzanas_2019-:
-
-1. En un paper, no fueron reportadas todas las variables dependientes de un estudio.
-
-2. Decidir si recopilar más datos después de ver si los resultados fueron significativos.
-
-3. En un paper, no fueron reportadas todas las condiciones del estudio.
-
-4. Dejar de recopilar datos antes de lo esperado porque se encontró el resultado que uno esperaba.
-
-5. En un paper, redondear un valor p (por ejemplo, reportar que un p-value de 0,054 es menor a 0,05.
-
-6. En un paper, selectivamente reportar estudios que ("funcionaron").
-
-7. En un paper, decidir si excluir datos después de analizar el impacto en los resultados.
-
-8. En un paper, reportar un hallazgo inesperado como previsto desde el principio.
-
-9. En un documento, afirmar que los resultados no se ven afectados por variables demográficas (por ejemplo, el género), cuando uno no está realmente seguro (o sabe que lo hacen).
-
-10. Falsificar datos
-
-Otra lista, aunque menos extensiva, es la de @oboyle_Chrysalis_2017:
-
-1. Eliminación o adición de datos después de pruebas de hipótesis.
-
-2. Alterando los datos después de la prueba de hipótesis.
-
-3. Supresión selectiva o adición de variables.
-
-4. Invertir la dirección o reformular hipótesis para respaldar los datos
-
-5. Eliminación o adición post hoc de hipótesis
-
-La mayoría o la totalidad de las prácticas presentadas acá han sido nombradas de distintas formas a lo largo de los años. La lista presentada por @abrilruiz_Manzanas_2019 hace un buen resumen de los términos:
-
-- _Intentional bias in Research_: sesgos que investigadores introducen en la investigación.
-- _Fudging, massaging o cooking_: procesar los datos con tal de obtener resultados desados (e.g. que se cumpla una hipotésis que originalmente no se cumpliría). Este concepto suele caer dentro de las FFP.
-- _Drylabbing_: reportar experimentos que nunca se realizaron
-- _Cherry picking data_: reportar resultados que confirman hipotésis e ignorar los que la contradicen
-- _Salami publication o salami slicing_: dividir una invesigación en pequeñas partes y publicar las partes por separado, con tal de contar con más publicaciones.
-- _Publication bias_: publicar una investigación solo si el resultado es significativo.
-- _Verification bias_: repetir un experimento hasta obtener resultados deseados o extraer casos con el mismo objetivo.
-- _Data fishing o p-hacking_: realización de multiples pruebas estadísticas para hallar patrones significativos.
-- _HARKing_[^3]: plantear las hipotesis una vez habiendo analizado los resultados, y reportar el proceso inverso.
-
-[^3]: Este concepto no está en la lista original de @abrilruiz_Manzanas_2019, pero lo agregamos dado su reciente uso.
-
-Una vez contamos con un paneo general sobre qué situaciones particulares caben dentro del concepto de QRP (y también de FFP), podemos pasar a revisar la evidencia en turno a su prevalencia. Una de las fuentas más citadas para una primera aproximación a la cuantificación de las QRP es el estudio de @john_Measuring_2012. En este estudio se encuestaron a más de 2000 psicologos sobre su implicación con las QRP. El procedimiento consistió en preguntar sobre las 10 malas prácticas de investigación más comunes. Las preguntas sobre cada QRP estaban divididas en tres formatos: primero, relacionados a su propio comportamiento; segundo, relacionado al comportamiento de otros psicologos y tercero, el porcentaje de psicologos que creían que admitiría haber cometido QRP. Adicionalmente, a aquellos que admitieron haber prácticado alguna QRP se les preguntó acerca de las justificaciones para hacerlo. Los resultados mostraron que un 36.6% de quienes participaron alguna vez habían práctiado alguna QRP. En detalle, analizando los porcentajes práctica a práctica se halló que el 50% de los psicologos encuestados alguna vez reportaron selectivamente estudios que apoyaran su hipotesis; un 35% alguna vez reportaron resultados inesperados como esperados; y un 2% alguna vez reportó datos falsos.
-
-Otro estudio, algo más antiguo en cuanto a fecha -en comparación a @john_Measuring_2012-, pero más potente en cuanto a resultados es el de @fanelli_How_2009. En este estudio se hizo un metanálisis en varios idiomas sobre artículos que incluyeran palabras relacionadas a las malas prácticas en investigación (e.g. _research misconduct_) y que hubieran sido publicados entre 1988 y 2005. De un conjunto de referencias inicial de 3276, se seleccionaron 21 artículos. El criterio de inclusión era que fueran artículos cuantitativos de encuestas que preguntaran directamente sobre malas prácticas (como el de @john_Measuring_2012). Los principales resultados son los siguientes: en promedio, un 1.97% de investigadores admite haber fabricado datos al menos una vez; un 33.7% admite haber realizado QRP como "borrar puntos de los datos basados en un sentimiento visceral". Cuando se les pregunta por los comportamientos de otros, un 14% consiera que sus colegas caen en FFP y un 72% en QRP.
 
 Un estudio que se aleja de la encuesta directa sobre prácticas, pero que contribuye estimando cuál es el potencial de que una QRP afecte los resultados de un artículo es el de @simmons_FalsePositive_2011. En detalle, los autores buscan calcular el _likelihood_ de obtener un falso positivo (error Tipo I) de acuerdo a al nivel de manipulación intencionada de los datos. El procedimiento consistió en calcular 15.000 muestras de 20 observaciones por condición de tratamiento para un experimento hipotetico y determinaron cuatro posibles ajustes a los datos: 1) plantear dos variables dependientes correlacionadas, 2) incrementar la muestra entre 20 y 30 casos según condición de tratamiento, 3) controlar por una variable sociodemográfica (género) o plantear una interacción genero y condición de tratamiento y 4) flexibilidad en eliminar alguna condición de tratamiento. Como se puede ver en la Figura N° \@ref(fig:fp), el resultado principal es que a medida que aumenta la cantidad de manipulación en los datos, el likelihood de obtener un falso positivo aumenta progresivamente. Una situación en donde se realicen los cuatro ajustes planteados tiene un 60.7% de likelihood de encontrar un falso positivo.
 
-```{r fp, echo=FALSE, fig.cap="Likekihood de obtener un falso positivo según nivel de manipulación de datos. Imagen de @simmons_FalsePositive_2011", fig.align = 'center', out.width = '100%'}
-knitr::include_graphics(path = "docs/images/fp.png")
-```
-
 Una herramienta que se ha utilizado para estimar la existencia de p-hacking en los cuerpos de literatura es la _p-curve_. La p-curve "describe la densidad de los _p-values_ reportados en una literatura, aprovechando el hecho de que si la hipótesis nula fuera verdadera (es decir, sin efecto), los p-values deben distribuirse uniformemente entre 0 y 1" [@christensen_Transparent_2019, p.67.]. De esta manera, en cuerpos de literatura que no sufran de p-hacking, la distribución de p-values debería ser asimetrica a la derecha, en cambio, si existe sesgo por p-hacking la distribución de p-values estaría distribuida de forma asimetrica a la izquierda. @simonsohn_Pcurve_2014 proponen esta herramienta y la prueban en dos muestras de artículos de la _Journal of Personality and Social Psychology (JPSP)_. Las pruebas estadísitcas consistieron en confirmar que la primera muestra de artículos (que presentaban signos de p-hacking) estaba sesgada, en cambio la segunda muestra (sin indicios de p-hacking), no lo estaba. Los resultados corroboraron las hipotesis, en detalle, los artículos que presentaban solamente resultados con covariables, resultaron tener una p-curve asimetrica a la izquierda.
-
-Además del p-hacking, en la literatura también se habla del sesgo de publicación. Como se mencionó, el sesgo de publicación se refiere al reporte selectivo de resultados significativos, dejando sin reportar los no significativos. El estudio de @franco_Publication_2014 busca cuantificar esta situación, especificamente en ciencias sociales. En su estudio encontraron un patrón interesante: "estudios donde la hipotesis principales arrojan resultados nulos son 40% menos probables de ser publicados en una revista cientifica, en contraste a estudios que arrojen resultados significativos" [@christensen_Transparent_2019, p.41]. Los descriptivos se pueden ver en la Figura N° \@ref(fig:written).
 
 ```{r written, echo=FALSE, fig.cap="Porcentajes de publicación de acuerdo a significancia de resultados. Imagen de @christensen_Transparent_2019.", fig.align = 'center', out.width = '100%'}
 knitr::include_graphics(path = "docs/images/fp.png")
 ```
-...
 
-> Parrafo final de la seccion que vuelva a conectar los factores con la idea de crisis
+## ¿Que podemos hacer?
 
-
-
-## ¿Qué podemos hacer? Recomendaciones, prácticas y experiencias
-
-### Recomendaciones
-
-### Experiencias
-
-### Herramientas
+Tanto en las ciencias sociales, como en otras disciplinas han ido emergiendo una variedad de recomiendaciones y consejos que contribuyen a la adopción de la transparencia. Por ejemplo, @cruwell_Easy_2018 propone formar investigadores y estudiantes a partir de la promoción de siete principales tópicos: entender la ciencia abierta; acceso abierto; la importancia de los datos, material y código abierto, los análisis reproducibles; los pre-registros; la replicación y, por último, la enseñanza de la ciencia abierta. De forma similar,...
