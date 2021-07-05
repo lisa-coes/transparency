@@ -1,5 +1,31 @@
 # Transparencia
 
+```{r setup, include=FALSE}
+if (!require("pacman")) install.packages("pacman")  #si falta pacman, instalar
+if (!require("tinytex")) install.packages("tinytex")#si falta tinytex, instalar
+pacman::p_load(knitr, kableExtra, dplyr, ggplot2,sjmisc,texreg) # librerias
+knitr::opts_chunk$set(
+	fig.pos = "H",
+	message = FALSE,
+	warning = FALSE,
+	cache = FALSE,
+	out.width = "85%"
+)
+options(scipen=999) # notacion cientifica
+rm(list=ls())       # limpiar workspace
+options(knitr.kable.NA = '') # NA en kable = ''
+table_format = if(is_html_output()) { # Usar en argumento "format=" de kable
+  "html"
+} else if(is_latex_output()) {
+  "latex"
+}
+fwidth = if(is_html_output()) { #Usar en argumento "full_width" de kableExtra
+  T
+} else if(is_latex_output()) {
+  F
+}
+```
+
 Esta sección tratará sobre la transaprencia en la investigación cientifica, haciendo enfásis en las ciencias sociales. Nuestro objetivo es poder comunicar de forma clara y concisa tres puntos: a) qué es la transparencia, b) por qué la necesitamos y c) cómo podemos adoptarla. En esta sección verenmos los dos primeros puntos, luego, en la sección de herramientas presentaremos algunas formas de adoptar la transparencia. La tónica de este escrito es la práctica, es decir; todo lo que presentemos acá tiene la finalidad de servir de camino para poder aprender y aprehender herramientas que promueven la transparencia. Dicho esto, comenzemos con los dos primeros puntos.
 
 ## ¿Qué es la transparencia? Un concepto multidimensional
@@ -64,7 +90,27 @@ El caso de Stapel deja un punto base sobre la mesa: la falta de transparencia en
 
 ### Prácticas cuestionables de investigación (QRP)
 
-Recordemos, las QRP son prácticas que en si mismas no dañan directamente la empresa cientifica, pero si tienen el potencial de hacerlo. En la literatura sobre el tema, existen una multiplicidad de términos y listas de prácticas especificas que pueden categorizarse como cuestionables. @abrilruiz_Manzanas_2019 hace una recopilación y traducción de distintos códigos de conducta de distintas universidades y organismos, el cuál nosotros sistematizamos en la Figura N° X. La figura muestra un conjunto de prácticas divididos en cuatro categorías, de acuerdo a si las prácticas tienen que ver con: la redacción y el reporte de los resultados, el procesamiento de los datos, temas de citación y uso de ideas ajenas y, por último, sobre relaciones con otros actores en el campo de la ciencia. El objetivo de esta recopilación es meramente esquemático, en el sentido de poder gatillar la reflexión respecto a la experiencia del lector a partir de algunas situaciones concretas que podráin afectar las investigaciones.
+Recordemos, las QRP son prácticas que en si mismas no dañan directamente la empresa cientifica, pero si tienen el potencial de hacerlo. En la literatura sobre el tema, existen una multiplicidad de términos y listas de prácticas especificas que pueden categorizarse como cuestionables. @abrilruiz_Manzanas_2019 hace una recopilación y traducción de distintos códigos de conducta de distintas universidades y organismos, el cuál nosotros sistematizamos en la Figura N° \@ref(fig:tabqrp). La figura muestra un conjunto de prácticas divididos en cuatro categorías, de acuerdo a si las prácticas tienen que ver con: la redacción y el reporte de los resultados, el procesamiento de los datos, temas de citación y uso de ideas ajenas y, por último, sobre relaciones con otros actores en el campo de la ciencia. El objetivo de esta recopilación es meramente esquemático, en el sentido de poder gatillar la reflexión respecto a la experiencia del lector a partir de algunas situaciones concretas que podráin afectar las investigaciones.
+
+```{r include=FALSE}
+cap1 <- "Algunas situaciones de QRP"
+# if (knitr::is_html_output()) {tb <- table_nums("tb",cap)} else {tb <- cap}
+```
+
+```{r tabqrp, echo=FALSE}
+tab01 <- read.csv(file = "input/tables/tabqrp.csv",header = 1,sep = ",",encoding = "UTF-8")
+cnames <- c("Dimensión","Práctica")
+kable(tab01,table_format,booktabs = T, linesep = "",col.names = cnames, caption = cap1) %>%
+  kable_styling(
+    full_width = T,
+    latex_options = c("hold_position"),
+    position = "center",
+    font_size = 10,
+    bootstrap_options=c("striped", "bordered")) %>%
+  column_spec(column = 1, width = "5 cm", ) %>%
+  column_spec(column = 2,width = "5 cm") %>%
+  collapse_rows(columns = 1:2,valign = "middle")
+```
 
 Han habido algunos estudios que han intentado medir directamente la existencia de estas prácticas a través de encuestas cuantitativas. @fanelli_How_2009 hizo un metanálisis que tenía por objetivo sistematizar los resultados de estudios que hasta esa fecha habían abordado las prácticas de investigación desde encuestas cuantitativas. Los resultados mostraron que un 1.97% de investigadores había inventado datos al menos una vez y que un 33.7% había realizado alguna vez una QRP como "borrar puntos de los datos basados en un sentimiento visceral". Un estudio más reciente, también basado en encuestas cuantitativas sobre prácticas, es el de @john_Measuring_2012. En este estudio, los resultados mostraron que un 36.6% de quienes participaron alguna vez habían práctiado alguna QRP. En detalle, analizando los porcentajes práctica a práctica se halló que el 50% de los psicologos encuestados alguna vez reportaron selectivamente estudios que apoyaran su hipotesis; un 35% alguna vez reportaron resultados inesperados como esperados; y un 2% alguna vez reportó datos falsos. Estos estudios son una primera aproximación a la existencia de las QRP en la ciencia.
 
@@ -84,10 +130,6 @@ Por último, está el _HARKing_, el cual...
 Un estudio que se aleja de la encuesta directa sobre prácticas, pero que contribuye estimando cuál es el potencial de que una QRP afecte los resultados de un artículo es el de @simmons_FalsePositive_2011. En detalle, los autores buscan calcular el _likelihood_ de obtener un falso positivo (error Tipo I) de acuerdo a al nivel de manipulación intencionada de los datos. El procedimiento consistió en calcular 15.000 muestras de 20 observaciones por condición de tratamiento para un experimento hipotetico y determinaron cuatro posibles ajustes a los datos: 1) plantear dos variables dependientes correlacionadas, 2) incrementar la muestra entre 20 y 30 casos según condición de tratamiento, 3) controlar por una variable sociodemográfica (género) o plantear una interacción genero y condición de tratamiento y 4) flexibilidad en eliminar alguna condición de tratamiento. Como se puede ver en la Figura N° \@ref(fig:fp), el resultado principal es que a medida que aumenta la cantidad de manipulación en los datos, el likelihood de obtener un falso positivo aumenta progresivamente. Una situación en donde se realicen los cuatro ajustes planteados tiene un 60.7% de likelihood de encontrar un falso positivo.
 
 Una herramienta que se ha utilizado para estimar la existencia de p-hacking en los cuerpos de literatura es la _p-curve_. La p-curve "describe la densidad de los _p-values_ reportados en una literatura, aprovechando el hecho de que si la hipótesis nula fuera verdadera (es decir, sin efecto), los p-values deben distribuirse uniformemente entre 0 y 1" [@christensen_Transparent_2019, p.67.]. De esta manera, en cuerpos de literatura que no sufran de p-hacking, la distribución de p-values debería ser asimetrica a la derecha, en cambio, si existe sesgo por p-hacking la distribución de p-values estaría distribuida de forma asimetrica a la izquierda. @simonsohn_Pcurve_2014 proponen esta herramienta y la prueban en dos muestras de artículos de la _Journal of Personality and Social Psychology (JPSP)_. Las pruebas estadísitcas consistieron en confirmar que la primera muestra de artículos (que presentaban signos de p-hacking) estaba sesgada, en cambio la segunda muestra (sin indicios de p-hacking), no lo estaba. Los resultados corroboraron las hipotesis, en detalle, los artículos que presentaban solamente resultados con covariables, resultaron tener una p-curve asimetrica a la izquierda.
-
-```{r written, echo=FALSE, fig.cap="Porcentajes de publicación de acuerdo a significancia de resultados. Imagen de @christensen_Transparent_2019.", fig.align = 'center', out.width = '100%'}
-knitr::include_graphics(path = "docs/images/fp.png")
-```
 
 ## ¿Que podemos hacer?
 
