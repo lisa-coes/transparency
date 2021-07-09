@@ -1,8 +1,8 @@
 fig:taxonomy
-fig:tabtax
+tab:tabtax
 fig:rcr
 fig:grad
-fig:written
+tab:tabqrp
 fig:tabtop
 intro
 transparencia

@@ -2,24 +2,12 @@
 
 ## Pre-registros
 
+Los preregistros son una marca temporal sobre las decisiones del diseño, el método y el análisis de un artículo cientifico y se suelen hacer antes del levantamiento de datos [@stewart_Preregistration_2020]. Los preregistros..
+
+
+
 ## Flujos de trabajos reproducibles.
 
-Otro tratamiento extensivo de la idea de transparencia se da en las TOP Guidelines. Estos son principios que buscan alcanzar un formato de investigación reproducible a tracés del aumento de la transparencia en el proceso y los productos de investigación [@nosek_Transparency_2014]. Estos principios sirven de guía a las revistas académicas para poder adherir progresivamente al ideal de transparencia en la ciencia. Son ocho principios:
-
-1. Citación
-2. Transparencia de datos
-3. Transparencia de métodos análiticos (código)
-4. Transparencia de los materiales
-5. Transparencia del diseño y el análisis
-6. Preregistro de estudios
-7. Pre registro de planes de análisis
-8. Replicación
-
-A grandes rasgos, el principio de citación propone que las normas de citado deben ampliarse también a los datos y códigos, permitiendo reconocer su autoría intelectual [@nosek_Promoting_2015]. Los principios de transparencia de datos, métodos análiticos, materiales y diseño y análisis (2 a 5) refieren a la transparencia en su forma más concreta: la apertura del proceso de investigación para su evaluación. El detalle puesto a los principios responde a la generelabizilidad que se le busca dar a los principios. Por ejemplo, un estudio observacional cuantitativo no tiene material que transparentar, pero si datos y métodos análiticos. Asi también, un estudio cualitativo quizás no tenga código que transparentar, pero si un diseño y una bitacora detalla del proceso de análisis. En el caso de los principios relacionados al pre-registro, @nosek_Promoting_2015 argumenta que registrar los estudios los hace más descubribles, incluso si no son públicados. Asi también, los preregistros del plan de análisis contribuyen a distinguir entre los análisis confirmatorios y explotatorios (ver @nosek_preregistration_2018 para un manejo detalado del tema). Por último, el principios de replicación fomenta las oportunidades para la corrección de artículos y redirecciona la investigación en vías más prometedoras [@nosek_Promoting_2015].
-
-Cada uno de estos principios cuenta con tres niveles, que sirven para medir el grado de inclusión de la transparencia por parte de una revista cientifica. La Figura N° \@ref(fig:tabtop) muestra cada nivel en relación el principio correspondiente. Se añade un nivel 0 que no cumple los estandares de transparencia con la finalidad de tener una comparación. Por ejemplo, para los estandares de transparencia del método de análisis (código), el nivel 1 dicta que las revistas deben solicitar la existencia del código de análisis, en cambio, el nivel 3 es más estricto en plantear que el código de análisis debe estar almacenado en un repositorio confiable y que el análisis será reproducido durante el proceso de revisión. El mismo método se puede aplicar para la el preregistro del plan de análisis. En el nivel 1 las revistas promueven el uso de preregistros, en cambio, en el nivel 3 los preregistros son obligatorios y también reconocidos. En suma, las TOP Guideliness son una iniciativa que contribuye a la apertura en la ciencia cambiando los requerimientos de las revistas.
-
-Los dos ejemplos entregados (la taxonomía y las TOP Guideliness) perimiten comprender con un poco más de detalle el concepto de transparencia. Sin embargo, aun queda la interrogante del por qué. ¿Cuál es la problemática que lleva a considerar necesaria la adopción de la transparencia? En breve, la respuesta es la crisis en las ciencias, y especificamente en las ciencia sociales.
 
 ```{r tabtop, echo=FALSE, fig.cap="Variaciones por dimensión de transparencia", fig.align = 'center', out.width = '100%'}
 knitr::include_graphics(path = "docs/images/table_top.png")
