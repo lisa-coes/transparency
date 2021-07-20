@@ -14,6 +14,7 @@ prácticas-cuestionables-de-investigación-qrp
 que-podemos-hacer
 reproducibilidad
 herramientas-para-la-transparencia-y-irreproducibilidad
-pre-registros
+preregistros
+otros
 flujos-de-trabajos-reproducibles.
 palabras-finales
