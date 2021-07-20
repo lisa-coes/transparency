@@ -4,6 +4,7 @@ fig:rcr
 fig:grad
 tab:tabqrp
 fig:tabtop
+fig:scenarios
 intro
 transparencia
 qué-es-la-transparencia-un-concepto-multidimensional
@@ -13,6 +14,7 @@ diderik-stapel
 prácticas-cuestionables-de-investigación-qrp
 que-podemos-hacer
 reproducibilidad
+cómo-se-entiende
 herramientas-para-la-transparencia-y-irreproducibilidad
 preregistros
 otros
