@@ -4,7 +4,14 @@ fig:rcr
 fig:grad
 tab:tabqrp
 fig:tabtop
+<<<<<<< Updated upstream
 fig:scenarios
+=======
+tab:tabprereg
+fig:osfprereg1
+fig:osfprereg2
+fig:osfprereg3
+>>>>>>> Stashed changes
 intro
 transparencia
 qué-es-la-transparencia-un-concepto-multidimensional
@@ -17,6 +24,8 @@ reproducibilidad
 cómo-se-entiende
 herramientas-para-la-transparencia-y-irreproducibilidad
 preregistros
+algunas-cosas-sobre-los-preregistros
+manos-a-la-obra-cómo-utilizar-un-preregistro
 otros
 flujos-de-trabajos-reproducibles.
 palabras-finales

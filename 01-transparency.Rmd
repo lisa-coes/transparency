@@ -14,16 +14,6 @@ knitr::opts_chunk$set(
 options(scipen=999) # notacion cientifica
 rm(list=ls())       # limpiar workspace
 options(knitr.kable.NA = '') # NA en kable = ''
-table_format = if(is_html_output()) { # Usar en argumento "format=" de kable
-  "html"
-} else if(is_latex_output()) {
-  "latex"
-}
-fwidth = if(is_html_output()) { #Usar en argumento "full_width" de kableExtra
-  T
-} else if(is_latex_output()) {
-  F
-}
 ```
 
 Esta sección tratará sobre la transaprencia en la investigación cientifica, haciendo enfásis en las ciencias sociales. Nuestro objetivo es poder comunicar de forma clara y concisa tres puntos: a) qué es la transparencia, b) por qué la necesitamos y c) cómo podemos adoptarla. En esta sección profundizaremos en los dos primer puntos. Respecto al tercer punto, entregaremos algunos consejos y recomendaciones que se han dado en la literatura, para después, en la siguiente sección, profundizar en torno a las herramientas que nos permitirían adoptar la transparencia. La tónica de este escrito es la práctica, es decir; todo lo que presentemos acá tiene la finalidad de servir de camino para poder aprender y aprehender herramientas que promueven la transparencia. Dicho esto, comenzemos con los dos primeros puntos.
@@ -42,25 +32,30 @@ knitr::include_graphics(path = "docs/images/taxonomy.png")
 
 Para comprender mejor la taxonomía la Tabla N° \@ref(tab:tabtax) presenta una versión detallada de cada dimensión en conjunto a una lista no exhaustiva de variaciones. Por ejemplo, la dimensión del propósito sintetiza varios de los puntos que ya se han señalado en la literatura sobre ciencia abierta: la transparencia contribuye a formar una ciencia más replicable, facilita la interacción crítica, facilita el reanalisis de resultados, entre otros. La mayoría de estos propositos están estrechamente relacionados con el horizonte de una ciencia con mayor credibilidad, cuestión que profundizarmeos en breve. Dentro de las dimensiones restantes, existe una en particular que queremos recalcar: los contenidos. Aquí, los distintos contenidos que pueden ser transparentados van desde cosas complejas como los juicios de valor o factores que podrían influencias las interpretaciones de resultados, hasta lo más concreto como datos, métodos y materiales, o en otras palabras, el diseño de investigación. Como podemos ver, la transparencia abarca varias dimensiones, sin embargo, a fin de mantener un documento simple y práctico, esta sección apuntará especificamente a la promoción de la transparencia del diseño de investigación.
 
-
-```{r include=FALSE}
-cap1 <- "Variaciones por cada dimensión de transparencia"
-# if (knitr::is_html_output()) {tb <- table_nums("tb",cap)} else {tb <- cap}
-```
-
 ```{r tabtax, echo=FALSE}
-tabtax <- read.csv(file = "input/tables/tabtax.csv",header = 1,sep = ",",encoding = "UTF-8")
-cnames <- c("Dimensión","Variaciones")
+# Función para que las tablas renderizen tanto en html como pdf
+table_format = if(is_html_output()) { # Usar en argumento "format=" de kable
+  "html"
+} else if(is_latex_output()) {
+  "latex"
+}
+
+# Título tabla
+cap1 <- "Variaciones por cada dimensión de transparencia"
+
+# Crear tabla
+tabtax <- read.csv(file = "input/tables/tabtax.csv",header = 1,sep = ",",encoding = "UTF-8") # Leer .csv con la estructura de la tabla
+cnames <- c("Dimensión","Variaciones") # Nombres de las columnas
 kable(tabtax,table_format,booktabs = T, linesep = "",col.names = cnames, caption = cap1) %>%
   kable_styling(
     full_width = T,
-    latex_options = c("hold_position"),
+    latex_options = c("hold_position"), # Argumento para fijar la tabla en esta seccón del documento.
     position = "center",
     font_size = 10,
     bootstrap_options=c("striped", "bordered")) %>%
   column_spec(column = 1, width = "5 cm", ) %>%
   column_spec(column = 2,width = "5 cm") %>%
-  collapse_rows(columns = 1:2,valign = "middle")
+  collapse_rows(columns = 1:2,valign = "middle") # Para colapsar filas que tengan el mismo contenido
 ```
 
 En síntesis, un proceso de investigación transparente es uno que se puede evaluar con claridad y facilidad. La taxonomía de @elliott_Taxonomy_2020 nos ayuda a comprender las diversidad dimensiones en las que se puede pensar la idea de transparencia. Ahora conocemos un poco más sobre la transparencia y lo que han dicho algunas voces de la literatura, no obstante, probablemente esté pensando algo como "Sí, tiene sentido que la transparencia contribuya a una ciencia mejor, pero ¿de verdad vale el esfuerzo y el tiempo de adoptar todas estas prácticas? La ciencia parece estar bien como está" Es un pensamiento razonable, sin embargo, la comunidad de adherentes a la ciencia abierta y la literatura asociada han adoptado el discurso de que efectivamente es necesario cambiar la forma que estamos haciendo hoy en día. Ha emergido la narrativa de que la ciencia está en crisis.
@@ -93,7 +88,7 @@ La mala conducta académica suelen ser situaciones polémicas y que muchas veces
 
 #### Diderik Stapel
 
-Probablemente, el caso de Diderik Stapel sea uno de los más emblématicos y representativos de este problema. Diderik Stapel era un investigador de la _Tilburg University_ que se dedicaba al campo de la psicología social. Su carrera se caracterizó por una trayectoria ejemplar, obtuvo su M.A en psicolgía y comunicaciones el año 1991, se doctoró en psicología social el año 1997 y trabajó como profesor asociado primero en la _University of Gronigen_ (2000-2006) y dede el 2006 en la Tilburg University. Fue fundador del _Tilburg Institute for Behavioral Economics Research_, del cuál el 2010 se convirtió en decano. Así también, fue galardonado con el premio a la trayectoria académica por la _Social of Experimental Social Psychology_. En breve, Stapel era una figura de alto estatus en el mundo académico, entre 1995 y 2015 publicó aproximadamente 150 artículos en revistas cientificas, algunas de las más prestigiosas (e.g. _Science_). Sin embargo, el año 2011 se confirmó que gran parte de su trayectoria académica era una farsa.
+Probablemente, el caso de Diderik Stapel sea uno de los más emblématicos y representativos de este problema. Diderik Stapel era un investigador de la _Tilburg University_ que se dedicaba al campo de la psicología social. Su carrera se caracterizó por una trayectoria ejemplar, obtuvo su M.A en psicolgía y comunicaciones el año 1991, se doctoró en psicología social el año 1997 y trabajó como profesor asociado primero en la _University of Gronigen_ (2000-2006) y dede el 2006 en la Tilburg University. Fue fundador del _Tilburg Institute for Behavioral Economics Research_, del cuál el 2010 se convirtió en decano. Así también, fue galardonado con el premio a la trayectoria académica por la _Social of Experimental Social Psychology_. En breve, Stapel era una figura de alto estatus en el mundo académico, entre 1995 y 2015 publicó aproximadamente 150 artículos en revistas cientificas, algunas de las más prestigiosas (e.g. _Science_). Sin embargo, 	el año 2011 se confirmó que gran parte de su trayectoria académica era una farsa.
 
 Después de la verificación de su culpa ante acusaciones de malas prácticas, la carrera de Diderik Stapel acabó. Fue desvinculado de la Tilburg University, se le rebocó su título de doctorado y toda su trayectoria académica fue investigada acusiociamente. El informe final de la investigación encontró que más de 50 de sus artículos eran fraudulentos. De hecho, Stapel ocupa el tercer lugar en con 58 artículos listados en _Retraction Watch_ (https://retractionwatch.com/), una plataforma que se dedica a sistematizar y mantener una lista actualizada sobre retracciones de artículos . A efectos de este escrito, lo que más destacable es que Stapel cometió conductas de mala conducta académica durante más de 15 años. La pregunta es ¿cómo fue esto posible? ¿cómo ninguno de sus colegas, alumnos o co-autores se dio cuenta de sus malas prácticas? La respuesta breve es por la falta de transparencia durante el proceso de investigación.
 
@@ -104,27 +99,34 @@ El caso de Stapel deja un punto importante sobre la mesa: la falta de transparen
 ### Prácticas cuestionables de investigación (QRP)
 
 Recordemos, las QRP son prácticas que en si mismas no dañan directamente la empresa cientifica, pero si tienen el potencial de hacerlo. Son prácticas que alteran el correcto funcionamiento del método cientifico. En la literatura, existen una variedad de términos que se utilizan para describir las prácticas cuestionables, asi como también distintas listas de prácticas que han emitido instituciones . @abrilruiz_Manzanas_2019 hace una recopilación y traducción de distintos códigos de conducta de distintas universidades y organismos, el cuál nosotros sistematizamos en la Tabla N° \@ref(tab:tabqrp). La tabla muestra un conjunto de prácticas divididos en cuatro categorías, de acuerdo a si las prácticas tienen que ver con: el diseño y el procesamiento de los datos, la redacción y el reporte de los resultados, temas de citación y uso de ideas ajenas y, por último, sobre relaciones con otros actores en el campo de la ciencia.
-```{r include=FALSE}
-cap1 <- "Algunas situaciones de QRP"
-# if (knitr::is_html_output()) {tb <- table_nums("tb",cap)} else {tb <- cap}
-```
 
 ```{r tabqrp, echo=FALSE}
-tab01 <- read.csv(file = "input/tables/tabqrp.csv",header = 1,sep = ",",encoding = "UTF-8")
-cnames <- c("Dimensión","Práctica")
+# Función para que las tablas renderizen tanto en html como pdf
+table_format = if(is_html_output()) { # Usar en argumento "format=" de kable
+  "html"
+} else if(is_latex_output()) {
+  "latex"
+}
+
+# Título tabla
+cap1 <- "Algunas situaciones de QRP"
+
+# Crear tabla
+tab01 <- read.csv(file = "input/tables/tabqrp.csv",header = 1,sep = ",",encoding = "UTF-8") # Leer .csv con estructura de la tabla
+cnames <- c("Dimensión","Práctica") # Nombre de las columnas
 kable(tab01,table_format,booktabs = T, linesep = "",col.names = cnames, caption = cap1) %>%
   kable_styling(
     full_width = T,
-    latex_options = c("hold_position"),
+    latex_options = c("hold_position"), # Argumento para mantener posición de la tabla en esta sección del documento
     position = "center",
     font_size = 10,
     bootstrap_options=c("striped", "bordered")) %>%
   column_spec(column = 1, width = "5 cm", ) %>%
   column_spec(column = 2,width = "5 cm") %>%
-  collapse_rows(columns = 1:2,valign = "middle")
+  collapse_rows(columns = 1:2,valign = "middle") # Para colapsar filas con el mismo contenido
 ```
 
-Existe una serie de estudios que han intentado medir directamente la existencia de estas prácticas a través de encuestas. @fanelli_How_2009 hizo un metanálisis que tenía por objetivo sistematizar los resultados de estudios que hasta esa fecha habían abordado las prácticas de investigación desde encuestas cuantitativas. Los resultados mostraron que un 1.97% de investigadores había inventado datos al menos una vez (FFP) y que un 33.7% había realizado alguna vez una QRP como "borrar puntos de los datos basados en un sentimiento visceral". Un estudio más reciente, también basado en encuestas cuantitativas sobre prácticas, es el de @john_Measuring_2012. En este estudio, los resultados mostraron que un 36.6% de quienes participaron alguna vez habían práctiado alguna QRP. En detalle, analizando los porcentajes práctica a práctica se halló que el 50% de los psicologos encuestados alguna vez reportaron selectivamente estudios que apoyaran su hipótesis; un 35% alguna vez reportaron resultados inesperados como esperados; y un 2% alguna vez reportó datos falsos. Estos estudios son una primera aproximación a la existencia de las QRP en la ciencia.
+Existen una serie de estudios que han intentado medir directamente la existencia de estas prácticas a través de encuestas. @fanelli_How_2009 hizo un metanálisis que tenía por objetivo sistematizar los resultados de estudios que hasta esa fecha habían abordado las prácticas de investigación desde encuestas cuantitativas. Los resultados mostraron que un 1.97% de investigadores había inventado datos al menos una vez (FFP) y que un 33.7% había realizado alguna vez una QRP como "borrar puntos de los datos basados en un sentimiento visceral". Un estudio más reciente, también basado en encuestas cuantitativas sobre prácticas, es el de @john_Measuring_2012. En este estudio, los resultados mostraron que un 36.6% de quienes participaron alguna vez habían práctiado alguna QRP. En detalle, analizando los porcentajes práctica a práctica se halló que el 50% de los psicologos encuestados alguna vez reportaron selectivamente estudios que apoyaran su hipótesis; un 35% alguna vez reportaron resultados inesperados como esperados; y un 2% alguna vez reportó datos falsos. Estos estudios son una primera aproximación a la existencia de las QRP en la ciencia.
 
 Existen ciertas prácticas que han sido tratadas con más enfásis en la literatura, y que son las que queremos destacar acá. Por un lado, está el _sesgo de publicación_, el cual significa, a grandes rasgos, que un artículo es públicado en base a sus resultados. Especificamente, el sesgo de publicación ocurre cuando el criterio determinante para que un artículo sea públicado es que sus resultados sean signiificativos, en desmedro de la publicación de resultados no signifcativos. El estudio de @franco_Publication_2014 logra cuantificar esta situación bastante bien y esclarecer el _file drawer problem_ (en español: problema del cajón de archivos), que hace alusión a los resultados perdidos dentro de un cuerpo de evidencia [@christensen_Transparent_2019, p.39]. @franco_Publication_2014 encontraron que, efectivamente, los resultados nulos tienen un 40% menos de probabilidades de ser públicados en revistas cientificas, en comparación a estudios con resultados significativos. Es más, muchas veces los resultados nulos nisiquiera llegan a ser escritos: más de un 60% de los experimentos que componen la muestra del estudio de @franco_Publication_2014 nunca llegaron a ser escritos, en contraste al menos del 10% de resultados significativos.
 
