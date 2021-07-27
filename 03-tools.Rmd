@@ -16,7 +16,7 @@ Una característica principal de los preregistros es que deben ser efectuados pr
 
 En la literatura sobre preregistros se han discutido los desafíos que implica preregistrar estudios que utilicen datos pre-existentes [e.g. @editors_Observational_2014]. Existen posturas que proponen que, en realidad, no existe una forma creíble para preregistrar este tipo de estudios [@christensen_Transparency_2018]. No obstante, otras posturas han profundizado en las situaciones en las que aun es posible pre-registrar estudios con datos elaborados previamente. @burlig_Improving_2018 propone tres escenarios donde el preregistro de datos observacionales es valioso. El primero es, básicamente, cuando los investigadores que diseñaron la investigación generan sus propios datos. En este caso, los investigadores sí pueden elaborar un preregistro previo a la recolección de datos. El segundo escenario se da cuando se preregistra un estudio que tenga como objeto de interés un suceso que aun no ha ocurrido, lo que se conoce como estudios prospectivos. Por ejemplo, un grupo de investigadores puede estar interesado en el efecto que tendrá la introducción de una ley en las prácticas sociales, o el efecto de un tratado en las variaciones del PIB. Para esos casos, el preregistro aun mantiene su validez original ya que, si bien los datos ya existen, no es posible hacer los análisis antes del preregistro porque el evento de interés no ha ocurrido. El tercer escenario ocurre cuando los datos existen, pero no están abiertos al público. En estos casos, es la accesibilidad lo que determina la credibilidad del preregistro. Por ejemplo, el grupo de investigadores que elaboraron los datos pueden establecer que serán accesibles con previo contacto y que se solicitará un preregistro. Por ende, en orden de analizar los datos, los investigadores interesados deberán elaborar un preregistro para utilizar los datos. Según @mertens_Preregistration_2019, también se pueden adoptar ciertas prácticas para asegurar la credibilidad de un preregistro con datos secundarios. Dos de ellas son: que el grupo de investigadores que analiza los datos sea distinto e independiente de quien propuso el diseño de investigación y que el equipo realice sintaxis de análisis con datos simulados, con tal de demostrar que las hipotésis ya existían previo a acceder a los datos. En suma, lo que permite mantener el efecto "puro" de un preregistro, es que los datos no hayan sido observados por ningún integrante del grupo de investigación que los analizará [@nosek_preregistration_2018].
 
-El principio básico de un preregistro entonces, es que los datos no deben haber sido observados previos al análisis. Sin embargo, según @nosek_preregistration_2018 aun pueden existir ciertos sesgos en el planteamiento de hipótesis a raíz de cosas como el reporte de resultados descriptivos de la base de datos o las recomendaciones sobre cómo aproximarse a la base de datos. Este tipo de influencias son un poco más sútiles y es difícil deshacerse completamente de ellas. Es por esto que, quizás la recomendación más transversal y a la vez simple para pregistristrar análisis con datos secundarios, es ser sincero y detallado respecto a lo que se ha hecho y lo que no [ v@nosek_preregistration_2018]. Si es que se ha leído el reporte descriptivo sobre la base de datos, estipularlo como tal. Es preciso transparentar cualquier tipo de aproximación a los datos previo haberlos analizados. Para lograr este nivel de detalle y ser eficiente con los tiempos y la comunicación hacia otros investigadores, es que existen plantillas predeterminadas para preregistrar distintos tipos de artículos. A continuación veremos las más comunes y nos centraremos en describir una de las más usadas y su variante para estudios que usen datos secundarios.
+El principio básico de un preregistro entonces, es que los datos no deben haber sido observados previos al análisis. Sin embargo, según @nosek_preregistration_2018 aun pueden existir ciertos sesgos en el planteamiento de hipótesis a raíz de cosas como el reporte de resultados descriptivos de la base de datos o las recomendaciones sobre cómo aproximarse a la base de datos. Este tipo de influencias son un poco más sútiles y es difícil deshacerse completamente de ellas. Es por esto que, quizás la recomendación más transversal y a la vez simple para pregistristrar análisis con datos secundarios, es ser sincero y detallado respecto a lo que se ha hecho y lo que no [@nosek_preregistration_2018]. Si es que se ha leído el reporte descriptivo sobre la base de datos, estipularlo como tal. Es preciso transparentar cualquier tipo de aproximación a los datos previo haberlos analizados. Para lograr este nivel de detalle y ser eficiente con los tiempos y la comunicación hacia otros investigadores, es que existen plantillas predeterminadas para preregistrar distintos tipos de artículos. A continuación veremos las más comunes y nos centraremos en describir una de las más usadas y su variante para estudios que usen datos secundarios.
 
 ### Manos a la obra: cómo utilizar un preregistro
 
@@ -36,7 +36,7 @@ cap1 <- "Plantillas de preregistro"
 # Crear tabla
 tab01 <- read.csv(file = "input/tables/tabprereg.csv",header = 1,sep = ",",encoding = "UTF-8") # Leer .csv con estructura de la tabla
 cnames <- c("Plantilla","Proposito", "Discplina/Área") # Nombre de las columnas
-kable(tab01,table_format,booktabs = T, linesep = "",col.names = cnames, caption = cap1) %>%
+kable(tab01,table_format,booktabs = T, linesep = "",col.names = cnames, caption = cap1, label = "ola") %>%
   kable_styling(
     full_width = T,
     latex_options = c("hold_position"), # Argumento para mantener posición de la tabla en esta sección del documento
@@ -49,7 +49,7 @@ kable(tab01,table_format,booktabs = T, linesep = "",col.names = cnames, caption 
 ```
 
 
-Como bien se ha señalado en otras partes de este libro, el Open Science Framework (OSF) es tanto una herramienta para la colaboración, que permite hacer públicos distintos tipos de proyectos; como un modelo de flujo de trabajo que hace más eficiente el proceso de investigación al centralizar herramientas como GitHub, Google Docs etc. Dentro de estas funciones se encuentra la el servicio de preregistros. En la línea de lo que hemos señalado hasta ahora, con este servicio OSF busca fomentar la transparencia y reproducibilidad en la investigación. Vamos viendo paso a paso como ingresar un pre-registor en OSF.
+Como bien se ha señalado en otras partes de este libro, el Open Science Framework (OSF) es tanto una herramienta para la colaboración, que permite hacer públicos distintos tipos de proyectos; como un modelo de flujo de trabajo que hace más eficiente el proceso de investigación al centralizar herramientas como GitHub, Google Docs etc. Dentro de estas funciones se encuentra la el servicio de preregistros. En la línea de lo que hemos señalado hasta ahora, con este servicio OSF busca fomentar la transparencia y reproducibilidad en la investigación. Vamos viendo paso a paso como ingresar un pre-registro en OSF.
 
 El primer paso es acceder a la sección especifica de preregistros de la página de OSF, la cual se encuentra en el siguiente link: https://osf.io/prereg/. Para usar este servicio es necesario tener una cuenta, cuestion que no profundizaremos aquí. Si entramos al link con una cuenta recién hecha, la apariencia de la página será algo como la Figura N° \@ref(fig:osfprereg1). En la página veremos una barra superior con opciones asociadas a la cuenta y en el centro veremos un gran botón azul con forma rectangular el cual nos da la opción de comenzar un preregistro. En el caso de acceder con una cuenta que ya tiene proyectos, OSF nos dará la opción de preregistrar un proyecto ya existente. Seleccionemos _Start a new preregistration_, le damos un nombre y clickeamos _Continue_, que nos llevará a la siguiente página, representada en la Figura N° \@ref(fig:osfprereg2). En la página, podemos ver que hemos creado un proyecto nuevo en OSF, el cual nos da la opción de preregistrarlo clickeando en el botón _New registration_.
 
@@ -63,7 +63,7 @@ knitr::include_graphics(path = "docs/images/osfprereg1.png")
 knitr::include_graphics(path = "docs/images/osfprereg2.png")
 ```
 
-En la Figura N° \@ref(fig:osfprereg3) podemos ver dos cosas. Primero, la descripción de lo que está haciendo OSF al comenzar un nuevo preregistro, lo que en pocas palabras es una versión no modificable del proyecto al momento que hacemos el preregistro. Tal y como dice la página es una versión "congelada". En segundo lugar, también se aprecia una serie de opciones para preregistrar, estas son las plantillas de las que habíamos hablado anteriormente. OSF nos ofrece distintas plantillas de acuerdo al carácter que tiene nuestro estudio. Una breve descripción de cada una es la siguiente:
+En la Figura N° \@ref(fig:osfprereg3) podemos ver dos cosas. Primero, la descripción de lo que está haciendo OSF al comenzar un nuevo preregistro, lo que en pocas palabras es una versión no modificable del proyecto al momento que hacemos el preregistro. Tal y como dice la página es una versión "congelada". En segundo lugar, también se aprecia una serie de opciones para preregistrar, estas son las plantillas que habíamos mencionado anteriormente. OSF nos ofrece distintas plantillas de acuerdo al carácter que tiene nuestro estudio. Una breve descripción de cada una es la siguiente:
 
 
 - OSF Preregistration: Es la plantilla estándar, en la cual se hacen una serie de preguntas relativas al muestreo, diseño y planes de análisis.
@@ -74,7 +74,7 @@ En la Figura N° \@ref(fig:osfprereg3) podemos ver dos cosas. Primero, la descri
 
 - Secondary Data Preregistration: También consiste en una serie de preguntas relativas al muestro, diseño y planes de análisis, con algunas pequeñas variaciones.
 
-- Registered Report Protocol Preregistration: Hace unas cuantas preguntas relativas al estudio y permite adjuntar el manuscrito. Esta plantilla se utiliza cuando se está intentando publicar en una revista que adhiere al modelo de Informes Registrados.
+- Registered Report Protocol Preregistration: Hace unas cuantas preguntas relativas al estudio y permite adjuntar el manuscrito. Esta plantilla se utiliza cuando se está intentando publicar en una revista que adhiere al modelo de _Registered Reports_.
 
 - OSF-Standard Pre-Data Collection Registration: Plantilla que sigue el modelo estándar, pero que agrega algunas preguntas más específica sobre recolección de datos. Por ejemplo, pregunta si la recolección de datos está en curso o si se ha hecho algún análisis de los datos hasta ahora.
 
@@ -89,6 +89,48 @@ En la Figura N° \@ref(fig:osfprereg3) podemos ver dos cosas. Primero, la descri
 ```{r osfprereg3, echo=FALSE, fig.cap="Preregistros en OSF", fig.align = 'center', out.width = '100%'}
 knitr::include_graphics(path = "docs/images/osfprereg3.png")
 ```
+
+De todas estas plantillas veamos el detalles de tres de ellas: OSF Preregistration, Secondary Data Preregistration y Preregistration Template from AsPredicted.org.
+
+Una vez ecojamos una plantilla, la página se verá como la Figura N°  \@ref(fig:osfprereg5). Esta sección es transversal a todas las plantillas y consiste en el registro de los metadatos. Específicamente, OSF nos solicitará que registremos:
+
+- Título del preregistro
+- Una breve descripción
+- Contribuyentes
+- La categoría. Generalmente está en categoría _Project_, pero dependiendo de lo que estemos preregistrando, podemos cambiarlo a _Data_, _Software_, _Analysis_, entre otros.
+- Áreas discplinares, como _Arts and Humanities_, _Business_, _Social and Behavioral Sciences_ entre otras.
+- Tags. Los tags sirven para facilitar la búsqueda del preregistro
+
+```{r osfprereg5, echo=FALSE, fig.cap="Metadatos para preregistros", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/osfprereg5.png")
+```
+
+#### OSF Preregistration
+
+Esta plantilla incluye ocho tópico para rellenar con la información del estudio, estos son:
+
+- Información del estudio: Principalmente solicita listar de forma concisa y detallada las hiótesis que serán puestas a prueba. Se solicita reportar si la hipótesis es direccional o no, y en el caso de serlo, especificar el sentido de la dirección. Si el estudio incluye moderaciones o mediaciones, plantearlas en hipótesis apaerte.
+
+- Plan del diseño: En esta sección se hacen cuatro preguntas importantes. La primera es sobre el **Tipo del estudio**, donde se solicita especificar si el estudio es de tipo experimental, observacional, un metanálisis u otro. En segundo lugar, esta el **_Blinding_**, el cual trata sobre quienes están en conocimiento de las condiciones de tratamiento en el caso de un diseño experimental. En el caso de un diseño experimental no aplica. En tercer lugar, se pregunta sobre el **Diseño del estudio**, donde se solicita la mayor cantidad de detalles posibles respecto a este tópico. Por último, se solicita especificar cuál será el tipo de **Randomización** (en el caso de un diseño experimental).
+
+- Plan del muestreo: En esta sección, la plantilla requiere rellenar información respecto a la existencia de datos, los procedimientos de recolección de datos y sobre el tamaño de la muestra. En el caso de la existencia de datos, se nos solicita que marquemos de las siguientes situaciones la que más se acerca al estado de nuestro estudio:
+
+  * Registro previo a la creación de datos
+  * Registro previo a cualquier observación humana de los datos
+  * Registro previo a acceder a los datos
+  * Registro previo al análisis de los datos
+  * Registro tras el análisis de los datos
+
+  En el caso de trabajar con datos existentes la plantilla da una opción para detallar los pasos necesarios que se han tomado para asegurar que no conocemos el comportamiento de los datos. Por ejemplo, cómo es que se ha limitado la accesibilidad de los datos, o quiénes han revisado los datos y quienes no.
+
+  En lo que respecta a los procedimientos de análisis, la plantilla solicita especificar cómo es que se han recolectado los datos y cuáles han sido los criterios de exclusión. En el caso de muestras que involucren seres humanos, se deben reportar todo tipo de incentivos a la participación. Por último, se pregunta por el tamaño de muestra de la muestra y si se ha realizado algún análisis de poder estadístico
+
+- Variables: En esta sección se preguntan tres cosas. La primera es sobre, en el caso de los estudios experimentales, cómo se manipularán los niveles de tratamiento de las variables. Segundo, la plantilla requiere especificar cómo es que se medirán las variables, tanto la variable dependiente como los predictores. En tercer lugar, en el caso de construir indices, se pide detallar lo más posible su construcción.
+
+
+- Plan de análisis: En esta sección se busca el mayor detalle posible para le plan de análisis con tal de que sirva de guía para la reproducción o replicación del artículo. Partiendo por los modelos estadísticos, la plantilla solicita especificar la herramienta principal de análisis de datos (e.g. regresión múltiple) en conjunto a las variables que se incluirán (dependientes, independientes, controles, términos de interacción etc.). Otro componente importante a especificar son las transformaciones a los datos, incluyendo recodificaciones, centrados o cualquier procedimiento que cambie el formato original de la variable. También, la plantilla solicita especificar cuáles serán los criterios de inferencia estadística (e.g. valores p o intervalos de confianza). Por último, la plantilla requiere especificar cómo se determinará la exclusión de datos, cómo se trabajarán los datos perdidos y detallar los análisis exploratorios en caso de que existiesen.
+
+- Otro: Esta es la última sección de la plantilla, donde se da la opción al investigador o investigadora de añadir cualqier información importante que hasta ahora no ha sido reportada.
 
 ### Otros
 
