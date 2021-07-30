@@ -107,7 +107,7 @@ knitr::include_graphics(path = "docs/images/osfprereg5.png")
 
 #### OSF Preregistration
 
-Esta plantilla incluye ocho tópico para rellenar con la información del estudio, estos son:
+Esta plantilla incluye ocho tópicos para rellenar con la información del estudio, estos son:
 
 - Información del estudio: Principalmente solicita listar de forma concisa y detallada las hiótesis que serán puestas a prueba. Se solicita reportar si la hipótesis es direccional o no, y en el caso de serlo, especificar el sentido de la dirección. Si el estudio incluye moderaciones o mediaciones, plantearlas en hipótesis apaerte.
 
@@ -123,7 +123,7 @@ Esta plantilla incluye ocho tópico para rellenar con la información del estudi
 
   En el caso de trabajar con datos existentes la plantilla da una opción para detallar los pasos necesarios que se han tomado para asegurar que no conocemos el comportamiento de los datos. Por ejemplo, cómo es que se ha limitado la accesibilidad de los datos, o quiénes han revisado los datos y quienes no.
 
-  En lo que respecta a los procedimientos de análisis, la plantilla solicita especificar cómo es que se han recolectado los datos y cuáles han sido los criterios de exclusión. En el caso de muestras que involucren seres humanos, se deben reportar todo tipo de incentivos a la participación. Por último, se pregunta por el tamaño de muestra de la muestra y si se ha realizado algún análisis de poder estadístico
+  En lo que respecta a los procedimientos de análisis, la plantilla solicita especificar cómo es que se han recolectado los datos y cuáles han sido los criterios de exclusión. En el caso de muestras que involucren seres humanos, se deben reportar todo tipo de incentivos a la participación. Por último, se pregunta por el tamaño de muestra y si se ha realizado algún análisis de poder estadístico
 
 - Variables: En esta sección se preguntan tres cosas. La primera es sobre, en el caso de los estudios experimentales, cómo se manipularán los niveles de tratamiento de las variables. Segundo, la plantilla requiere especificar cómo es que se medirán las variables, tanto la variable dependiente como los predictores. En tercer lugar, en el caso de construir indices, se pide detallar lo más posible su construcción.
 
@@ -132,9 +132,46 @@ Esta plantilla incluye ocho tópico para rellenar con la información del estudi
 
 - Otro: Esta es la última sección de la plantilla, donde se da la opción al investigador o investigadora de añadir cualqier información importante que hasta ahora no ha sido reportada.
 
-### Otros
+#### Secondary Data Preregistration
 
-- Otras cosas que contribuyen a los preregistros: reporting standards y registered reports
+Esta plantilla es similar a la que acabamos de revisar, la principal diferencia es que está enfocada en el preregistro de datos secundarios, por lo que todas las opciones que veíamos en la plantilla general de OSF que hacían referencia a datos primarios ya no existen. Recomendamos esta plantilla a investigadores que usen datos secundarios ya que hace más simple el proceso de preregistro al enfocarse en las preguntas que realmente se asemejan a la situación del investigador.
+
+La plantilla se compone de siete puntos. El primero también consiste en esepcificar los metadatos del estudio, como por ejemplo en nombre del proyecto, el área del conocimiento en el que se circunscribe etc.
+
+- Información del estudio: Básicamente implica especificar las preguntas y las hipótesis que orientan el estudio.
+
+- Descripción de los datos: Esta sección es caracteristica de esta plantilla, ya que nos pregunta directamente sobre caracteristicas de la base de datos a utilizar. En detalle, recaba información sobre el nombre de la base de datos, una descripción general de ella y cuál será el subset de datos en caso de que corresponda. También se solicita especificar qué tipo de base de datos es (e.g. longitudinal), si es que existen restricciones para el acceso y describir el procedimiento de elaboración de la base de datos. Por último, se nos solicita adjuntar el libro de códigos correspondiente y si este no existe, adjuntar cualquier archivo de la base de datoa que permita conocer su composición.
+
+- Variables: En esta sección las preguntas no son muy distintas de la plantilla que acabamos de revisar. En general, se solicita especificar la manipulación de las variables (no aplica para estudios observacionales), la forma de medición de las variables, la unidad de análisis y cuáles serán los procedimientos para tratar con casos perdidos y con casos extremos.
+
+- Conocimiento de los datos: Esta sección es caracteristica de esta plantilla. A grandes rasgos, se nos pide dos cosas. Primero, que listemos los documentos con los cuales hayamos trabajado y que estén basados en la base de datos que utilizaremos (e.g. publicaciones, _working papers_, presentaciones de conferencia). Segundo, reportar cualquier conocimiento previo que tengamos del uso de la base de datos, especialmente las variables que sean relevante para el análisis propuesto. Este conocimiento de la base puede venir de publicaciones previar, de reportes de resultaodos o del libro de códigos.
+
+- Análisis: En esta sección se pregunta sobre toda característica de nuestro análisis de datos, partiendo por el tipo de modelos estadístico que utilizaremos para probar las hipótesis. Se nos solicita que por cada hipótesis detallemos la herramienta de análisis. Luego, se nos preguntan detalles cómo: el tamaño de efecto de interés para nustro análisis, el poder estadístico, los criterios de inferencia (e.g. valores p o factores bayesianos), los tests de robustez que se efectuarán y si es que realizaremos algún tipo de análisis exploratorio.
+
+#### AsPredicted
+
+La plantilla de AsPredicted es quizás una de las más conocidas para hacer preregistros, dado que está estandarizada y puede ser utilizada en cualquier discplina. Esta plantilla la podemos encontrar tanto en OSF, como en la misma página de AsPredicted, en este caso, mostraremos cómo es el proceso en la página original.
+
+Partimos por entrar a la página de AsPredicted, donde veremos algo como la Figura N° \@ref(fig:asp). Acá se nos da la opción de crear un preregistro, de ver los que ya hemos hecho (si es que ese es el caso) y también una breve descripción de AsPredicted. A grandes rasgos, la página nos dice que AsPredicted es una plataforma que busca facilitar el preregistro de estudios por parte de los investigadores a través de nueve simples preguntas. La página genera un documento pdf y una URL asociada. También, cuenta cómo funciona el preregistro. Básicamente, un autor elabora un preregistro de un estudio y los coautores reciben un mail para aprobar ese preregistro. Una vez aprobado por todos los autores, el preregistro queda alojado en la plataforma de manera privada, y no cambia hasta que un autor decida hacerlo público. Además, en caso de que el estudio entre en revisión por pares, se puede enviar una versión anonima del preregistro. Por último, nos entrega una recomendación sobre qué hacer en el caso de que el proceso de invstigacón no haya podido apegarse totalmente a lo predicho.
+
+```{r asp, echo=FALSE, fig.cap="Página de inicio de AsPredicted", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/asp.png")
+```
+
+Para elaborar un preregistro debemos hacer click en el rectangulo azul que dice _Create_. Una vez hecho eso, nos pedirá una dirección de email para continuar. Cuando ingresemos un email, nos enviará un link al email que hayamos ingresado, con ese link podremos comenzar el preregistro. Una vez hayamos entrado en el link, veremos la plantilla de preregistro. Lo primero que aparece es una sección donde debemos escribir los email de los autores colaboradores del estudio. También, nos da la opción de añadir otros email además del que hemos introducido. Una vez pasada esta parte, ya nos encontramos con las preguntas del preregistro, las cuales son las siguientes:
+
+1) Recogida de datos. ¿Se han recogido ya datos para este estudio?
+2) Hipótesis. ¿Cuál es la pregunta principal que se plantea o la hipótesis que se pone a prueba en este estudio?
+3) Variable dependiente. Describa la(s) variable(s) dependiente(s) clave especificando cómo se medirán.
+4) Condiciones. ¿Cuántos y qué condiciones se asignarán a los participantes?
+5) Análisis. Especifique exactamente qué análisis realizará para examinar la pregunta/hipótesis principal.
+6) Valores atípicos y exclusiones. Describa exactamente cómo se definirán y tratarán los valores atípicos, así como su(s) regla(s) precisa(s) para excluir las observaciones.
+7) Tamaño de la muestra. ¿Cuántas observaciones se recogerán o qué determinará el tamaño de la muestra?
+8) Otros. ¿Hay algo más que quiera preinscribir?
+9) Nombre. Poner un título a este prerregistro de AsPredicted
+Finalmente. A efectos de registro, indíquenos el tipo de estudio que está preinscribiendo.
+
+Las preguntas son bastante autoexplicativas, pero no está de más entregar algunos detalles adicionales. En la pregunta de recolección de datos, las opciones son tres: "Sí, se han recolectado datos", "No, no se han recolectado datos" y "Es complicado". Es importante mencionar que en esta plantilla, la respuesta de que se han recolectado datos no es valida, por lo que si se está llevando a cabo un estudio con datos secundarios hay responder "Es complicado" y en la pregunta 8 de la plantilla especificar por qué este preregistro sigue siendo válido pese a que los datos son pre-existentes. Otro detalle importante es que cada pregunta está pensada para ser respuesta en aproximadamente una oración. Esta plantilla tiene el objetivo de ser lo más eficiente posible, por lo que, en general, se recomienda que todo el documento no pase de los 3200 caracteres. Otro detalle a especificar es que la pregunta acerca del tipo de estudio que se está preregistrando también es semicerrada, tenemos las opciones de: "Proyecto de clase", "Experimento", "Encuesta", "Estudio observacional" y "Otro". Es responsabilidad de quien hace el preregistro el seleccionar la opción que más se asemeje a su situación. Por último, es importante señalar que el preregistro, al menos en la página de AsPredicted, solo puede ser rellenado en inglés. En caso de utilizar otro idioma solicitará traducirlo.
 
 
 

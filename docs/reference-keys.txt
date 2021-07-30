@@ -11,6 +11,7 @@ fig:osfprereg1
 fig:osfprereg2
 fig:osfprereg3
 fig:osfprereg5
+fig:asp
 intro
 transparencia
 qué-es-la-transparencia-un-concepto-multidimensional
@@ -30,6 +31,7 @@ preregistros
 algunas-cosas-sobre-los-preregistros
 manos-a-la-obra-cómo-utilizar-un-preregistro
 osf-preregistration
-otros
+secondary-data-preregistration
+aspredicted
 flujos-de-trabajos-reproducibles.
 palabras-finales
