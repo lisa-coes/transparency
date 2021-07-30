@@ -6,6 +6,9 @@ tab:tabqrp
 fig:tabtop
 fig:scenarios
 fig:espectro
+tab:mooc
+fig:resources
+fig:octopus
 tab:ola
 fig:osfprereg1
 fig:osfprereg2
@@ -24,8 +27,8 @@ reproducibilidad
 cómo-se-entiende
 iniciativas
 berkeley-initiative-for-transparency-in-the-social-sciences
-objetivos-y-visión
-contribución
+uk-reproducibility-network-ukrn
+proyecto-tier-teaching-integrity-in-empirical-research
 herramientas-para-la-transparencia-y-irreproducibilidad
 preregistros
 algunas-cosas-sobre-los-preregistros
