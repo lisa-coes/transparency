@@ -35,7 +35,7 @@ Como sugiere @nosek_Promoting_2015, el problema de la ausencia o falta de reprod
 ### Berkeley Initiative for Transparency in the Social Sciences
 
 ```{r, echo=FALSE, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics(path = "https://bitss.github.io/ACRE/BITSS_logo_horizontal.png")
+knitr::include_graphics(path = "docs/images/BITSS_logo_horizontal.png")
 ``` 
 
 #### Objetivos y visión {-}
@@ -90,7 +90,7 @@ knitr::include_graphics(path = "docs/images/resource-library.PNG")
 ### UK Reproducibility Network (UKRN)
 
 ```{r, echo=FALSE, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics(path = "https://cpb-eu-w2.wpmucdn.com/blogs.bristol.ac.uk/dist/b/631/files/2020/09/UKRN-Logo-150-extra2.png")
+knitr::include_graphics(path ="docs/images/UKRN-Logo.png")
 ``` 
 
 #### Objetivos y visión {-}
@@ -131,9 +131,10 @@ Para publicar debemos [logearnos](https://science-octopus.org/publish) con una c
 ### Proyecto TIER (Teaching Integrity in Empirical Research)
  
 ```{r, echo=FALSE, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics(path = "https://i.ytimg.com/vi/5joKl7fcIvE/maxresdefault.jpg")
+knitr::include_graphics(path = "docs/images/tier-logo.jpg")
 ``` 
- #### Objetivos y visión {-}
+
+#### Objetivos y visión {-}
 
 El proyecto TIER es una iniciativa respaldada por la [Fundación Alfred Sloan](https://sloan.org/) que se propone contribuir a un cambio en las normas y conducta profesionales en torno a la transparencia y reproducibilidad en la investigación empírica en las ciencias sociales.
 
