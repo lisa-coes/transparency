@@ -3,13 +3,12 @@ tab:tabtax
 fig:rcr
 fig:grad
 tab:tabqrp
-fig:tabtop
 fig:scenarios
 fig:espectro
 tab:mooc
 fig:resources
 fig:octopus
-tab:ola
+tab:tabprereg
 fig:osfprereg1
 fig:osfprereg2
 fig:osfprereg3
@@ -29,7 +28,7 @@ iniciativas
 berkeley-initiative-for-transparency-in-the-social-sciences
 uk-reproducibility-network-ukrn
 proyecto-tier-teaching-integrity-in-empirical-research
-herramientas-para-la-transparencia-y-irreproducibilidad
+herramientas-para-la-transparencia-y-la-reproducibilidad
 preregistros
 algunas-cosas-sobre-los-preregistros
 manos-a-la-obra-cómo-utilizar-un-preregistro
