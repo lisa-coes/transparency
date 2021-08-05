@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html lang="es" xml:lang="es">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Transparencia y Reproducibilidad en Investigación Social</title>
-  <meta name="description" content="Un breve manual sobre la transparencia y reproducibilidad en las ciencias sociales." />
+  <meta name="description" content="Documento de trabajo del equipo Transparencia y Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Transparencia y Reproducibilidad en Investigación Social" />
   <meta property="og:type" content="book" />
-  
-  
-  <meta property="og:description" content="Un breve manual sobre la transparencia y reproducibilidad en las ciencias sociales." />
-  
+  <meta property="og:url" content="https://github.com/lisa-coes/transparency" />
+  <meta property="og:image" content="https://github.com/lisa-coes/transparency/images/lisa-complete.png" />
+  <meta property="og:description" content="Documento de trabajo del equipo Transparencia y Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="github-repo" content="lisa-coes/transparency" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Transparencia y Reproducibilidad en Investigación Social" />
   
-  <meta name="twitter:description" content="Un breve manual sobre la transparencia y reproducibilidad en las ciencias sociales." />
-  
+  <meta name="twitter:description" content="Documento de trabajo del equipo Transparencia y Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="twitter:image" content="https://github.com/lisa-coes/transparency/images/lisa-complete.png" />
 
-<meta name="author" content="Julio Iturra y Martín Venegas" />
+<meta name="author" content="Investigador a cargo: Juan Carlos Castillo   Asistente de investigación: Julio Iturra   Pasante: Martín Venegas Márquez" />
 
 
-<meta name="date" content="2021-08-02" />
+<meta name="date" content="2021-08-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  
+  <link rel="shortcut icon" href="images/lisa.ico" type="image/x-icon" />
 
 <link rel="next" href="transparencia.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
@@ -81,7 +81,7 @@ div.csl-indent {
 }
 </style>
 
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="assets/lisa.css" type="text/css" />
 </head>
 
 <body>
@@ -94,7 +94,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Transparencia</a></li>
+<li class="toc-logo"><a href="./"><img src="images/favicon.jpg"></a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
@@ -130,7 +130,7 @@ div.csl-indent {
 <li class="chapter" data-level="5" data-path="palabras-finales.html"><a href="palabras-finales.html"><i class="fa fa-check"></i><b>5</b> Palabras finales</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://github.com/lisa-coes" target="blank">LISA-COES <i class="fa fa-github"></i></a></li>
 
 </ul>
 
@@ -149,10 +149,25 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <script src="assets/hideOutput.js"></script>
+  <link href="assets/lisa.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="images/lisa-complete.png">
+</div>
 <div id="header">
 <h1 class="title">Transparencia y Reproducibilidad en Investigación Social</h1>
-<p class="author"><em>Julio Iturra y Martín Venegas</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-08-02</em></p>
+<h2 class="subtitle"><em><center>
+Documento de trabajo
+</center></em></h2>
+<p class="author"><em>Investigador a cargo: Juan Carlos Castillo <br> Asistente de investigación: Julio Iturra <br> Pasante: Martín Venegas Márquez</em></p>
+<p class="date" style="margin-top: 1.5em;"><em>04 August 2021</em></p>
 </div>
 <div id="intro" class="section level1" number="1">
 <h1><span class="header-section-number">Capítulo 1</span> Introducción</h1>
@@ -163,7 +178,7 @@ div.csl-indent {
 <p>La perdida de la confianza en el quehacer científico afecta el objetivo de las ciencias sociales. Generalmente se tiene la concepción de que es parte de las tareas de los científicos sociales el contribuir al bienestar de la sociedad por la vía de las herramientas de investigación. Esta es la noción de las ciencias sociales como un bien público <span class="citation">(<a href="#ref-thibodeaux_Production_2016" role="doc-biblioref">Thibodeaux 2016</a>)</span>. Bajo esa idea, los efectos de una crisis de credibilidad tienen dos posibles efectos concretos en las ciencias sociales. Primero, la falta de credibilidad podría afectar la confianza en los hallazgos y en las disciplinas que componen las ciencias sociales. Ya existe evidencia sobre un incremento de desconfianza hacia los científicos en países como Estados Unidos <span class="citation">(<a href="#ref-motta_Dynamics_2018" role="doc-biblioref">Motta 2018</a>)</span> y sumarle una crisis de la ciencia a esa situación solo generaría un ambiente mucho más complejo. Segundo, y estrechamente relacionado a lo anterior, una perdida de credibilidad en la ciencia podría impactar en la elaboración de políticas sociales, mal orientando las prioridades y los recursos del país. Si se quieren evitar estas situaciones, es necesario tomar cartas en el asunto y orientar los esfuerzos a devolverle la credibilidad a las ciencias sociales.</p>
 <p>Este manual busca contribuir a una ciencia social más creíble, basándose en el marco de la ciencia abierta. La ciencia abierta se entiende como:</p>
 <blockquote>
-<p>“…la práctica de la ciencia de manera que otros puedan colaborar y contribuir, donde los datos de la investigación, las notas de laboratorio y otros procesos de investigación estén disponibles libremente, en términos que permitan la reutilización, redistribución y reproducción de la investigación y sus datos y métodos subyacentes.” (FORSTER, Open Science Teaching Resource)</p>
+<p>“…la práctica de la ciencia de manera que otros puedan colaborar y contribuir, donde los datos de la investigación, las notas de laboratorio y otros procesos de investigación estén disponibles libremente, en términos que permitan la reutilización, redistribución y reproducción de la investigación y sus datos y métodos subyacentes”. (FORSTER, Open Science Teaching Resource)</p>
 </blockquote>
 <p>Dentro de la ciencia abierta, nos centraremos en dos conceptos: transparencia y reproducibilidad. Si seguimos la metáfora de la cocina que planteamos en un principio, la transparencia y la reproducibilidad son dos conceptos similares, pero no idénticos. La transparencia implicaría la posibilidad de evaluar y poner en discusión la receta y la ejecución de esta. En cambio, la reproducibilidad apuntaría a que la receta sea lo suficientemente clara y precisa para que el mismo plato, con el mismo sabor, pueda ser preparado por cualquier persona que contase con los ingredientes y recursos necesarios. En el campo de las ciencias, esta distinción la hacemos entre: 1) la transparencia de los procesos de producción científica (e.g. transparentar el plan de análisis) y 2) la reproducibilidad de los análisis en los artículos (e.g. código de procesamiento y análisis de datos permite reproducir el artículo). Este manual estará estructurado en torno a estos dos conceptos.</p>
 <p>Relacionado al primer concepto (transparencia), haremos un barrido un tanto más detallado sobre la crisis de la reproducibilidad que aquí hemos mencionado brevemente. Ahondaremos en los factores que contribuyen a su reproducción, a las razones éticas por el cuales es necesario hacer un cambio y en las recomendaciones que se pueden seguir para adoptar ciertos principios de transparencia. En el caso del segundo concepto (reproducibilidad), nos centraremos en los análisis reproducibles, teniendo un carácter mucho más práctico. Presentaremos las distintas consideraciones que hay que tener para que un análisis sea fácilmente reproducible, desde tipos de flujos de trabajo hasta herramientas específicas que faciliten la reproducibilidad de los análisis.</p>
@@ -173,15 +188,24 @@ div.csl-indent {
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-abrilruiz_Manzanas_2019" class="csl-entry">
-Abril Ruiz, Angel. 2019. <em><span class="nocase">Manzanas podridas: Malas prácticas de investigación y ciencia descuidada</span></em>.
+Abril Ruiz, Angel. 2019. <em><span>Manzanas podridas: Malas prácticas de investigación y ciencia descuidada</span></em>.
 </div>
 <div id="ref-motta_Dynamics_2018" class="csl-entry">
-Motta, Matthew. 2018. <span>“The <span>Dynamics</span> and <span>Political Implications</span> of <span>Anti</span>-<span>Intellectualism</span> in the <span>United States</span>.”</span> <em>American Politics Research</em> 46 (3): 465–98. <a href="https://doi.org/10.1177/1532673X17719507">https://doi.org/10.1177/1532673X17719507</a>.
+Motta, Matthew. 2018. <span>«The <span>Dynamics</span> and <span>Political Implications</span> of <span>Anti</span>-<span>Intellectualism</span> in the <span>United States</span>»</span>. <em>American Politics Research</em> 46 (3): 465-98. <a href="https://doi.org/10.1177/1532673X17719507">https://doi.org/10.1177/1532673X17719507</a>.
 </div>
 <div id="ref-thibodeaux_Production_2016" class="csl-entry">
-Thibodeaux, Jarrett. 2016. <span>“Production as Social Change: <span>Policy</span> Sociology as a Public Good.”</span> <em>Sociological Spectrum</em> 36 (3): 183–90. <a href="https://doi.org/10.1080/02732173.2015.1102666">https://doi.org/10.1080/02732173.2015.1102666</a>.
+Thibodeaux, Jarrett. 2016. <span>«Production as Social Change: <span>Policy</span> Sociology as a Public Good»</span>. <em>Sociological Spectrum</em> 36 (3): 183-90. <a href="https://doi.org/10.1080/02732173.2015.1102666">https://doi.org/10.1080/02732173.2015.1102666</a>.
 </div>
 </div>
+<hr>
+<center> 
+  <div class="footer">
+      Laboratorio de Ciencia Social Abierta <a href="https://lisa-coes.netlify.app/"> (LISA) </a> del Centro de Estudios de Conflicto y Cohesión Social (COES) <a href="https://coes.cl/"></a>
+      <br>
+      Para más información puedes contactárnos <a href= "lisa@coes.cl"> en nuestro correo </a>
+  </div>
+</center>
+
             </section>
 
           </div>
@@ -204,15 +228,15 @@ Thibodeaux, Jarrett. 2016. <span>“Production as Social Change: <span>Policy</s
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
-"facebook": true,
+"github": true,
+"facebook": false,
 "twitter": true,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
 "whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": false
 },
 "fontsettings": {
 "theme": "white",
@@ -233,7 +257,7 @@ gitbook.start({
 },
 "download": ["transparency.pdf", "transparency.epub"],
 "toc": {
-"collapse": "subsection"
+"collapse": "section"
 }
 });
 });

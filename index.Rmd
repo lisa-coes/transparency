@@ -1,13 +1,19 @@
 ---
 title: "Transparencia y Reproducibilidad en Investigación Social"
-author: "Julio Iturra y Martín Venegas"
-date: "`r Sys.Date()`"
+subtitle: "<center>Documento de trabajo</center>"
+author: "Investigador a cargo: Juan Carlos Castillo <br> Asistente de investigación: Julio Iturra <br> Pasante: Martín Venegas Márquez"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "Un breve manual sobre la transparencia y reproducibilidad en las ciencias sociales."
+description: "Documento de trabajo del equipo <b>Transparencia y Reproducibilidad </b> para el Laboratorio de Ciencia Social Abierta"
+favicon: images/lisa.ico
+cover-image: images/lisa-complete.png
+github-repo: lisa-coes/transparency
+url: https://github.com/lisa-coes/transparency
+always_allow_html: yes
 ---
 
 # Introducción {#intro}
