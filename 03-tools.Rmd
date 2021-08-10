@@ -1,3 +1,5 @@
+
+
 # Herramientas para la transparencia y la reproducibilidad
 
 ## Preregistros
@@ -176,6 +178,24 @@ Las preguntas son bastante auto explicativas, pero no está de más entregar alg
 
 ## Flujos de trabajos reproducibles.
 
+```{r include=FALSE}
+if (!require("pacman")) install.packages("pacman") # instalar pacman
+pacman::p_load(dplyr,       # Manipulacion de datos 
+               sjmisc,      # descriptivos y frecuencias
+               sjPlot,      # tablas, plots y descriptivos
+               summarytools,# resumen de dataframe
+               texreg,      # tablas de regresion
+               knitr,       # tablas kable
+               kableExtra,  # tablas kable personalizadas
+               ggplot2,     # plots
+               corrplot,    # matrices correlaciones
+               webshot     # tomar screenshot de html
+               )
+
+load("input/data/proc/datos_proc.RData") # Cargar la base de datos directo desde dataverse
+```
+
+
 
 ### Introducción
 
@@ -223,7 +243,37 @@ El nivel principal corresponde al nivel base donde se encuentra toda la document
 1. Detalle del nivel principal y las subcarpetas organizadas según su contenido. Una manera amigable de representar esta estructura es a través de un “árbol de directorios”, el cual ilustra la jerarquía de las carpetas y los principales archivos contenidos. 
 
 
-[AQUI ARBOL DE DIRECTORIOS]
+```
+repro-lisa/
+│
+│   readme.md 
+│   paper.Rmd 
+│
+├───input: (archivos de datos y utilidades)
+│   │
+│   ├───bib (subcarpeta  de input con documentos de bibliografía)
+│   │
+│   ├───data (subcarpeta de input con datos originales y procesados, junto con documentación)
+│   │   ├───original (datos originales del estudio)
+│   │   │   │   
+│   │   │   └───documentacion (documentación de datos originales)
+│   │   │
+│   │   └───proc
+│   │       │   
+│   │       └───documentacion (documentación de datos procesados)
+│   │
+│   ├───images (subcarpeta de input con imágenes externas)
+│   │
+│   └───prereg (subcarpeta de input con documentación para preregistro)
+│
+├───procesamiento: (rutinas de código de preparación y análisis de datos)
+│
+└───output: (resultados de análisis en figuras y tablas)  
+    ├───imagenes (subcarpeta de output para guardar figuras)
+    │
+    └───tablas (subcarpeta de output para guardar tablas)
+```
+
 
 
 > Tip: Cómog enerar un directory tree automatizado en [Windows](t.ly/c58k),[linux](t.ly/WlMC) y [MacOS](t.ly/ZCXK)
@@ -305,6 +355,40 @@ En el caso de no emplear imágenes externas, simplemente se puede omitir esta se
 Para toda la documentación que refiere al pre-registro de un estudio, se sugiere emplear una plantilla preestablecida para dicho propósito (ver Preregistros [LINK]). Para la presentación de la documentación referida al pre-registro se sugiere emplear un documento que lleve de nombre “preregistro.pdf”. 
 
 En el caso de no haber pre-registrado el estudio, simplemente se puede omitir esta sección.
+
+
+**Resumen de presentación**
+
+```
+├───input: 
+│   │   readme-input.md 
+│   │
+│   ├───bib 
+│   │       referencias.bib
+│   │       apa6.csl
+│   │
+│   ├───data 
+│   │   ├───original 
+│   │   │   │   ELSOC_W01_v4.01_R.RData
+│   │   │   └───documentacion 
+│   │   │                   codebook_W01_S2016_ESP.pdf
+│   │   │                   Questionnaire_W01_S2016_ESP.pdf
+│   │   │                   User_Manual_ELSOC_Wave_01.pdf        
+│   │   │
+│   │   └───proc
+│   │       │   datos_proc.RData
+│   │       └───documentacion 
+│   │                       codebook_datos_proc.pdf
+│   │
+│   ├───images 
+│   │       logo-elsoc.png
+│   │
+│   └───prereg 
+│           preregistro.Rmd 
+│           preregistro.pdf 
+```
+
+
 
 #### II. Procesamiento
 
@@ -460,13 +544,13 @@ En R, esto lo podemos hacer de dos maneras. La primera es que, cuando trabajamos
 Al hacer esto, R irá ordenando los títulos de forma en la que vayan apareciendo en el script, como se ve en la Figura N° \@ref(fig:titulosscript).
 
 ```{r titulosscript, echo=FALSE, fig.cap="Ventana de script con el recuadro de títulos", fig.align = 'center', out.width = '100%'}
-# knitr::include_graphics(path = "docs/images/titulosscript.png")
+knitr::include_graphics(path = "docs/images/titulosscript.png")
 ```
     
 La segunda forma de ordenar el flujo a través del trabajo con documentos dinámicos, específicamente R Markdown. R Markdown es un lenguaje que combina código en R y escritura en texto plano Markdown. Para ordenar los títulos del flujo, podríamos usar los gatos ("#") que denotan jerarquía de títulos en Markdown. Recomendamos usar los gatos "#" para subtitular las variables, y los pasos del flujo especificarlos con un comentario dentro del chunk. Ejemplo:
 
 
-### Sexo {-}
+###### Sexo {-}
 
 ```{r}
 # Descriptivo inicial
@@ -510,8 +594,195 @@ Estando en conocimiento del funcionamiento de las rutas relativas, el código pa
 save(elsoc_proc,file = "../input/data/proc/datos_proc.Rdata")
 ```
 
+###### Documento de análisis de datos {-}
+
+Una vez contamos con nuestra base de datos procesada, es hora de la acción. En la sección del análisis de datos se procede a elaborar todas las tablas, gráficos, pruebas estadísticas etc. que vayan a ser introducidos en el artículo final. Es importante que se piense en este documento cómo un reporte de análisis en sí mismo, es decir, debe estar dirigido al público y no solo ser un documento de trabajo interno para el equipo de investigación. 
+
+Al igual que para la sección de procesamiento de datos, aquí también recomendamos un flujo de trabajo para hacer el código reproducible y eficiente. Dividimos el flujo en dos secciones, primero, una que contenga los análisis necesarios para probar las hipótesis de investigación. Segundo, una sección con análisis secundarios y/o exploratorios que sean relevantes para lo que el artículo busca plantear. Veremos esto con un poco más de detalle.
+
+###### Flujo para el documento de procesamiento de datos {-}
+
+**Análisis para el artículo**
+
+En esta parte del flujo, se espera trabajar con las variables que forman parte de las hipótesis de investigación, efectuando dos importantes pasos. El primer paso consiste en la descripción de variables y el segundo en el contraste de hipótesis de las mismas.
+
+** Paso 1: Descripción de las variables:** En concreto, en este paso efectuamos al menos dos actividades. Primero, comenzamos por elaborar la **tabla general de descriptivos** que suele introducirse en la sección de método en un reporte de investigación. Recomendamos introducir esta tabla para que el lector conozca en detalle cómo se distribuyen las variables importantes de la muestra. En R, existen muchos paquetes que permiten elaborar este tipo de tabla, de los cuales mencionaremos tres y uno de ellos será el que recomendamos.
+
+La función `stargazer` del paquete con el mismo nombre permite mostrar las medidas de tendencia central y las medidas de dispersión de la base de datos que introducimos. El código y una demostración del output es el siguiente:
+
+```{r}
+stargazer::stargazer(elsoc_proc,type = "text")
+```
+La función `descr` de la librería `sjmisc` también muestra los descriptivos de una base de datos:
+
+```{r}
+sjmisc::descr(elsoc_proc$ess)
+```
+Una forma de crearla de forma más estética es especificar los estadísticos que queremos visualizar y combinar la función `descr` con la función `kable` de la librería del mismo nombre. Esto permite elaborar una tabla apta para formato HTML.
+```{r}
+sjmisc::descr(elsoc_proc$ess,
+      show = c("label","range", "mean", "sd", "NA.prc", "n"))%>%
+      kable(.,"markdown")
+```
+
+La última forma de elaborar una tabla de descriptivos general es utilizar la función `dfsummary` de la librería `summarytools`. En contraste a las otras dos tablas, esta tabla abarca no solo medidas de tendencia central o dispersión, sino que también frecuencias de variables categóricas. Dicho de otra forma, esta función discrimina si las variables que estamos introduciendo son cuantitativas o categóricas y muestra los estadísticos correspondientes. Además, entrega una pequeña visualización de los datos: un gráfico de barras si las variables son categóricas y un histograma sí son cuantitativas. El código es el siguiente:
+
+```{r}
+df<- summarytools::dfSummary(elsoc_proc,
+               plain.ascii = FALSE,
+               style = "grid",
+               tmp.img.dir = "/tmp",
+               graph.magnif = 0.75,
+               headings = F,  # encabezado
+               varnumbers = F, # num variable
+               labels.col = T, # etiquetas
+               na.col = F,    # missing
+               graph.col = T, # plot
+               valid.col = T, # n valido
+               col.widths = c(5,10,10,10,10)
+               )
+df$Variable <- NULL        # Borrar variable column
+view(df,method = "render") # Visualizar tabla
+```
+
+La segunda actividad que podemos hacer en este paso del análisis de datos es **explorar las relaciones entre variables**. Acá las tablas o gráficos que elaboremos dependen de la naturaleza de las variables, donde:
+
+* Relación entre dos variables categóricas: tabla de contingencia
+* Relación entre una variable categórica y una continua: tabla de promedios por cada categoría
+* Relación entre dos variables continuas: correlaciones.
+
+La función `sjt.xtab` de la librería `sjPlot` construye de forma eficiente y estética una tabla de contingencia entre las dos variables señaladas. Además, muestra el valor relativo a la prueba de Chi2 en caso de que sea importante efectuar una prueba de hipótesis entre las variables expuestas en la tabla. 
+
+```{r}
+sjt.xtab(elsoc_proc$educ, elsoc_proc$sexo)
+```
+Se le pueden agregar los porcentajes si se considera necesario haciendo la siguiente modificación al código:
+
+```{r}
+sjt.xtab(elsoc_proc$educ, elsoc_proc$sexo, show.col.prc = TRUE)
+```
+La función `plot_grpfrq` de la librería `sjPlot` es una forma simple de graficar la distribución de una variable cuantitativa por cada categoría de la variable categórica. En el siguiente código se muestra cómo elaborar un gráfico de cajas por categoría:
+
+```{r}
+sjPlot::plot_grpfrq(elsoc_proc$ess,elsoc_proc$educ,
+            type = "box")
+```
+
+Por último, tenemos varias funciones para representar la relación entre dos variables cuantitativas (correlaciones). La función `sjt.corr()` de `sjPlot` es una forma eficiente y estética de presentar una tabla de correlaciones:
+
+```{r, eval = FALSE}
+sjt.corr(elsoc_proc)
+```
+Además, podemos representar una correlación a través de matrices de correlación con la función `corrplot.mixed()` de la librería `corrplot`, agregando un paso previo que es crear un objeto que contenga las correlaciones a graficar. Esta matriz contribuye a gráficar de forma más digerible la información al introducir colores y formas. Color rojo significa correlaciones negativas y color azul correlaciones positivas, a su vez, mientras más grande el círculo más grande el coeficiente de correlación.
+
+```{r, eval = FALSE}
+M <- cor(elsoc_proc) # Paso previo: crear un objeto que albergue las correlaciones con la función base de R “cor”.
+
+corrplot.mixed(M) # Graficar una matriz de correlación
+```
+Por último, también se puede visualizar la correlación entre dos variables cuantitativas a través de nubes de puntos. La función `plot_scatter()` de `sjPlot` es una buena opción para efectuar esta tarea:
+
+```{r}
+plot_scatter(elsoc_proc, edad, sexo)
+```
+
+**Paso 2: Contraste de hipótesis:**
+
+El segundo paso para el documento de análisis de datos es escribir el código que permitirá producir y reproducir las técnicas de análisis inferencial. 
+
+**Análisis secundario y/o exploratorio**
+
+Una vez concluidos los análisis que son necesarios para reportar en el artículo, podemos dedicar nuestro tiempo y esfuerzos en una sección secundaria o exploratoria. La existencia de esta sección depende de sí, efectivamente, es relevante para efectos de la investigación el efectuar algún análisis adicional. Un artículo eminentemente confirmatorio podría no necesitar una sección específica. Sin embargo, nuestro punto es que, para efectos de claridad y transparencia del proceso de investigación, es importante dejar por separado todo análisis que sea adicional al análisis principal. Además, esto permite ser más eficiente en la preparación del material suplementario en caso de que una revista lo requiera.
+
+Recomendamos el mismo flujo que vimos para la sección de análisis principal: descriptivos y contrastes de hipótesis.
+
+```{r produccion2, echo=FALSE, fig.cap="Flujo de trabajo para procesamiento y análisis de datos", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "images/produccion2.png")
+```
+
+###### Buenas prácticas {-}
+
+Terminaremos esta sección de procesamiento listando algunas buenas prácticas necesarias para asegurar la reproducibilidad de ambos documentos descritos:
+
+* Nunca hacer trabajo manual, siempre automatizar el proceso en código fácilmente leíble. Esto implica: evitar a toda costa el uso de softwares que no permitan la reproducibilidad (e.g. Microsoft Excel)
+
+* Asegurarse que el código siempre produzca el mismo resultado. Un ejemplo es cuando por algún tipo de análisis se necesitan generar números aleatorios. En R, para poder reproducir la generación de esos números aleatorios se utiliza la función `set.seed()`.
+
+* Trabajar con scripts. Para poder automatizar el procesamiento y análisis de los datos, la principal recomendación es trabajar con documentos “script” que albergan el código y permiten su rápida ejecución. En el caso de R, se pueden utilizar documentos .R.
+
+* Escribir con minúscula, sin espacios, sin ñ y sin tildes. Dos razones para esto, primero es que R está construido en base al idioma inglés, por lo que el utilizar “ñ” o tildes puede generar errores en la reproducción del código. Segundo, R es _case sensitive_, lo que significa que reconoce si el código está escrito con mayúsculas o con minúsculas. Sin embargo, no todos los softwares cumplen con esta característica, por lo que a modo de recomendación general no se incluyen mayúsculas en partes importantes del código. Por ejemplo, que lo único que diferencia dos variables sea una mayúscula.
+
+* Indentar el código. La indentación es una característica del trabajo con código en general (no solo a nivel de software estadístico) y se refiere a la jerarquía en los niveles del código. En R, la recomendación es que por cada jerarquía de código se añaden dos espacios. Indentar permite una lectura más fácil del código. Uno de los ejemplos más conocidos es la elaboración de funciones condicionales de tipo `if-else`.
+
+* Comentar el código. Cómo señalamos a lo largo de la explicación, comentar el código es sustancial para que cualquier persona no asociada al proyecto (o incluso uno mismo en el futuro) pueda entender para qué sirve cada función y reproducir los documentos sin problemas.
+
+* Especificar las versiones de paquetes. Los paquetes están mejorando día a día, es por eso que a veces un código elaborado bajo cierta versión podría no funcionar con versiones futuras (e.g. que cambie el nombre de una función para la elaboración de tablas). Para que esto no sea un problema, siempre se recomienda utilizar la función `sessionInfo()` la cual entrega toda la información de versiones, tanto del software cómo de los paquetes. La recomendación es poner el output de esta función cómo parte del script, con tal de que quien lee el código pueda saber en detalle con qué paquetes y qué versiones se construyó el código. Otra recomendación un tanto más avanzada es fijar las versiones de los paquetes utilizados en el script a través de paquetes especializados. Un ejemplo es `groundhog`: https://groundhogr.com/.
+
+* Elaborar código autocontenido. El código autocontenido es quizás el ápice de la reproducibilidad en el código, ya que no solamente es el documento el que es reproducible en sí mismo, sino que cada bloque de código. Esto implica que cada bloque de código no depende de otro: por ejemplo, elaborar una tabla con la función `stargazer()` no depende de que hayamos cargado el paquete al principio del documento, sino que el comando para cargar el paquete está dentro del mismo bloque de código. Veremos esto con más detalle en el ejemplo reproducible.
+
+* Nombrar variables: nombres sustantivos y cortos. Esto es una recomendación que dimos durante la explicación, pero es bueno recordarla. Para que el código sea lo más fácilmente trabajable, debemos renombrar correctamente las variables que estamos trabajando.
+
+* Etiquetado o buen diccionario de variables. Además de renombrar las variables, recomendamos etiquetar de forma sustantiva las variables que se utilizarán y/o hacer un buen diccionario de ellas.
+
+* Utilizar UTF8. Si bien el lenguaje nativo de R es el inglés, sí se está escribiendo en español estipular siempre que se pueda que el formato del código sea UTF-8. El formato UTF-8 acepta caracteres especiales del español (cómo tildes y “ñ”), lo cual es especialmente relevante que funcione cuando se visualizan tablas o gráficos.
+
+* Documentos dinámicos. Los documentos dinámicos son textos que combinan tanto código cómo texto en formato plano. En el caso de R, esto se logra mediante los documentos R Markdown. Recomendamos utilizar este formato para el flujo de trabajo propuesto acá ya que más compatible con la reproducibilidad y la eficiencia en el trabajo con datos, en contraste al uso de scripts (.R)
+
+* Trabajar con rutas relativas. Cómo vimos, las rutas relativas permiten cargar o guardar archivos en directorios específicos sin necesidad de estipular la dirección local del computador. Esto contribuye a la reproducibilidad.
+
+* Usar StackOverflow. Stack Overflow es un foro donde programadores, ingenieros y en general cualquier que utiliza código en su día a día puede hacer o responder preguntas respecto a código. Es una gran herramienta para cuando los códigos no funcionan.
+
+##### b) Documentación de Procesamiento 
+
+Para una correcta comprensión de la subcarpeta de procesamiento, sus archivos y roles, es importante tener una descripción adecuada de cada una de sus partes. Al estar mayormente orientado a la programación de rutinas de código, los documentos de preparación y análisis debieran contener la mayor parte de la información para una correcta comprensión del procedimiento.
+
+No obstante, es relevante precisar de qué manera estos documentos se vinculan con otros archivos dentro del proyecto. Por un lado, el documento de preparación requiere de una fuente de datos inicial, por tanto está directamente relacionada con la carpeta Input y la subcarpeta de datos originales (`input/data/original`). Por otro lado, el documento de análisis requiere de una fuente de datos procesada, por tanto está directamente relacionada con la carpeta Input y la subcarpeta de datos procesados (`input/data/proc`). Además, se debe tener en consideración que los productos del análisis, es decir, los resultados de la investigación, pueden ser reportados en forma de figuras o tablas, las cuales son almacenadas en la carpeta Output y en las subcarpetas imágenes y tablas, respectivamente.
+
+Para una correcta ejecución de las rutinas de código, es importante describir adecuadamente la relación entre los archivos de preparación y análisis. Para ello, se sugiere incorporar un archivo de nombre “readme-proc.md/txt/pdf”, en donde se describa brevemente dicha vinculación. Para ello sugerimos los siguientes puntos a describir:
+
+1. Para la ejecución de la preparación, precisar la ubicación de la o las fuentes de datos originales. (p.ej. “input/data/original/original-data.dta”)
+2. Para el cierre de la preparación, precisar la ruta donde se deben almacenar la base de datos procesada y su extensión (p.ej. “input/data/original/proc-data.RData”)
+3. Para la ejecución de los análisis se debe precisar el origen de la base procesada que fue creada en el punto 2.
+. Para los archivos de resultados provenientes del análisis de los datos, tales como figuras o tablas, debemos precisar la ruta donde se almacenarán y su nombre. 
+
+**Resumen de presentación** 
+
+```
+├───procesamiento: 
+        readme-proc.md 
+        proc_analisis.Rmd
+        proc_preparacion.Rmd
+```
 
 
 
+
+#### III. Output
+
+
+##### a) Explicación de Output 
+
+En la sección de output se espera albergar toda tabla, figura o gráfico relevante producto del código de análisis de datos. Para esto, el protocolo IPO propone dos carpetas, una de imágenes y otra de tablas. La idea de esta carpeta es que podamos guardar toda figura que vaya a ser parte del documento final del artículo.
+
+##### b) Documentación de Output 
+
+Como se ha señalado anteriormente, tenemos dos tipos de archivos contenidos dentro de las subcarpetas de Output. Para una correcta identificación de cada uno de estos elementos sugerimos seguir las siguientes indicaciones:
+
+a. Para las imágenes, sugerimos usar nombres breves e incorporar numeración. Por ejemplo “figura01.png”, según el orden de aparición en la publicación.
+b. Para el caso de los cuadros o tablas, existen distintas extensiones para almacenarlas como archivos independientes (tex/txt/md/html/xls). Para ello, sugerimos emplear nombres cortos e incorporar numeración. Por ejemplo, “tabla01.xls”, según el orden de aparición en la publicación. 
+
+**Resumen de presentación**
+
+```
+└───output:  
+    ├───imagenes 
+    │       figura01.png
+    │       figura02.png
+    │
+    └───tablas 
+            tabla01.xls
+            tabla02.xls
+
+```
 
 
