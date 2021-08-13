@@ -18,7 +18,7 @@ options(knitr.kable.NA = '') # NA en kable = ''
 
 Esta sección tratará sobre la transparencia en la investigación científica, haciendo énfasis en las ciencias sociales. Nuestro objetivo es poder comunicar de forma clara y concisa tres puntos: a) qué es la transparencia, b) por qué la necesitamos y c) cómo podemos adoptarla. En esta sección profundizaremos en los dos primeros puntos. Respecto al tercer punto, entregaremos algunos consejos y recomendaciones que se han dado en la literatura, para después, en la siguiente sección, profundizar en torno a las herramientas que nos permitirían adoptar la transparencia. La tónica de este escrito es la práctica, es decir; todo lo que presentemos acá tiene la finalidad de servir de camino para poder aprender y aprehender herramientas que promueven la transparencia. Dicho esto, comencemos con los dos primeros puntos.
 
-## ¿Qué es la transparencia? Un concepto multidimensional
+## ¿Qué es la transparencia?
 
 Nuestro punto de partida es que la transparencia es un concepto amplio y multidimensional. Por eso, antes de adentrarnos en sus dimensiones, comencemos con una definición de diccionario. Según la Real Academia Española la transparencia es la cualidad de un cuerpo que permite ver a través de él. Un ejemplo para llevar esta definición a la práctica es el vidrio de una ventana. La transparencia del vidrio nos permite ver con claridad lo que está el otro lado, como por ejemplo un paisaje. No obstante, ¿qué ocurre cuándo la transparencia del vidrio se va perdiendo? La respuesta es simple, pero potente: la claridad con la que veíamos el paisaje se va difuminando. Esta pérdida de claridad puede dar como resultado que nuestra observación del paisaje se torne ambigua y errónea, o dicho de otro modo, cada vez será más difícil analizar el paisaje. Desde este ejemplo se podría plantear un símil con la ciencia; el paisaje equivale al proceso de producción científica, y el vidrio representa la claridad con la que podemos analizar este proceso. De esta manera, la base de la idea de transparencia es que permite analizar con claridad un fenómeno, una situación, o en este caso, un proceso.
 
@@ -66,7 +66,7 @@ kable(tabtax,table_format,booktabs = T, linesep = "",col.names = cnames, caption
 
 En síntesis, un proceso de investigación transparente es uno que se puede evaluar con claridad y facilidad. La taxonomía de @elliott_Taxonomy_2020 nos ayuda a comprender la diversidad de dimensiones en las que se puede pensar la idea de transparencia. Ahora conocemos un poco más sobre la transparencia y lo que han dicho algunas voces de la literatura, no obstante, probablemente esté pensando algo como "Sí, tiene sentido que la transparencia contribuya a una ciencia mejor, pero ¿de verdad vale el esfuerzo y el tiempo de adoptar todas estas prácticas? La ciencia parece estar bien como está" Es un pensamiento razonable, sin embargo, la comunidad de adherentes a la ciencia abierta y la literatura asociada han adoptado el discurso de que efectivamente es necesario cambiar la forma que estamos haciendo hoy en día. Ha emergido la narrativa de que la ciencia está en crisis.
 
-## ¿Crisis en las ciencias?
+### ¿Crisis en las ciencias? {-}
 
 En los últimos años, ha venido tomando fuerza la idea de que existe una crisis en la ciencia. Esta idea se basa en el diagnóstico de que gran parte de los artículos científicos en distintas disciplinas no son posibles de reproducir ni replicar [e.g. @wilson_Replication_1973; @camerer_Evaluating_2018]. Tanto la reproducibilidad (emplear el mismo diseño y datos para reproducir los hallazgos de un artículo) o la replicabilidad (emplear el mismo diseño y distintos datos para obtener los mismos resultados) son componentes centrales de la ciencia. Gran parte del avance del conocimiento científico recae en la verificabilidad de sus hallazgos, por lo que si estos no se pueden poner a prueba es más difícil confiar en la ciencia. La pregunta es ¿existe realmente una crisis en las ciencias?
 
@@ -88,11 +88,11 @@ Habiéndonos situado dentro del concepto de integridad en la investigación, pod
 
 Comprendidos ambos conceptos, veamos las situaciones que podrían categorizarse como FFP y las que podrían concebirse como QRP.
 
-### Mala conducta académica (FFP)
+### Mala conducta académica (FFP) {-}
 
 La mala conducta académica suelen ser situaciones polémicas y que muchas veces alcanzan gran cobertura mediática. El libro de @abrilruiz_Manzanas_2019 hace una revisión de una serie de situaciones, en distintas disciplinas y años, en las que investigadores han sido descubiertos cometiendo prácticas que atentan directamente a la ciencia. Las situaciones son variadas, existen casos de manipulación de imágenes, exageración de registros de laboratorio, o de plano la invención de conjuntos de datos enteros. En esta sección veremos el caso de Diderik Stapel como ejemplo de malas prácticas de investigación y plantearemos la relación que tiene con la transparencia en la investigación.
 
-#### Diderik Stapel
+#### El caso de Diderik Stapel {-}
 
 Probablemente, el caso de Diderik Stapel sea uno de los más emblemáticos y representativos de este problema. Diderik Stapel era un investigador de la _Tilburg University_ que se dedicaba al campo de la psicología social. Su carrera se caracterizó por una trayectoria ejemplar, obtuvo su M.A en psicología y comunicaciones el año 1991, se doctoró en psicología social el año 1997 y trabajó como profesor asociado primero en la _University of Gronigen_ (2000-2006) y dede el 2006 en la Tilburg University. Fue fundador del _Tilburg Institute for Behavioral Economics Research_, del cuál el 2010 se convirtió en decano. Así también, fue galardonado con el premio a la trayectoria académica por la _Social of Experimental Social Psychology_. En breve, Stapel era una figura de alto estatus en el mundo académico, entre 1995 y 2015 publicó aproximadamente 150 artículos en revistas científicas, algunas de las más prestigiosas (e.g. _Science_). Sin embargo, 	el año 2011 se confirmó que gran parte de su trayectoria académica era una farsa.
 
@@ -102,7 +102,7 @@ Los artículos periodísticos que han profundizado en el caso han relatado parte
 
 El caso de Stapel deja un punto importante sobre la mesa: la falta de transparencia en el proceso investigativo dio cabida a la mala conducta académica. Cómo nadie más colaboraba con el procesamiento de datos, ni tampoco parecía extraño que así fuera, las oportunidades para la falsificación de los datos estaban abiertas. Ahora, esta no es necesariamente una relación de causalidad, la falta de transparencia no tiene por qué terminar en conductas como fabricación o falsificación de datos. Sin embargo, tal y como lo argumentan @oboyle_Chrysalis_2017 si son una oportunidad para violaciones a la integridad científica más sutiles, tales como las QRP.
 
-### Prácticas cuestionables de investigación (QRP)
+### Prácticas cuestionables de investigación (QRP) {-}
 
 Recordemos, las QRP son prácticas que en si mismas no dañan directamente la empresa científica, pero si tienen el potencial de hacerlo. Son prácticas que alteran el correcto funcionamiento del método científico. En la literatura, existen una variedad de términos que se utilizan para describir las prácticas cuestionables, así como también distintas listas de prácticas que han emitido instituciones. @abrilruiz_Manzanas_2019 hace una recopilación y traducción de distintos códigos de conducta de distintas universidades y organismos, el cuál nosotros sistematizamos en la Tabla N° \@ref(tab:tabqrp). La tabla muestra un conjunto de prácticas divididos en cuatro categorías, de acuerdo con si las prácticas tienen que ver con: el diseño y el procesamiento de los datos, la redacción y el reporte de los resultados, temas de citación y uso de ideas ajenas y, por último, sobre relaciones con otros actores en el campo de la ciencia. Esta no es una lista exhaustiva de las QRP, sino que son solo algunas de las más comunes.
 
@@ -148,7 +148,7 @@ El _p-hacking_ también contribuye a sesgar cuerpos enteros de literatura. Para 
 
 Por último, pero no menos importante existe la práctica del _HARKing_. El nombre es una nomenclatura en lengua inglesa: _Hypothesizing After the Results are Known_, que literalmente significa establecer las hipótesis del estudio una vez que se conocen los resultados. El principal problema de esta práctica es que confunde los dos tipos de razonamiento que están a la base de la ciencia: el exploratorio y el confirmatorio. El objetivo principal del razonamiento exploratorio es plantear hipótesis a partir de un análisis de datos. En cambio, el razonamiento confirmatorio busca plantear hipótesis basado en teoría y contrastar esas hipótesis con datos empíricos. Como señala @nosek_preregistration_2018, cuando se confunden ambos tipos de análisis y se hace pasar un razonamiento exploratorio como confirmatorio se está cometiendo un sesgo inherente, ya que se está generando un razonamiento circular: se plantean hipótesis a partir del comportamiento de los datos y se confirman las hipótesis con esos mismos datos.
 
-## ¿Que podemos hacer?
+## ¿Qué se ha hecho? 
 
 Tanto en las ciencias sociales, como en otras disciplinas han ido emergiendo una variedad de recomendaciones que contribuyen a la adopción de la transparencia. Por ejemplo, @cruwell_Easy_2018 propone formar investigadores y estudiantes a partir de la promoción de siete principales tópicos: entender la ciencia abierta; acceso abierto; la importancia de los datos, material y código abierto, los análisis reproducibles; los pre-registros; la replicación y, por último, la enseñanza de la ciencia abierta. Cada uno de estos tópicos son un paso para lograr avanzar hacia una ciencia más abierta y transparente. De forma similar, @miguel_Promoting_2014 enfatiza en tres ideas: el _disclosure_ (divulgación), los pre-registros y los datos y materiales abiertos. La divulgación consta de que los investigadores deben declarar todo tipo de procesamiento realizada a los datos y detallar como se llégó a las muestras finales. Los preregistros son una forma de ser más transparente con los procedimientos y dividir los tipos de formulación de hipótesis. Los datos y materiales abiertos permiten que otros investigadores puedan reproducir el trabajo, hacer otras pruebas de hipótesis, identificar malas prácticas etc. También @lindsay_Seven_2020 discute los efectos que tienen el sesgo de publicación y otras prácticas similares en la credibilidad de la ciencia, proponiendo siete pasos para mejorar la transparencia: decir la verdad, por ejemplo, si la idea de investigación surgió analizando datos plantearlo de esa manera; evaluar la comprensión de la estadística inferencial; estandarizar la aproximación para probar las hipótesis, por ejemplo, realizar un plan de análisis; hacer un manual de laboratorio (en el caso de diseños experimentales); hacer abiertos los materiales, datos y análisis; abordar las limitaciones de la generalidad de las conclusiones; y por último, considerar enfoques colaborativos para conducir investigaciones. A su vez, @oboyle_Chrysalis_2017 proponen tres simples consejos para hacer la ciencia más transparente: incluir una clausula ética en el envío de manuscritos que declaren no haber cometido QRP, qué todo artículo original (e.g. tesis doctoral) debe estar disponible para descarga y que las revistas cuenten con un espacio dedicado a replicación.
 
@@ -168,3 +168,174 @@ A grandes rasgos, el principio de citación propone que las normas de citado deb
 Cada uno de estos principios cuenta con tres niveles, que sirven para medir el grado de inclusión de la transparencia por parte de una revista científica [ver @nosek_Promoting_2015 para detalle]. La adopción de prácticas transparentes va desde el nivel 1, siendo lo menos transparente, hasta el nivel 3 siendo lo más transparente. Se añade un nivel 0 que no cumple los estándares de transparencia con la finalidad de tener una comparación. Por ejemplo, para los estándares de transparencia del método de análisis (código), el nivel 1 dicta que las revistas deben solicitar la existencia del código de análisis, en cambio, el nivel 3 es más estricto en plantear que el código de análisis debe estar almacenado en un repositorio confiable y que el análisis será reproducido durante el proceso de revisión. El mismo método se puede aplicar para la el preregistro del plan de análisis. En el nivel 1 las revistas promueven el uso de preregistros, en cambio, en el nivel 3 los preregistros son obligatorios y también reconocidos. En suma, las _TOP Guideliness_ son una iniciativa que contribuye a la apertura en la ciencia proponiendo nuevas prácticas para los requerimientos de las revistas.
 
 Como podemos ver, en general las recomendaciones sobre transparencia giran en torno a los preregistros, los datos y materiales abiertos y la replicación. En la siguiente sección profundizaremos en los preregistros como una forma de aumentar la transparencia durante el proceso de investigación.
+
+## Herramientas para los diseños transparentes
+
+### Preregistros
+
+Los preregistros son una marca temporal sobre las decisiones del diseño, el método y el análisis de un artículo científico y se suelen hacer antes del levantamiento de datos [@stewart_Preregistration_2020]. Básicamente, preregistrar un artículo o un proyecto implica que un grupo de investigadores dejarán por escrito una pauta de investigación a la cual se atendrán lo más posible cuando desarrollen la investigación, especialmente la recopilación y el análisis de los datos. Ahora ¿por qué habría de hacer algo así? Llevar a cabo una investigación ya es lo suficientemente complejo como para añadirle una tarea adicional. La respuesta es que, cómo señalamos en secciones anteriores, los preregistros son una herramienta que permite hacerle frente a las QRP y, a la larga, contribuir a la realización de una ciencia de mayor calidad.
+
+Ciertamente, los preregistros no son la respuesta a cada una de las QRP existentes, pero si son una herramienta eficaz para evitar las más frecuentes. En secciones anteriores hablamos de los sesgos de publicación, el p-hacking y el HARKing pues, cada uno de ellos puede ser evitado a partir de un preregistro. Primero, vimos que el sesgo de publicación se trataba de publicar selectivamente los resultados de investigación: resultados que no hayan sido significativos, o hipótesis que "no funcionaron" simplemente se omiten. Sin embargo, cuando existe un documento como un preregistro, el cual deja estipulado claramente las hipótesis que deben ponerse a prueba y los análisis que se emplearan para ello, se torna más difícil reportar selectivamente los resultados. Dicho de otra forma, cuando existe una pauta a la cual apegarse, la discrecionalidad en el reporte de los resultados disminuye. En el caso del p-hacking, el efecto del preregistro es parecido. Cómo vimos, el p hacking consistía en abusar de las pruebas estadísticas para obtener resultados significativos. "Abusar" en el sentido de buscar toda vía posible para obtener un valor p que confirme las hipótesis planteadas. El hecho de preregistrar el plan de análisis y el procesamiento que se le efectuara a las variables permite evitar este tipo de búsqueda intencionada: como hay una guía que seguir, cualquier desviación debe ser justificada. En esta misma línea, un preregistro evita el HARKing ya que las hipótesis están previamente planteadas y no es posible cambiarlas una vez que se han visto los resultados. En suma, el plantear un registro _a priori_ de la investigación, disminuye la flexibilidad que suele dar paso a las QRP.
+
+Si bien los preregistros pueden ser una herramienta en contra de las QRP, existen resquemores de los que es preciso hacerse cargo. Una de las principales preocupaciones es que el uso de preregistros tendería a coartar la creatividad y la producción de conocimiento exploratoria [@moore_Preregister_2016]. La lógica es que, como cada parte de la investigación debe ser registrada detalladamente previo a la recopilación, no queda espacio para la espontaneidad durante el análisis de datos. Nada puede estar más lejos del sentido de un preregistro. Más que inhibir la investigación exploratoria, el objetivo de especificar una pauta a priori es poder separar lo que es la investigación confirmatoria (pruebas de hipótesis) y la exploratoria (generación de hipótesis) [@nosek_preregistration_2018]. En ese sentido, es posible la investigación exploratoria bajo el modelo de preregistros, solo que hay que especificarla como tal. Una segunda creencia es que realizar un preregistro añade un nivel de escrutinio mayor del necesario, es decir, como se conoce cada detalle, la investigación se vuelve un blanco fácil de críticas. Sin embargo, la situación es todo lo contrario [@moore_Preregister_2016], por ejemplo, haber preregistrado un plan de análisis para una regresión logística binaria con datos que originalmente eran ordinales hará más creíble los resultados, ya que quienes evalúen la investigación tendrán pruebas de que el nivel de medición no se cambió solo para obtener resultados significativos. Una tercera idea en torno a los preregistros es que conllevan una gran inversión de tiempo y energía. Si bien es cierto que se añade un paso más al proceso de investigación, el avance en la temática ha logrado que existan una variedad de plantillas que hacen el proceso más rápido y eficiente. Desde una lógica racional, el tiempo que toma este paso nuevo en la investigación es un costo bajo en contraste a los beneficios que trae.
+
+Una característica principal de los preregistros es que deben ser efectuados previo a la recolección de datos. Este requisito es lo que permite asegurar la credibilidad de los resultados, ya que, si no hay datos que alterar, entonces las probabilidades de que ocurra una QRP son básicamente nulas. Generalmente, para las ciencias médicas o la psicología experimental (disciplinas donde cada vez se usan más los preregistros), esto no suele ser un problema ya que se utilizan diseños experimentales. Los diseños experimentales se apegan al método científico clásico: se plantean hipótesis basadas en la teoría, se diseña un experimento para probar esas hipótesis y luego se recopilan y analizan los datos para ver si dan soporte a las hipótesis planteadas. Sin embargo, ¿qué ocurre cuando trabajamos con datos preexistentes? En muchas disciplinas de las ciencias sociales los diseños experimentales son una pequeña fracción del conjunto de la literatura [e.g. según @card_Role_2011 en 2010, un 3% de los artículos en las mejores revistas de economía eran experimentales], donde lo que prima son los diseños observacionales, los que suelen trabajar con datos administrativos o generados a partir de censos o encuestas. A diferencia de los estudios experimentales, los cuales deben generar de primera fuente el experimento que les permita testear sus hipótesis, en los estudios observacionales se utilizan datos ya existentes, lo cual afecta al principal componente de credibilidad de los preregistros: nada puede asegurar que los datos fueron analizados antes de la escritura del preregistro y que, por ejemplo, las hipótesis se están planteando una vez conocidos los patrones significativos (HARKing). De ahí que nace la pregunta sobre la posibilidad (y la utilidad) de utilizar preregistros en estudios con datos preexistentes.
+
+En la literatura sobre preregistros se han discutido los desafíos que implica preregistrar estudios que utilicen datos preexistentes [e.g. @editors_Observational_2014]. Existen posturas que proponen que, en realidad, no existe una forma creíble para preregistrar este tipo de estudios [@christensen_Transparency_2018]. No obstante, otras posturas han profundizado en las situaciones en las que aún es posible preregistrar estudios con datos elaborados previamente. @burlig_Improving_2018 propone tres escenarios donde el preregistro de datos observacionales es valioso. El primero es, básicamente, cuando los investigadores que diseñaron la investigación generan sus propios datos, en este caso, los investigadores sí pueden elaborar un preregistro previo a la recolección de datos. El segundo escenario se da cuando se preregistra un estudio que tiene como objeto de interés un suceso que aún no ha ocurrido, lo que se conoce como estudios prospectivos. Por ejemplo, un grupo de investigadores puede estar interesado en el efecto que tendrá la introducción de una ley en las prácticas sociales, o el efecto de un tratado en las variaciones del PIB. Para esos casos, el preregistro aún mantiene su validez original ya que, si bien los datos ya existen, no es posible hacer los análisis antes del preregistro porque el evento de interés no ha ocurrido. El tercer escenario ocurre cuando los datos existen, pero no están abiertos al público. En estos casos, es la accesibilidad lo que determina la credibilidad del preregistro. Por ejemplo, el grupo de investigadores que elaboraron los datos pueden establecer que serán accesibles con previo contacto y que se solicitará un preregistro. Por ende, en orden de analizar los datos, los investigadores interesados deberán elaborar un preregistro para utilizar los datos. Según @mertens_Preregistration_2019, también se pueden adoptar ciertas prácticas para asegurar la credibilidad de un preregistro con datos secundarios. Dos de ellas son: que el grupo de investigadores que analiza los datos sea distinto e independiente de quien propuso el diseño de investigación y que el equipo realice sintaxis de análisis con datos simulados, con tal de demostrar que las hipótesis ya existían previas a acceder a los datos. En suma, lo que permite mantener el efecto "puro" de un preregistro, es que los datos no hayan sido observados por ningún integrante del grupo de investigación que los analizará [@nosek_preregistration_2018].
+
+El principio básico de un preregistro entonces es que los datos no deben haber sido observados previos al análisis. Sin embargo, según @nosek_preregistration_2018 aún pueden existir ciertos sesgos en el planteamiento de hipótesis a raíz de cosas como el reporte de resultados descriptivos de la base de datos o las recomendaciones sobre cómo aproximarse a la base de datos. Este tipo de influencias son un poco más sutiles y es difícil deshacerse completamente de ellas. Es por esto que, quizás la recomendación más transversal y a la vez simple para preregistrar análisis con datos secundarios, es ser sincero y detallado respecto a lo que se ha hecho y lo que no [@nosek_preregistration_2018]. Si es que se ha leído el reporte descriptivo sobre la base de datos, estipularlo como tal. Es preciso transparentar cualquier tipo de aproximación a los datos previo haberlos analizados. Para lograr este nivel de detalle y ser eficiente con los tiempos y la comunicación hacia otros investigadores, es que existen plantillas predeterminadas para preregistrar distintos tipos de artículos. A continuación, describiremos algunas de las más usadas.
+
+### Manos a la obra: cómo utilizar un preregistro
+
+En la práctica, preregistrar un artículo es básicamente sintetizar la información importante sobre nuestra investigación en una plantilla estandarizada y alojar ese documento en un lugar público. Por lo que el primer paso para elaborar un preregistro es elegir la plantilla correcta. Existen plantillas estandarizadas, que están estructuradas de tal forma que son útiles para preregistrar estudios de cualquier disciplina, así como también existen plantillas dedicadas a una disciplina o un conjunto de ellas. En la Tabla N° \@ref(tab:tabprereg) se pueden ver algunas de las plantillas más usadas según @stewart_Preregistration_2020. Primero está el conjunto de plantillas que ofrece el Open Science Framework (OSF) dependiendo de las características específicas del estudio. Luego, encontramos a la plantilla de AsPredicted que se caracteriza por su simpleza: son solo nueve preguntas que buscan recopilar la información sustancial para el preregistro de un artículo. También, están las plantillas de PROSPERO, ISRCTN y Bio-Protocol que se utilizan más en el campo de las ciencias biológicas o médicas. PROSPERO se focaliza en artículos de tipo _review_ que tengan relación con la medicina, en tanto IRCTN busca ser una primera instancia de registro para ensayos clínicos. Bio-Protocol por su parte busca dejar el registro de protocolos detallados en la investigación biológica, con tal de complementar la sección de Método en los artículos. Las plantillas de AEA RCT, RIDIE y EGAP están más relacionadas a las ciencias sociales y áreas afines. La AEA RCT se focaliza en diseños experimentales para ciencias sociales, en tanto RIDIE es una herramienta para evaluaciones de impacto. EGAP busca ser una plantilla específica para temas de gobernanza y política. Como podemos ver, todas las plantillas tienen su campo de aplicación, sin embargo, aquí nos centraremos en las dos más universales y conocidas: OSF y AsPredicted.
+
+```{r tabprereg, echo=FALSE}
+# Función para que las tablas renderizen tanto en html como pdf
+table_format = if(is_html_output()) { # Usar en argumento "format=" de kable
+  "html"
+} else if(is_latex_output()) {
+  "latex"
+}
+
+# Título tabla
+cap1 <- "Plantillas de preregistro"
+
+# Crear tabla
+tab01 <- read.csv(file = "input/tables/tabprereg.csv",header = 1,sep = ",",encoding = "UTF-8") # Leer .csv con estructura de la tabla
+cnames <- c("Plantilla","Proposito", "Discplina/Área") # Nombre de las columnas
+kable(tab01,table_format,booktabs = T, linesep = "",col.names = cnames, caption = cap1) %>%
+  kable_styling(
+    full_width = T,
+    latex_options = c("hold_position"), # Argumento para mantener posición de la tabla en esta sección del documento
+    position = "center",
+    font_size = 10,
+    bootstrap_options=c("striped", "bordered")) %>%
+  column_spec(column = 1, width = "5 cm", ) %>%
+  column_spec(column = 2,width = "5 cm") %>%
+  collapse_rows(columns = 1:2,valign = "middle") # Para colapsar filas con el mismo contenido
+```
+
+
+Como bien se ha señalado en otras partes de este libro, el Open Science Framework (OSF) es tanto una herramienta para la colaboración, que permite hacer públicos distintos tipos de proyectos; como un modelo de flujo de trabajo que hace más eficiente el proceso de investigación al centralizar herramientas como GitHub, Google Docs etc. Dentro de estas funciones se encuentra la el servicio de preregistros. En la línea de lo que hemos señalado hasta ahora, con este servicio OSF busca fomentar la transparencia y reproducibilidad en la investigación. Vamos viendo paso a paso como ingresar un preregistro en OSF.
+
+El primer paso es acceder a la sección especifica de preregistros de la página de OSF, la cual se encuentra en el siguiente link: https://osf.io/prereg/. Para usar este servicio es necesario tener una cuenta, cuestión que no profundizaremos aquí. Si entramos al link con una cuenta recién hecha, la apariencia de la página será algo como la Figura N° \@ref(fig:osfprereg1). En la página veremos una barra superior con opciones asociadas a la cuenta y en el centro veremos un gran botón azul con forma rectangular el cual nos da la opción de comenzar un preregistro. En el caso de acceder con una cuenta que ya tiene proyectos, OSF nos dará la opción de preregistrar un proyecto ya existente. Seleccionemos _Start a new preregistration_, le damos un nombre y hacemos click en _Continue_, lo que nos llevará a la siguiente página, representada en la Figura N° \@ref(fig:osfprereg2). En la página, podemos ver que hemos creado un proyecto nuevo en OSF, el cual nos da la opción de preregistrarlo haciendo click en el botón _New registration_.
+
+
+
+```{r osfprereg1, echo=FALSE, fig.cap="Preregistros en OSF", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/osfprereg1.png")
+```
+
+```{r osfprereg2, echo=FALSE, fig.cap="Preregistros en OSF 2", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/osfprereg2.png")
+```
+
+En la Figura N° \@ref(fig:osfprereg3) podemos ver dos cosas. Primero, la descripción de lo que está haciendo OSF al comenzar un nuevo preregistro, lo que en pocas palabras es una versión no modificable del proyecto al momento que hacemos el preregistro. Tal y como dice la página es una versión "congelada". En segundo lugar, también se aprecia una serie de opciones para preregistrar, estas son las plantillas que habíamos mencionado anteriormente. OSF nos ofrece distintas plantillas de acuerdo con el carácter que tiene nuestro estudio. Una breve descripción de cada una es la siguiente:
+
+
+- OSF Preregistration: Es la plantilla estándar, en la cual se hacen una serie de preguntas relativas al muestreo, diseño y planes de análisis.
+
+- Open-Ended Registration: Consiste en una síntesis narrativa de la investigación a preregistrar. No hay un minimo de palabras para el documento.
+
+- Qualitative Preregistration: Plantilla elaborada por la comunidad de investigadores cualitativos para preregistrar estudios cualitativos.
+
+- Secondary Data Preregistration: También consiste en una serie de preguntas relativas al muestro, diseño y planes de análisis, con algunas pequeñas variaciones.
+
+- Registered Report Protocol Preregistration: Hace unas cuantas preguntas relativas al estudio y permite adjuntar el manuscrito. Esta plantilla se utiliza cuando se está intentando publicar en una revista que adhiere al modelo de _Registered Reports_.
+
+- OSF-Standard Pre-Data Collection Registration: Plantilla que sigue el modelo estándar, pero que agrega algunas preguntas más específicas sobre recolección de datos. Por ejemplo, pregunta si la recolección de datos está en curso o si se ha hecho algún análisis de los datos hasta ahora.
+
+- Preregistration Template from AsPredicted.org: Plantilla estandarizada de AsPredicted. Simplifica el proceso de preregistro en 9 preguntas clave sobre el estudio.
+
+- Replication Recipe (Brandt et al., 2013): Post-Completion: Se trata de una plantilla para estudios de replicación, específicamente estudios que ya finalizaron.
+
+- Replication Recipe (Brandt et al., 2013): Pre-Registration: Se trata de una plantilla para estudios de replicación que aún no han comenzado.
+
+- Pre-Registration in Social Psychology (van 't Veer & Giner-Sorolla, 2016): Pre-Registration: Plantilla de preregistro para estudios específicamente de la subdisciplina Psicología Social.
+
+```{r osfprereg3, echo=FALSE, fig.cap="Preregistros en OSF", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/osfprereg3.png")
+```
+
+De todas estas plantillas veremos el detalle de tres de ellas: OSF Preregistration, Secondary Data Preregistration y Preregistration Template from AsPredicted.org.
+
+Una vez escojamos una plantilla, la página se verá como la Figura N°  \@ref(fig:osfprereg5). Esta sección es transversal a todas las plantillas y consiste en el registro de los metadatos. Específicamente, OSF nos solicitará que registremos:
+
+- Título del preregistro
+- Una breve descripción
+- Contribuyentes
+- La categoría. Generalmente está en categoría _Project_, pero dependiendo de lo que estemos preregistrando, podemos cambiarlo a _Data_, _Software_, _Analysis_, entre otros.
+- Areas discplinares, como _Arts and Humanities_, _Business_, _Social and Behavioral Sciences_ entre otras.
+- Tags. Los tags sirven para facilitar la búsqueda del preregistro
+
+```{r osfprereg5, echo=FALSE, fig.cap="Metadatos para preregistros", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/osfprereg5.png")
+```
+
+#### OSF Preregistration
+
+Esta plantilla incluye ocho tópicos para rellenar con la información del estudio, estos son:
+
+- Información del estudio: Principalmente solicita listar de forma concisa y detallada las hipótesis que serán puestas a prueba. Se solicita reportar si la hipótesis es direccional o no, y en el caso de serlo, especificar el sentido de la dirección. Si el estudio incluye moderaciones o mediaciones, plantearlas en hipótesis aparte.
+
+- Plan del diseño: En esta sección se hacen cuatro preguntas importantes. La primera es sobre el **tipo del estudio**, donde se solicita especificar si el estudio es de tipo experimental, observacional, un metaanálisis u otro. En segundo lugar, está el **_blinding_**, el cual trata sobre quienes están en conocimiento de las condiciones de tratamiento en el caso de un diseño experimental. En el caso de un diseño experimental no aplica. En tercer lugar, se pregunta sobre el **diseño del estudio**, donde se solicita la mayor cantidad de detalles posibles respecto a este tópico. Por último, se solicita especificar cuál será el tipo de **aleatorización** (en el caso de un diseño experimental).
+
+- Plan del muestreo: En esta sección, la plantilla requiere rellenar información respecto a la existencia de datos, los procedimientos de recolección de datos y sobre el tamaño de la muestra. En el caso de la existencia de datos, se nos solicita que marquemos de las siguientes situaciones la que más se acerca al estado de nuestro estudio:
+
+  * Registro previo a la creación de datos
+  * Registro previo a cualquier observación humana de los datos
+  * Registro previo a acceder a los datos
+  * Registro previo al análisis de los datos
+  * Registro tras el análisis de los datos
+
+  En el caso de trabajar con datos existentes la plantilla da una opción para detallar los pasos necesarios que se han tomado para asegurar que no conocemos el comportamiento de los datos. Por ejemplo, cómo es que se ha limitado la accesibilidad de los datos, o quiénes han revisado los datos y quienes no.
+
+  En lo que respecta a los procedimientos de análisis, la plantilla solicita especificar cómo es que se han recolectado los datos y cuáles han sido los criterios de exclusión. En el caso de muestras que involucren seres humanos, se deben reportar todo tipo de incentivos a la participación. Por último, se pregunta por el tamaño de muestra y si se ha realizado algún análisis de poder estadístico
+
+- Variables: En esta sección se preguntan tres cosas. La primera es sobre, en el caso de los estudios experimentales, cómo se manipularán los niveles de tratamiento de las variables. Segundo, la plantilla requiere especificar cómo es que se medirán las variables, tanto la variable dependiente como los predictores. En tercer lugar, en el caso de construir índices, se pide detallar lo más posible su construcción.
+
+
+- Plan de análisis: En esta sección se busca el mayor detalle posible para le plan de análisis con tal de que sirva de guía para la reproducción o replicación del artículo. Partiendo por los modelos estadísticos, la plantilla solicita especificar la herramienta principal de análisis de datos (e.g. regresión múltiple) en conjunto a las variables que se incluirán (dependientes, independientes, controles, términos de interacción etc.). Otro componente importante para especificar son las transformaciones a los datos, incluyendo recodificaciones, centrados o cualquier procedimiento que cambie el formato original de la variable. También, la plantilla solicita especificar cuáles serán los criterios de inferencia estadística (e.g. valores p o intervalos de confianza). Por último, la plantilla requiere especificar cómo se determinará la exclusión de datos, cómo se trabajarán los datos perdidos y detallar los análisis exploratorios en caso de que existiesen.
+
+- Otro: Esta es la última sección de la plantilla, donde se da la opción al investigador o investigadora de añadir cualquier información importante que hasta ahora no ha sido reportada.
+
+#### Secondary Data Preregistration
+
+Esta plantilla es similar a la que acabamos de revisar, la principal diferencia es que está enfocada en el preregistro de datos secundarios, por lo que todas las opciones que veíamos en la plantilla general de OSF que hacían referencia a datos primarios ya no existen. Recomendamos esta plantilla a investigadores que usen datos secundarios ya que hace más simple el proceso de preregistro al enfocarse en las preguntas que realmente se asemejan a la situación del investigador.
+
+La plantilla se compone de siete puntos. El primero también consiste en especificar los metadatos del estudio, como por ejemplo en nombre del proyecto, el área del conocimiento en el que se circunscribe etc.
+
+- Información del estudio: Básicamente implica especificar las preguntas y las hipótesis que orientan el estudio.
+
+- Descripción de los datos: Esta sección es característica de esta plantilla, ya que nos pregunta directamente sobre características de la base de datos a utilizar. En detalle, recaba información sobre el nombre de la base de datos, una descripción general de ella y cuál será el subconjunto de datos en caso de que corresponda. También se solicita especificar qué tipo de base de datos es (e.g. longitudinal), si es que existen restricciones para el acceso y describir el procedimiento de elaboración de la base de datos. Por último, se nos solicita adjuntar el libro de códigos correspondiente y si este no existe, adjuntar cualquier archivo de la base de datos que permita conocer su composición.
+
+- Variables: En esta sección las preguntas no son muy distintas de la plantilla que acabamos de revisar. En general, se solicita especificar la manipulación de las variables (no aplica para estudios observacionales), la forma de medición de las variables, la unidad de análisis y cuáles serán los procedimientos para tratar con casos perdidos y extremos.
+
+- Conocimiento de los datos: Esta sección es característica de esta plantilla. A grandes rasgos, se nos pide dos cosas. Primero, que listemos los documentos con los cuales hayamos trabajado y que estén basados en la base de datos que utilizaremos (e.g. publicaciones, _working papers_, presentaciones de conferencia). Segundo, reportar cualquier conocimiento previo que tengamos del uso de la base de datos, especialmente las variables que sean relevante para el análisis propuesto. Este conocimiento de la base puede venir de publicaciones previas, de reportes de resultados o del libro de códigos, por dar algunos ejemplos.
+
+- Análisis: En esta sección se pregunta sobre toda característica de nuestro análisis de datos, partiendo por el tipo de modelos estadístico que utilizaremos para probar las hipótesis. Se nos solicita que por cada hipótesis detallemos la herramienta de análisis. Luego, se nos preguntan detalles cómo: el tamaño de efecto de interés para nuestro análisis, el poder estadístico, los criterios de inferencia (e.g. valores p o factores bayesianos), las pruebas de robustez que se efectuarán y si es que realizaremos algún tipo de análisis exploratorio.
+
+#### AsPredicted
+
+La plantilla de AsPredicted es quizás una de las más conocidas para hacer preregistros, dado que está estandarizada y puede ser utilizada en cualquier disciplina. Esta plantilla la podemos encontrar tanto en OSF, como en la misma página de AsPredicted, en este caso, mostraremos cómo es el proceso en la página original.
+
+Partimos por entrar a la página de AsPredicted, donde veremos algo como la Figura N° \@ref(fig:asp). Acá se nos da la opción de crear un preregistro, de ver los que ya hemos hecho (si es que ese es el caso) y también una breve descripción de AsPredicted. A grandes rasgos, la página nos dice que AsPredicted es una plataforma que busca facilitar el preregistro de estudios por parte de los investigadores a través de nueve simples preguntas. La página genera un documento .pdf y una URL asociada. También, cuenta cómo funciona el preregistro. Básicamente, un autor elabora un preregistro de un estudio y los coautores reciben un mail para aprobar ese preregistro. Una vez aprobado por todos los autores, el preregistro queda alojado en la plataforma de manera privada, y no cambia hasta que un autor decida hacerlo público. Además, en caso de que el estudio entre en revisión por pares, se puede enviar una versión anónima del preregistro. Por último, nos entrega una recomendación sobre qué hacer en el caso de que el proceso de investigación no haya podido apegarse totalmente a lo predicho.
+
+```{r asp, echo=FALSE, fig.cap="Página de inicio de AsPredicted", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/asp.png")
+```
+
+Para elaborar un preregistro debemos hacer click en el rectángulo azul que dice _Create_. Una vez hecho eso, nos pedirá una dirección de email para continuar. Cuando ingresemos un email, nos enviará un enlace al email que hayamos ingresado, con ese enlace podremos comenzar el preregistro. Una vez hayamos entrado en el enlace, veremos la plantilla de preregistro. Lo primero que aparece es una sección donde debemos escribir los emails de los autores colaboradores del estudio. También, nos da la opción de añadir otros emails además del que hemos introducido. Una vez pasada esta parte, ya nos encontramos con las preguntas del preregistro, las cuales son las siguientes:
+
+1) Recogida de datos. ¿Se han recogido ya datos para este estudio?
+2) Hipótesis. ¿Cuál es la pregunta principal que se plantea o la hipótesis que se pone a prueba en este estudio?
+3) Variable dependiente. Describa la(s) variable(s) dependiente(s) clave especificando cómo se medirán.
+4) Condiciones. ¿Cuántos y qué condiciones se asignarán a los participantes?
+5) Análisis. Especifique exactamente qué análisis realizará para examinar la pregunta/hipótesis principal.
+6) Valores atípicos y exclusiones. Describa exactamente cómo se definirán y tratarán los valores atípicos, así como su(s) regla(s) precisa(s) para excluir las observaciones.
+7) Tamaño de la muestra. ¿Cuántas observaciones se recogerán o qué determinará el tamaño de la muestra?
+8) Otros. ¿Hay algo más que quiera preinscribir?
+9) Nombre. Poner un título a este preregistro de AsPredicted
+Finalmente. A efectos de registro, indíquenos el tipo de estudio que está preinscribiendo.
+
+Las preguntas son bastante auto explicativas, pero no está de más entregar algunos detalles adicionales. En la pregunta de recolección de datos, las opciones son tres: "Sí, se han recolectado datos", "No, no se han recolectado datos" y "Es complicado". Es importante mencionar que, en esta plantilla, la respuesta de que se han recolectado datos no es válida, por lo que si se está llevando a cabo un estudio con datos secundarios hay responder "Es complicado" y en la pregunta 8 de la plantilla especificar por qué este preregistro sigue siendo válido pese a que los datos son preexistentes. Otro detalle importante es que cada pregunta está pensada para ser respuesta en aproximadamente una oración. Esta plantilla tiene el objetivo de ser lo más eficiente posible, por lo que, en general, se recomienda que todo el documento no pase de los 3200 caracteres. Otro detalle que especificar es que la pregunta acerca del tipo de estudio que se está preregistrando también es semicerrada, tenemos las opciones de: "Proyecto de clase", "Experimento", "Encuesta", "Estudio observacional" y "Otro". Es responsabilidad de quien hace el preregistro el seleccionar la opción que más se asemeje a su situación. Por último, es importante señalar que el preregistro, al menos en la página de AsPredicted, solo puede ser rellenado en inglés, por lo que en caso de utilizar otro idioma solicitará traducirlo.

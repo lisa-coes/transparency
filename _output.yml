@@ -1,4 +1,5 @@
 bookdown::gitbook:
+  split_by: section
   highlight: tango
   css: assets/lisa.css
   pandoc_args: [ 
