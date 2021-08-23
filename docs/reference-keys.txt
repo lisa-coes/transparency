@@ -3,12 +3,14 @@ tab:tabtax
 fig:rcr
 fig:grad
 tab:tabqrp
+fig:significant
 tab:tabprereg
 fig:osfprereg1
 fig:osfprereg2
 fig:osfprereg3
 fig:osfprereg5
 fig:asp
+fig:rr
 fig:scenarios
 fig:espectro
 tab:mooc
@@ -18,7 +20,7 @@ fig:titulosscript
 fig:produccion2
 intro
 transparencia
-qué-es-la-transparencia
+transparencia-de-qué
 qué-se-ha-hecho
 herramientas-para-los-diseños-transparentes
 preregistros
@@ -26,6 +28,7 @@ manos-a-la-obra-cómo-utilizar-un-preregistro
 osf-preregistration
 secondary-data-preregistration
 aspredicted
+otras-herramientas
 reproducibilidad
 qué-es-la-reproducibilidad
 qué-se-ha-hecho-1
