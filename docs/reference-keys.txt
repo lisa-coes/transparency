@@ -34,7 +34,6 @@ berkeley-initiative-for-transparency-in-the-social-sciences
 proyecto-tier-teaching-integrity-in-empirical-research
 uk-reproducibility-network-ukrn
 herramientas-para-los-análisis-reproducibles
-introducción
 flujo-de-trabajo
 nivel-principal
 a.-datos
