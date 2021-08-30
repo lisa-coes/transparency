@@ -11,14 +11,6 @@ fig:osfprereg3
 fig:osfprereg5
 fig:asp
 fig:rr
-<<<<<<< Updated upstream
-fig:scenarios
-fig:espectro
-tab:mooc
-fig:resources
-fig:octopus
-=======
->>>>>>> Stashed changes
 intro
 transparencia
 transparencia-de-qué
@@ -30,29 +22,3 @@ osf-preregistration
 secondary-data-preregistration
 aspredicted
 otras-herramientas
-<<<<<<< Updated upstream
-reproducibilidad
-qué-es-la-reproducibilidad
-qué-se-ha-hecho-1
-berkeley-initiative-for-transparency-in-the-social-sciences
-proyecto-tier-teaching-integrity-in-empirical-research
-uk-reproducibility-network-ukrn
-herramientas-para-los-análisis-reproducibles
-flujo-de-trabajo
-nivel-principal
-a.-datos
-documentación
-datos
-datos-originales
-datos-procesados
-b.-métodos
-a-explicación
-b-documentación
-c.-resultados
-a-explicación-1
-b-documentación-1
-documentos-dinámicos
-control-de-versiones
-palabras-finales
-=======
->>>>>>> Stashed changes
