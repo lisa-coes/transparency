@@ -1,5 +1,5 @@
 ---
-title: "Transparencia y Reproducibilidad en Investigación Social"
+title: "Transparencia en Investigación Social"
 subtitle: "<center>Documento de trabajo</center>"
 author: "Investigador a cargo: Juan Carlos Castillo <br> Asistente de investigación: Julio Iturra <br> Pasante: Martín Venegas Márquez"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
@@ -8,7 +8,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "Documento de trabajo del equipo <b>Transparencia y Reproducibilidad </b> para el Laboratorio de Ciencia Social Abierta"
+description: "Documento de trabajo del equipo <b>Transparencia</b> para el Laboratorio de Ciencia Social Abierta"
 favicon: images/lisa.ico
 cover-image: images/lisa-complete.png
 github-repo: lisa-coes/transparency
