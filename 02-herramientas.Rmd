@@ -1,0 +1,182 @@
+
+```{r setupp, include=FALSE}
+if (!require("pacman")) install.packages("pacman")  #si falta pacman, instalar
+if (!require("tinytex")) install.packages("tinytex")#si falta tinytex, instalar
+pacman::p_load(knitr, kableExtra, dplyr, ggplot2,sjmisc,texreg) # librerias
+knitr::opts_chunk$set(
+	fig.pos = "H",
+	message = FALSE,
+	warning = FALSE,
+	cache = FALSE,
+	out.width = "85%"
+)
+options(scipen=999) # notacion cientifica
+rm(list=ls())       # limpiar workspace
+options(knitr.kable.NA = '') # NA en kable = ''
+```
+# Herramientas para los diseños transparentes
+
+Nuestra principal apuesta para promover la transparencia en los diseños de investigación son los pre registros, por lo que es a lo que le dedicaremos más espacio de esta sección. De todos modos, también revisaremos un par de herramientas que pueden complementar el uso de pre-registros. Esperamos que, posterior a esta sección, el lector pueda ser capaz de utilizar estas herramientas para sus investigaciones.
+
+## Manos a la obra: cómo utilizar un pre registro
+
+En la práctica, pre registrar un artículo es básicamente sintetizar la información importante sobre nuestra investigación en una plantilla estandarizada y alojar ese documento en un lugar público. Por lo que el primer paso para elaborar un pre registro es elegir la plantilla correcta. Existen plantillas estandarizadas que están estructuradas de tal forma que son útiles para preregistrar estudios de cualquier disciplina, así como también existen plantillas dedicadas a una disciplina o a situaciones particulares. En este apartado presentaremos plantillas bajo cuatro categorías: a) Plantillas genéricas (tipo AsPredicted), b) plantillas para experimentos y previas a recolección de datos, c) plantillas para datos existentes/secundarios, c) plantillas para estudios de reproduciubilidad y replicación y d) registered reports. Además de proveer una descripción de cada una, orientaremos al lector para elegir una plantilla de acuerdo al tipo de investigación que está desarrollando.
+
+El Open Science Framework (OSF) actúa cómo una herramienta y un repositorio que alberga las plantillas que trataremos en esta sección (y más). Para ver todas las plantillas disponible en OSF hacer clic en el siguiente enlace: https://osf.io/zab38/wiki/home/.
+
+**a) Plantillas Genéricas: AsPredicted**
+
+La plantilla de AsPredicted es quizás una de las más conocidas para hacer pre registros, dado que está estandarizada y puede ser utilizada en cualquier disciplina. Recomendamos utilizarla cuando lo que se busque es optimizar tiempo y energías. La plantilla cuenta solamente con ocho preguntas clave que aplican a cualquier tipo de artículo. Esta plantilla la podemos encontrar tanto en OSF, como en la página de AsPredicted, en este caso, mostraremos cómo es el proceso en la página original.
+
+Partimos por entrar a la página de AsPredicted, donde veremos algo como la Figura N° \@ref(fig:asp). Acá se nos da la opción de crear un pre registro, de ver los que ya hemos hecho (si es que ese es el caso) y también una breve descripción de AsPredicted. A grandes rasgos, la página nos dice que AsPredicted es una plataforma que busca facilitar el pre registro de estudios por parte de los investigadores a través de nueve simples preguntas. La página genera un documento .pdf y una URL asociada. También, cuenta cómo funciona el pre registro. Básicamente, un autor elabora un pre registro de un estudio y los coautores reciben un mail para aprobar ese pre registro. Una vez aprobado por todos los autores, el pre registro queda alojado en la plataforma de manera privada, y no cambia hasta que un autor decida hacerlo público. Además, en caso de que el estudio entre en revisión por pares, se puede enviar una versión anónima del pre registro. Por último, nos entrega una recomendación sobre qué hacer en el caso de que el proceso de investigación no haya podido apegarse totalmente a lo predicho.
+
+```{r asp, echo=FALSE, fig.cap="Página de inicio de AsPredicted", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/asp.png")
+```
+
+Para elaborar un pre registro debemos hacer click en el rectángulo azul que dice _Create_. Una vez hecho eso, nos pedirá una dirección de email para continuar. Cuando ingresemos un email, nos enviará un enlace al email que hayamos ingresado, con ese enlace podremos comenzar el pre registro. Una vez hayamos entrado en el enlace, veremos la plantilla de pre registro. Lo primero que aparece es una sección donde debemos escribir los emails de los autores colaboradores del estudio. También, nos da la opción de añadir otros emails además del que hemos introducido. Una vez pasada esta parte, ya nos encontramos con las preguntas del pre registro, las cuales son las siguientes:
+
+1) Recogida de datos. ¿Se han recogido ya datos para este estudio?
+2) Hipótesis. ¿Cuál es la pregunta principal que se plantea o la hipótesis que se pone a prueba en este estudio?
+3) Variable dependiente. Describa la(s) variable(s) dependiente(s) clave especificando cómo se medirán.
+4) Condiciones. ¿Cuántos y qué condiciones se asignarán a los participantes?
+5) Análisis. Especifique exactamente qué análisis realizará para examinar la pregunta/hipótesis principal.
+6) Valores atípicos y exclusiones. Describa exactamente cómo se definirán y tratarán los valores atípicos, así como su(s) regla(s) precisa(s) para excluir las observaciones.
+7) Tamaño de la muestra. ¿Cuántas observaciones se recogerán o qué determinará el tamaño de la muestra?
+8) Otros. ¿Hay algo más que quiera preinscribir?
+9) Nombre. Poner un título a este pre registro de AsPredicted
+Finalmente. A efectos de registro, indíquenos el tipo de estudio que está preinscribiendo.
+
+Las preguntas son bastante autoexplicativas, pero no está de más entregar algunos detalles adicionales. En la pregunta de recolección de datos, las opciones son tres: "Sí, se han recolectado datos", "No, no se han recolectado datos" y "Es complicado". Es importante mencionar que, en esta plantilla, la respuesta de que se han recolectado datos no es válida, por lo que si se está llevando a cabo un estudio con datos secundarios hay responder "Es complicado" y en la pregunta 8 de la plantilla especificar por qué este pre registro sigue siendo válido pese a que los datos son preexistentes. Otro detalle importante es que cada pregunta está pensada para ser respuesta en aproximadamente una oración. Esta plantilla tiene el objetivo de ser lo más eficiente posible, por lo que, en general, se recomienda que todo el documento no pase de los 3200 caracteres. Otro detalle que especificar es que la pregunta acerca del tipo de estudio que se está preregistrando también es semicerrada, tenemos las opciones de: "Proyecto de clase", "Experimento", "Encuesta", "Estudio observacional" y "Otro". Es responsabilidad de quien hace el pre registro el seleccionar la opción que más se asemeje a su situación. Por último, es importante señalar que el pre registro, al menos en la página de AsPredicted, solo puede ser rellenado en inglés, por lo que en caso de utilizar otro idioma solicitará traducirlo.
+
+
+**b) Plantillas para diseños experimentales y previas a recolección de datos**
+
+Considerando que el sentido original de un pre registro es que sea elaborado previo a la recolección y análisis de los datos, en principio cualquier plantilla genérica podría servir. A raíz de esto, presentaremos la plantilla tipo de OSF (que es genérica), pero añadiremos cómo complemento la plantilla “OSF-Standard Pre-Data Collection pre-registration”. Esta plantilla sigue el modelo estándar, pero agrega algunas preguntas más específicas sobre recolección de datos. Por ejemplo, pregunta si la recolección de datos está en curso o si se ha hecho algún análisis de los datos hasta ahora. La plantilla estandar se puede ver en este enlace: https://osf.io/preprints/metaarxiv/epgjd/ y la preguntas que agrega la plantilla complementaria se pueden ver en este enlace: https://osf.io/9j6d7/.
+
+A continuación, mostraremos como es el flujo de trabajo para pre registrar desde OSF.
+
+El primer paso es acceder a la sección específica de pre registros de la página de OSF, la cual se encuentra en el siguiente enlace: https://osf.io/prereg/ (para usar este servicio es necesario tener una cuenta). Si entramos al link con una cuenta recién hecha, la apariencia de la página será algo como la Figura N° \@ref(fig:osfprereg1). En la página veremos una barra superior con opciones asociadas a la cuenta y en el centro veremos un gran botón azul con forma rectangular el cual nos da la opción de comenzar un pre registro. En el caso de acceder con una cuenta que ya tiene proyectos, OSF nos dará la opción de preregistrar un proyecto ya existente. Seleccionemos _Start a new preregistration_, le damos un nombre y hacemos click en _Continue_, lo que nos llevará a la siguiente página, representada en la Figura N° \@ref(fig:osfprereg2). En la página, podemos ver que hemos creado un proyecto nuevo en OSF, el cual nos da la opción de preregistrarlo haciendo click en el botón _New registration_.
+
+
+```{r osfprereg1, echo=FALSE, fig.cap="pre registros en OSF", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/osfprereg1.png")
+```
+
+```{r osfprereg2, echo=FALSE, fig.cap="pre registros en OSF 2", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/osfprereg2.png")
+```
+
+En la Figura N° \@ref(fig:osfprereg3) podemos ver dos cosas. Primero, la descripción de lo que está haciendo OSF al comenzar un nuevo pre registro, lo que en pocas palabras es una versión no modificable del proyecto al momento que hacemos el pre registro. Tal y como dice la página es una versión "congelada". En segundo lugar, también se aprecia una serie de opciones para pre registrar, estas son las plantillas que habíamos mencionado anteriormente. OSF nos ofrece distintas plantillas de acuerdo con el carácter que tiene nuestro estudio.
+
+
+
+
+```{r osfprereg3, echo=FALSE, fig.cap="pre registros en OSF", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/osfprereg3.png")
+```
+
+Cómo en este caso buscamos pre registrar un estudio previo a la recolección de datos, tenemos dos posibles situaciones. Primero, es rellenar la plantilla estándar de OSF, para luego crear otro registro para rellenar la plantilla complementaria “OSF-Standard Pre-Data Collection pre-registration”. Segundo, en el caso de que ya exista un pre registro de nuestro estudio, podemos avanzar directamente a rellenar la plantilla complementaria. En lo que sigue, mostraremos el procedimiento para cualquiera de las dos situaciones.
+
+El primer paso es escoger la plantilla de acuerdo a la situación en la que nos encontremos. Una vez hayamos hecho eso, la página se verá como la Figura N°  \@ref(fig:osfprereg5). Esta sección es transversal a todas las plantillas y consiste en el registro de los metadatos. Específicamente, OSF nos solicitará que registremos título, descripción, contribuyentes, entre otras cosas que ayudan a identificar el proyecto.
+
+```{r osfprereg5, echo=FALSE, fig.cap="Metadatos para pre registros", fig.align = 'center', out.width = '100%'}
+knitr::include_graphics(path = "docs/images/osfprereg5.png")
+```
+El segundo paso es rellenar la plantilla que hayamos escogido. Recordar que en el caso que hayamos partido de cero llenando primero la plantilla estándar, deberemos repetir el proceso para llenar la planilla complementaria.
+
+**c) Plantillas para datos secundarios** https://osf.io/p26rq/
+
+Esta plantilla está dirigida a investigadores que usen datos secundarios. Hace más simple el proceso de pre registro al enfocarse en las preguntas que se asemejan realmente a la situación del investigador que trabaja con grandes encuestas o datos administrativos, lo cual es muchas veces el caso en disciplinas cómo sociología, ciencias políticas o economía.
+
+En el último tiempo se ha comenzado a considerar cómo es que investigadores de las ciencias sociales empíricas que trabajan con datos preexistentes pueden, de todas maneras, preregistrar sus estudios para asegurar la credibilidad de sus hallazgos. Sí bien OSF cuenta con una plantilla tipo para este tipo de situaciones (ver en https://osf.io/x4gzt/), nosotros recomendamos la plantilla de @mertens_Preregistration_2019 dada la simpleza y exhaustividad de sus preguntas. La plantilla de @mertens_Preregistratios_2019 se puede ver en el siguiente enlace: https://osf.io/p26rq/.
+
+Esta plantilla cuenta con las siguientes diez preguntas:
+
+1. ¿Cuál es la hipótesis que se investigará? 
+
+2. ¿Cómo se operacionalizarán las variables cruciales?
+
+3. ¿Cuál es la fuente de los datos incluidos en los análisis?
+
+4. ¿Cómo se obtendrán estos datos? 
+
+5. ¿Hay algún criterio de exclusión de los datos? 
+
+6. ¿Cuáles son los análisis estadísticos previstos? 
+
+7. ¿Cuáles son los criterios para confirmar y desconfirmar las hipótesis? 
+
+8. ¿Se han validado los análisis con un subconjunto de datos? En caso afirmativo, facilite los archivos de datos y la sintaxis de los mismos.
+
+9. ¿Qué se sabe sobre los datos que podría ser relevante para las hipótesis probadas? 
+
+10. Facilite un breve calendario para los diferentes pasos del prerregistro.
+
+Cómo podemos ver, además de los campos que se pueden encontrar en cualquier plantilla cómo la especificación de las hipótesis del estudio o los criterios de exclusión de datos, esta plantilla hace preguntas relativas al nivel de conocimiento previo de los datos. Por ejemplo, en la pregunta 4 solicita especificar la fuente de los datos. Cómo son datos secundarios, esto implica detallar cómo se accederá o serán solicitados los datos: sí es que es necesario rellenar algún formulario o contactar a alguien en específico para obtener acceso. También, en la pregunta 9 se solicita describir cualquier conocimiento de algún patrón en los datos que sea relevante para la pregunta de investigación, cómo sería la media o la mediana de una variable. Estos son ejemplos de preguntas que hacen esta plantilla útil para los investigadores que trabajen con datos preexistentes y que quieran pre registrar sus estudios.  
+
+## Otras herramientas
+
+Sí bien los pre registros son una de las herramientas que más ha ido tomando protagonismo para promover la transparencia, existen otras. Específicamente, queremos mencionar dos de ellas: el modelo de _registered reports_ (informes registrados) y la _transparency checklist_ (lista de transparencia).
+
+**Informes registrados**
+
+El modelo de informes registrados es una alternativa al modelo tradicional de publicación. Consiste en que el artículo atraviesa una revisión por pares en etapas tempranas de la investigación, específicamente **previo a la recolección de datos**. Esta práctica tiene por objetivo que el estudio sea evaluado por su innovación y calidad del diseño de investigación, más que por resultados impactantes [@chambers_Registered_2015]. Además, busca dejar sin efecto prácticas cómo el sesgo de publicación, p-hacking y HARKing, ya que no solamente existe una marca temporal que avala el diseño de investigación del estudio (cómo es el caso de un pre registro), sino que también existe un grupo de científicos anónimos que están de acuerdo con que el artículo es un aporte al conocimiento [@chambers_Registered_2013; @nosek_Registered_2014; @marsden_Introducing_2018].
+
+Los informes registrados tienen dos características principales [@marsden_Introducing_2018]. Primero, un manuscrito con la justificación del estudio, lo que incluye una introducción, revisión de antecedentes y una pregunta de investigación, dando la posibilidad de una **aceptación preliminar** (IPA, por sus siglas en inglés _In principle acceptance_). La segunda característica es que el IPA no puede revocarse en base a los resultados del estudio, esto evita que trabajos con resultados no significativos no sean publicados y así combatir el sesgo de publicación. Relacionado a ambas características, los informes registrados pasan por dos etapas de revisión, la primera es la del manuscrito, siendo este el determinante sí el estudio se acepta o no, y la segunda revisión que se da posterior a terminar la recolección y análisis de datos. El modelo, en comparación al sistema tradicional de publicaciones, se puede ver en la Figura N° \@ref(fig:rr). 
+
+```{r rr, echo=FALSE, fig.cap="Método convencional y de informes registrados para publicación cientifica", fig.align = 'center', out.width = '75%'}
+knitr::include_graphics(path = "images/rr.png")
+```
+
+Para enviar un artículo bajo el modelo de informes registrados, primero se debe tener en conocimiento de cuáles son las revistas que cuentan con este tipo de revisión. El Center for Open Sciences cuenta con una lista actualizada de revistas [aquí](https://www.cos.io/initiatives/registered-reports). Una vez escogida una revista, el proceso no es tan distinto al método convencional, en el sentido de que los investigadores envían su manuscrito con la justificación del estudio y este puede ser aceptado o rechazado por el editor, ya sea directamente o después de la corrección de algunos comentarios. Una vez se cuenta con el IPA y se efectúa la revisión en la segunda etapa, los revisores se aseguran de que el estudio ha seguido el plan de análisis inicialmente planteado y sí sus conclusiones tienen sentido de acuerdo a los datos y resultados obtenidos, así cómo también que toda desviación del plan original sea debidamente justificada [@stewart_Preregistration_2020]. Desviaciones muy sustanciales y/o que no sean debidamente justificadas pueden conllevar el rechazo del artículo, aunque puede seguir el proceso en el método convencional de publicación [@stewart_Preregistration_2020]. Una planilla para la elaboracion de informes registrados se puede ver [aquí](https://osf.io/93znh/)
+
+**Lista de transparencia**
+
+La lista de transparencia es una herramienta complementaria elaborada por @aczel_consensusbased_2020 que busca acompañar el proceso de reportar un estudio, contribuyendo a que estos sean más transparentes. Esta lista ha sido elaborada específicamente para investigadores de las ciencias sociales y del comportamiento que trabajan con datos primarios, aunque puede ser útil para otros enfoques y disciplinas. La lista consta de 36 ítems divididos en cuatro categorías: pre registro, método, resultados y discusiones y accesibilidad de datos, donde cada ítem refiere a alguna característica de un reporte transparente, preguntando sí ha sido efectuada o no, o sea, las respuestas posibles de cada ítem son "Sí", "No" y "N/A". Existe una versión más corte de 12 items, los cuales son los siguientes:
+
+**_Sección de pre registro:_**
+
+(1) Antes de analizar el conjunto completo de datos, se publicó un prerregistro con sello de tiempo en un registro independiente de terceros para el plan de análisis de datos.
+
+(2) El estudio fue registrado…
+- antes de que cualquier dato fuera recolectado
+- después de que algunos datos fueron recolectados, pero antes de explorarlos
+- después de que todos los datos fueron recolectados, pero antes de explorarlos
+- después de explorar los datos, pero antes de que cualquier análisis estadístico fuera efectuado
+- después de efectuar algunos análisis estadísticos, pero no todos
+- en otro momento, explicar:
+
+(3) El análisis estadístico previsto para cada pregunta de investigación (esto puede requerir, por ejemplo, información sobre la unilateralidad de las pruebas, los criterios de inferencia, las correcciones para pruebas múltiples, los criterios de selección de modelos, las distribuciones previas, etc.).
+
+**_Sección de método_**
+
+El manuscrito describe completamente...
+
+(4) la justificación del tamaño de la muestra utilizado (por ejemplo, un análisis de potencia a priori).
+
+(5) el diseño, los procedimientos y los materiales del estudio para permitir una réplica independiente.
+
+(6) las medidas de interés (por ejemplo, la amabilidad) y sus operacionalizaciones (por ejemplo, un cuestionario que mide la amabilidad).
+
+(7) ¿algún cambio en el prerregistro (como cambios en los criterios de elegibilidad, en los límites de pertenencia al grupo o en los procedimientos experimentales)?
+
+**_Sección de resultados y discusión_**
+
+El manuscrito…
+
+(8) distingue explícitamente entre la "confirmación" (es decir, preestablecido) y "exploratorio" (es decir, no preestablecidos).
+
+**_Sección de disponibilidad de datos, código y materiales_**
+
+Se han hecho públicas las siguientes…
+
+(9) los datos (procesados) en los que se han basado los análisis del manuscrito.
+
+(10) todo el código y el software (que no esté protegido por derechos de autor).
+
+(11) todas las instrucciones, los estímulos y los materiales de las pruebas (que no estén protegidos por derechos de autor).
+
+(12) El manuscrito incluye una declaración sobre la disponibilidad y localización de todos los elementos de la investigación, incluidos los datos, materiales y códigos pertinentes para su estudio.
+
+Tanto la versión completa de 36 ítems, cómo la recortada de 12 están disponibles para rellenar en línea. [Aquí](http://www.shinyapps.org/apps/TransparencyChecklist/) se puede encontrar la lista online, es una aplicación de uso simple, además que permite generar el reporte final de manera automática.
