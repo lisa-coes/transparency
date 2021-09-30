@@ -25,7 +25,7 @@ Nuestra principal apuesta para promover la transparencia en los diseños de inve
 
 <div style="text-align: justify">
 
-En la práctica, preregistrar un artículo es básicamente sintetizar la información importante sobre nuestra investigación en una plantilla estandarizada y alojar ese documento en un lugar público. Por lo que el primer paso para elaborar un preregistro es elegir la plantilla correcta. Existen plantillas estandarizadas que están estructuradas de tal forma que son útiles para preregistrar estudios de cualquier disciplina, así como también existen plantillas dedicadas a una disciplina o a situaciones particulares. En este apartado presentaremos plantillas bajo cuatro categorías: a) plantillas genéricas, b) plantillas para experimentos y previas a recolección de datos, c) plantillas para datos existentes/secundarios, c) plantillas para estudios de replicación y d) plantillas para _registered reports_. Además de proveer una descripción de cada una, orientaremos al lector para elegir una plantilla de acuerdo al tipo de investigación que está desarrollando.
+En la práctica, preregistrar un artículo es básicamente sintetizar la información importante sobre nuestra investigación en una plantilla estandarizada y alojar ese documento en un lugar público. Por lo que el primer paso para elaborar un preregistro es elegir la plantilla correcta. Existen plantillas estandarizadas que están estructuradas de tal forma que son útiles para preregistrar estudios de cualquier disciplina, así como también existen plantillas dedicadas a una disciplina o a situaciones particulares. En este apartado presentaremos plantillas bajo cinco categorías: a) plantillas genéricas, b) plantillas para experimentos y previas a recolección de datos, c) plantillas para datos existentes/secundarios, d) plantillas para estudios de replicación y e) plantillas para _registered reports_. Además de proveer una descripción de cada una, orientaremos al lector para elegir una plantilla de acuerdo al tipo de investigación que está desarrollando.
 
 <div style="text-align: justify">
 
@@ -43,15 +43,15 @@ La plantilla de AsPredicted es quizás una de las más conocidas para hacer prer
 
 <div style="text-align: justify">
 
-Partimos por entrar a la página de AsPredicted, donde veremos algo como la Figura N° \@ref(fig:asp). Acá se nos da la opción de crear un preregistro, de ver los que ya hemos hecho (si es que ese es el caso) y también una breve descripción de AsPredicted. A grandes rasgos, la página nos dice que AsPredicted es una plataforma que busca facilitar el preregistro de estudios por parte de los investigadores a través de nueve simples preguntas. La página genera un documento .pdf y una URL asociada. También, cuenta cómo funciona el preregistro. Básicamente, un autor elabora un preregistro de un estudio y los coautores reciben un mail para aprobar ese preregistro. Una vez aprobado por todos los autores, el preregistro queda alojado en la plataforma de manera privada, y no cambia hasta que un autor decida hacerlo público. Además, en caso de que el estudio entre en revisión por pares, se puede enviar una versión anónima del preregistro. Por último, nos entrega una recomendación sobre qué hacer en el caso de que el proceso de investigación no haya podido apegarse totalmente a lo predicho.
+Los preregistros realizados en esta página quedan en un documento .pdf y una URL asociada. Para lograr estos productos finales, el funcionamiento es el siguiente: un autor crea un preregistro de un estudio y los coautores reciben un email para aprobar ese preregistro. Una vez aprobado por todos los autores, el preregistro queda alojado en la plataforma de manera privada, y no cambia hasta que un autor decida hacerlo público. Además, en caso de que el estudio entre en revisión por pares, se puede enviar una versión anónima del preregistro.
 
 ```{r asp, echo=FALSE, fig.cap="Botón para comenzar un preregistro", fig.align = 'center', out.width = '100%'}
-knitr::include_graphics(path = "images/prereg1.png")
+knitr::include_graphics(path = "input/images/prereg1.png")
 ```
 
 <div style="text-align: justify">
 
-Para elaborar un preregistro debemos hacer click en el rectángulo azul que dice _Create_. Una vez hecho eso, nos pedirá una dirección de email para continuar. Cuando ingresemos un email, nos enviará un enlace al email que hayamos ingresado, con ese enlace podremos comenzar el preregistro. Una vez hayamos entrado en el enlace, veremos la plantilla de preregistro. Lo primero que aparece es una sección donde debemos escribir los emails de los autores colaboradores del estudio. También, nos da la opción de añadir otros emails además del que hemos introducido. Una vez pasada esta parte, ya nos encontramos con las preguntas del preregistro, las cuales son las siguientes:
+Al entrar a la página de AsPredicted veremos algo como la Figura N° \@ref(fig:asp). Acá se nos da la opción de crear un preregistro y de ver los que ya hemos hecho (si es que ese es el caso). Para elaborar un preregistro debemos hacer click en el rectángulo azul que dice _Create_. Una vez hecho eso, nos pedirá una dirección de email para continuar. Cuando ingresemos un email, nos enviará un enlace al email que hayamos ingresado, con ese enlace podremos comenzar el preregistro. Una vez hayamos entrado en el enlace, veremos la plantilla de preregistro. Lo primero que aparece es una sección donde debemos escribir los emails de los autores colaboradores del estudio. También, nos da la opción de añadir otros emails además del que hemos introducido. Una vez pasada esta parte, ya nos encontramos con las preguntas del preregistro, las cuales son las siguientes:
 
 <div style="text-align: justify">
 
@@ -72,7 +72,7 @@ Las preguntas son bastante autoexplicativas, pero no está de más entregar algu
 
 **OSF Estándar**
 
-La plantilla estándar de OSF también es de carácter general y busca abarcar distintas situaciones y tipos de estudios. La diferencia que tiene con la plantilla de AsPredicted es que contiene más preguntas y más detalladas. Por ejemplo, contiene preguntas relativas a en qué momento específico se está efectuando el preregistro (i.e antes de recopilar los datos, antes de cualquier observación humana a los datos, antes de acceder a los datos etc) o sí se harán transformaciones de las variables y su nivel de medición. La plantilla puede verse en este enlace: [https://osf.io/preprints/metaarxiv/epgjd/](https://osf.io/preprints/metaarxiv/epgjd/){target="_blank"}. A continuación, veremos el inicio del proceso para registrar en OSF, el cual sirve tanto para la plantilla estándar cómo para otras que veremos más adelante.
+La plantilla estándar de OSF también es de carácter general y busca abarcar distintas situaciones y tipos de estudios. La diferencia que tiene con la plantilla de AsPredicted es que contiene más preguntas y más detalladas. Por ejemplo, contiene preguntas relativas a en qué momento específico se está efectuando el preregistro (i.e antes de recopilar los datos, antes de cualquier observación humana a los datos, antes de acceder a los datos etc.) o si se harán transformaciones de las variables y su nivel de medición. La plantilla puede verse en este enlace: [https://osf.io/preprints/metaarxiv/epgjd/](https://osf.io/preprints/metaarxiv/epgjd/){target="_blank"}. A continuación, veremos el inicio del proceso para registrar en OSF, el cual sirve tanto para la plantilla estándar cómo para otras que veremos más adelante.
 
 <div style="text-align: justify">
 
@@ -80,14 +80,14 @@ El primer paso es acceder a la sección específica de preregistros de la págin
 
 
 ```{r osfprereg1, echo=FALSE, fig.cap="Opciones para comenzar un preregistro en OSF", fig.align = 'center', out.width = '100%'}
-knitr::include_graphics(path = "images/prereg2.png")
+knitr::include_graphics(path = "input/images/prereg2.png")
 ```
 <div style="text-align: justify">
 
 En la Figura N° \@ref(fig:osfprereg2) podemos ver dos cosas. Primero, la descripción de lo que está haciendo OSF al comenzar un nuevo preregistro, lo que en pocas palabras es una versión no modificable del proyecto al momento que hacemos el preregistro. En otras palabras, es una versión "congelada" del proyecto en OSF. Segundo, también se aprecia una serie de opciones para preregistrar, estas son las plantillas que mencionamos anteriormente. OSF nos ofrece distintas plantillas de acuerdo con el carácter que tiene nuestro estudio.
 
 ```{r osfprereg2, echo=FALSE, fig.cap="Opciones de plantilla de pre-reistro", fig.align = 'center', out.width = '100%'}
-knitr::include_graphics(path = "images/prereg3.png")
+knitr::include_graphics(path = "input/images/prereg3.png")
 ```
 
 <div style="text-align: justify">
@@ -95,7 +95,7 @@ knitr::include_graphics(path = "images/prereg3.png")
 El primer paso es escoger la plantilla de acuerdo a la situación en la que nos encontremos. En este caso, seleccionamos la plantilla estándar de OSF. Una vez hayamos hecho eso, será necesario llenar los metadatos del estudio (e.g. Figura N°  \@ref(fig:osfprereg3)). Esta sección es transversal a todas las plantillas y consiste en registrar el título, descripción, contribuyentes, entre otras cosas que ayudan a identificar el proyecto.
 
 ```{r osfprereg3, echo=FALSE, fig.cap="Ejemplo de campos de metadatos para rellenar", fig.align = 'center', out.width = '75%'}
-knitr::include_graphics(path = "images/prereg4.png")
+knitr::include_graphics(path = "input/images/prereg4.png")
 ```
 <div style="text-align: justify">
 
@@ -163,11 +163,11 @@ Cómo podemos ver, además de los campos que se pueden encontrar en cualquier pl
 
 <div style="text-align: justify">
 
-Tratar en extenso qué es y cómo se hace un estudio de replicación escapa de los objetivos de de este capítulo, sin embargo, es una práctica de la ciencia abierta que no podemos dejar fuera ya que también cuenta con una plantilla para prerregistro. Replicar un estudio significa regenerar los hallazgos de un estudio, siguiendo sus hipótesis y plan de análisis, pero con datos distintos. 
+Tratar en extenso qué es y cómo se hace un estudio de replicación escapa de los objetivos de de este capítulo, sin embargo, es una práctica de la ciencia abierta que no podemos dejar fuera ya que también cuenta con una plantilla para preregistro. Replicar un estudio significa regenerar los hallazgos de un estudio, siguiendo sus hipótesis y plan de análisis, pero con datos distintos. 
 
 <div style="text-align: justify">
 
-OSF ofrece dos plantillas para investigadores que tienen el objetivo de replicar un estudio. La primera es una plantilla para estudios de replicación previo a su ejecución, la cual incluye una serie de preguntas relativas al estudio original, por ejemplo, qué efecto se está buscando replicar, por qué es importante replicarlo o en qué área geográfica fue conducido el estudio original. Esta plantilla se puede ver en el siguiente enlace: [https://osf.io/4jd46/](https://osf.io/4jd46/){target="_blank"}. La segunda plantilla es para estudios de replicación que ya han sido completados. En este caso, las pvreguntas están relacionadas a los hallazgos del estudio de replicación, por ejemplo, cuál fue el efecto obtenido en la replicación y sí se considera que este efecto logra replicar los resultados originales o no. El enlace para esta plantilla se puede encontrar en este enlace: [https://osf.io/9rp6j/](https://osf.io/9rp6j/){target="_blank"}.
+OSF ofrece dos plantillas para investigadores que tienen el objetivo de replicar un estudio. La primera es una plantilla para estudios de replicación previo a su ejecución, la cual incluye una serie de preguntas relativas al estudio original, por ejemplo, qué efecto se está buscando replicar, por qué es importante replicarlo o en qué área geográfica fue conducido el estudio original. Esta plantilla se puede ver en el siguiente enlace: [https://osf.io/4jd46/](https://osf.io/4jd46/){target="_blank"}. La segunda plantilla es para estudios de replicación que ya han sido completados. En este caso, las preguntas están relacionadas a los hallazgos del estudio de replicación, por ejemplo, cuál fue el efecto obtenido en la replicación y sí se considera que este efecto logra replicar los resultados originales o no. El enlace para esta plantilla se puede encontrar en este enlace: [https://osf.io/9rp6j/](https://osf.io/9rp6j/){target="_blank"}.
 
 ### Plantillas para _registered reports_
 
@@ -193,7 +193,7 @@ El modelo de _registered reports_ es una alternativa al modelo tradicional de pu
 Los _registered reports_ tienen dos características principales [@marsden_Introducing_2018]. Primero, un manuscrito con la justificación del estudio, lo que incluye una introducción, revisión de antecedentes y una pregunta de investigación, dando la posibilidad de una **aceptación preliminar** (IPA, por sus siglas en inglés _In principle acceptance_). La segunda característica es que el IPA no puede revocarse en base a los resultados del estudio, esto evita que trabajos con resultados no significativos no sean publicados y así combatir el sesgo de publicación. Relacionado a ambas características, los informes registrados pasan por dos etapas de revisión, la primera es la del manuscrito, siendo este el determinante sí el estudio se acepta o no, y la segunda revisión que se da posterior a terminar la recolección y análisis de datos. El modelo, en comparación al sistema tradicional de publicaciones, se puede ver en la Figura N° \@ref(fig:rr). 
 
 ```{r rr, echo=FALSE, fig.cap="Método convencional y de registered reports para publicación cientifica", fig.align = 'center', out.width = '75%'}
-knitr::include_graphics(path = "images/rr.png")
+knitr::include_graphics(path = "input/images/rr.png")
 ```
 
 <div style="text-align: justify">
